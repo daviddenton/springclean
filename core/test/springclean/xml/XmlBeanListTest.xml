@@ -1,0 +1,3 @@
+<list>
+    <bean ref="ref"/>
+</list>

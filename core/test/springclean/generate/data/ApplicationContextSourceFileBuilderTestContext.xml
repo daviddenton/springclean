@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+    <import resource="anImportedApplicationContext.xml"/>
+
+    <bean id="aConstructorInjectedBean" class="springclean.generate.data.ConstructorInjectedBean">
+        <constructor-arg>
+            <ref bean="anImportedBean"/>
+        </constructor-arg>
+        <constructor-arg>
+            <bean class="springclean.generate.data.AnonymousBean"/>
+        </constructor-arg>
+        <constructor-arg type="int">
+            <value>1</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="aSetterInjectedBean" class="springclean.generate.data.SetterInjectedBean">
+        <property name="anImportedBean">
+            <ref bean="anImportedBean"/>
+        </property>
+        <property name="anonymousBean">
+            <bean class="springclean.generate.data.AnonymousBean"/>
+        </property>
+        <property name="shortcutRef" ref="aConstructorInjectedBean"/>
+        <property name="shortCutValue" value="aStringValue"/>
+        <property name="expandedValue">
+            <value>1</value>
+        </property>
+    </bean>
+
+    <!--<bean id="staticFactoryBean" class="springclean.generate.data.StaticFactoryMethodBean" factory-method="staticFactoryMethod"/>-->
+
+</beans>

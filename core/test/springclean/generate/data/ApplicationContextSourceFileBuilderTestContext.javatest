@@ -1,0 +1,19 @@
+package springclean.data;
+
+import java.lang.Object;
+import springclean.generate.data.ConstructorInjectedBean;
+
+public class ApplicationContextSourceFileBuilderTestContext {
+    public final ConstructorInjectedBean aConstructorInjectedBean;
+
+    public ApplicationContextSourceFileBuilderTestContext(final AnImportedBean anImportedBean) {
+        aConstructorInjectedBean =  new ConstructorInjectedBean(anImportedBean, new AnonymousBean(), 1);
+        aSetterInjectedBean = new SetterInjectedBean() {{
+            setAnImportedBean(anImportedBean);
+            setAnonymousBean(new AnonymousBean());
+            setShortcutRef(aConstructorInjectedBean);
+            setShortCutValue("aStringValue");
+            setExpandedValue(1)
+        }};
+    }
+}
