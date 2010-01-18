@@ -1,0 +1,71 @@
+SPRINGCLEAN TODO
+
+finish lists, sets and maps
+
+application contexts in the classpath
+
+FactoryBean interface -
+ignore type of bean in generated field and use result of getObjectClassWhatever method in FactoryBean class instead
+
+InitialisingBean - afterpropertiesset
+
+DisposableBean - same as destroy method
+
+aliases and names (multiple values in the bean "name" attribute)
+
+prototype scope - copy of each bean created each time
+
+
+default-init-method
+
+
+p-namespace
+
+<property name="properties">
+      <value>
+         jdbc.driver.className=com.mysql.jdbc.Driver
+         jdbc.url=jdbc:mysql://localhost:3306/mydb
+      </value>
+   </property>
+
+
+    <!-- the merge is specified on the *child* collection definition -->
+           <props merge="true">
+               <prop key="sales">sales@example.com</prop>
+               <prop key="support">support@example.co.uk</prop>
+           </props>
+
+
+
+singleton?!?!?
+
+abstact and parent beans - somehow lookup and inherit the dependencies from the parent
+
+proxies and pointcuts
+
+<aop:scoped-proxy/>
+
+
+ref parent attribute
+
+
+property configurer and PropertyPlaceholderConfigurer:
+auto import the "hidden bean"
+auto conversion of types such as URL
+
+
+values - fix auto casting stuff so that there is one implementation of Value interface (and context element?)
+ for each type
+
+depends-on
+
+FieldRetrievingFactoryBean ?
+
+idref bean
+
+lookup-method
+
+replaced-method
+
+scope
+
