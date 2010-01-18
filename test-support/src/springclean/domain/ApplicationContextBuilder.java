@@ -1,0 +1,60 @@
+package springclean.domain;
+
+import static com.google.common.collect.Lists.newArrayList;
+import static springclean.domain.ContextName.contextName;
+import springclean.xml.XomProcessingException;
+
+import java.io.File;
+import java.util.Collection;
+import java.util.List;
+
+public class ApplicationContextBuilder {
+    private ContextName name = contextName(new File("aContextName.xml"));
+    private List<IdentifiedBean> identifiedBeans = newArrayList();
+    private List<IdentifiedBean> importedBeans = newArrayList();
+
+    private ApplicationContextBuilder() {
+    }
+
+    public static ApplicationContextBuilder anApplicationContext() {
+        return new ApplicationContextBuilder();
+    }
+
+    public ApplicationContextBuilder withName(ContextName name) {
+        this.name = name;
+        return this;
+    }
+
+    public ApplicationContextBuilder withIdentifiedBean(IdentifiedBean identifiedBean) {
+        this.identifiedBeans.add(identifiedBean);
+        return this;
+    }
+
+    public ApplicationContextBuilder withImportedBean(IdentifiedBean importedBean) {
+        this.importedBeans.add(importedBean);
+        return this;
+    }
+
+    public ApplicationContext build() {
+        return new ApplicationContext() {
+            public ContextName name() {
+                return name;
+            }
+
+            public Collection<IdentifiedBean> beans() {
+                return identifiedBeans;
+            }
+
+            public Collection<IdentifiedBean> importedBeans() {
+                return importedBeans;
+            }
+
+            public IdentifiedBean findBean(SpringId springId) {
+                for (IdentifiedBean identifiedBean : identifiedBeans) {
+                    if (identifiedBean.id().equals(springId)) return identifiedBean;
+                }
+                throw new XomProcessingException("Can't find bean named " + springId);
+            }
+        };
+    }
+}
