@@ -9,7 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="client" />
-    <orderEntry type="module" module-name="test-support" />
     <orderEntry type="library" name="support" level="project" />
   </component>
 </module>
