@@ -223,5 +223,27 @@
     <mapping directory="" vcs="svn" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
+  <component name="libraryTable">
+    <library name="distributed">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/xom-1.2.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/org.springframework.beans-3.0.0.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/google-collect-1.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/commons-lang-2.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="support">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/externallib/hamcrest-core-1.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/externallib/junit-addons-1.4.jar!/" />
+        <root url="jar://$PROJECT_DIR$/externallib/hamcrest-library-1.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/externallib/junit-4.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
 </project>
 
