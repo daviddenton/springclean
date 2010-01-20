@@ -21,7 +21,8 @@
         <zip destfile="build/${artifact}.zip" update="true">
             <zipfileset dir="lib" prefix="lib"/>
             <zipfileset file="build/jars/${artifact}.jar"/>
-            <zipfileset dir="src/main" prefix="src"/>
+            <zipfileset file="build/jars/${artifact}-client.jar"/>
+            <zipfileset dir="core/src" prefix="src"/>
             <zipfileset file="${basedir}/readme.txt"/>
         </zip>
     </target>
@@ -76,6 +77,7 @@
                 <classpath>
                     <path refid="@{classpathref}"/>
                     <pathelement location="build/jars/${artifact}.jar"/>
+                    <pathelement location="build/jars/${artifact}-client.jar"/>
                     <pathelement location="build/classes"/>
                     <pathelement location="build/jars/${ant.project.name}-test-${version}.jar"/>
                 </classpath>
