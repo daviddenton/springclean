@@ -11,7 +11,7 @@ public abstract class AbstractFeatureTest extends AbstractSpringCleanTestCase {
 
     @Test
     public void featureGeneratesCorrectSource() throws Exception {
-        ApplicationContext applicationContext = new XmlApplicationContext(rl.loadFile("ApplicationContext.xml"));
+        ApplicationContext applicationContext = new XmlApplicationContext(rl.tempFile("ApplicationContext.xml"));
         ApplicationContextClassBuilder contextClassBuilder = new ApplicationContextClassBuilder(applicationContext);
         assertSource(contextClassBuilder.build(), equalTo(rl.loadString("ApplicationContext.javatest")));
     }

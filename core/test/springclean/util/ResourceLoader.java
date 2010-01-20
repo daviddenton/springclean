@@ -19,13 +19,13 @@ public class ResourceLoader {
 
     public Document loadDocument(String xmlFileName) {
         try {
-            return parse(loadFile(xmlFileName));
+            return parse(tempFile(xmlFileName));
         } catch (NullPointerException e) {
             throw new Defect("Can't find " + xmlFileName, e);
         }
     }
 
-    public File loadFile(String name) {
+    public File tempFile(String name) {
         try {
             File tmpFile = new File("build", name);
             tmpFile.createNewFile();

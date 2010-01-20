@@ -19,7 +19,7 @@ public class ApplicationContextClassBuilderTest extends AbstractSpringCleanTestC
     @Test
     @Ignore
     public void test() throws Exception {
-        final File file = rl.loadFile("data/ApplicationContextSourceFileBuilderTestContext.xml");
+        final File file = rl.tempFile("data/ApplicationContextSourceFileBuilderTestContext.xml");
         final ApplicationContext applicationContext = new XmlApplicationContext(file);
         final ApplicationContextClassBuilder contextClassBuilder = new ApplicationContextClassBuilder(applicationContext);
 
@@ -31,7 +31,7 @@ public class ApplicationContextClassBuilderTest extends AbstractSpringCleanTestC
             writer.close();
         }
 
-        System.out.println(rl.loadFile("data/ApplicationContextSourceFileBuilderTestContext.xml").getAbsolutePath());
+        System.out.println(rl.tempFile("data/ApplicationContextSourceFileBuilderTestContext.xml").getAbsolutePath());
         System.out.println(sWriter.toString());
 
         assertThat(sWriter.toString(), equalTo(rl.loadString("data/ApplicationContextSourceFileBuilderTestContext.javatest")));

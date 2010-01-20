@@ -9,7 +9,7 @@ import static springclean.domain.ContextName.contextName;
 import java.io.File;
 
 public class XmlApplicationContextTest extends AbstractSpringCleanTestCase {
-    private final File file = rl.loadFile("XmlApplicationContextTest_main.xml");
+    private final File file = rl.tempFile("XmlApplicationContextTest_main.xml");
 
     @Test
     public void forAllBeans() throws Exception {

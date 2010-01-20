@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/generate/ApplicationContextClassBuilderTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/ApplicationContextClassBuilderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlApplicationContextTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/xml/XmlApplicationContextTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/generate/AbstractFeatureTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/AbstractFeatureTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/util/ResourceLoader.java" afterPath="$PROJECT_DIR$/core/test/springclean/util/ResourceLoader.java" />
     </list>
     <ignored path="springclean.iws" />
@@ -91,7 +92,9 @@
         <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/ApplicationContextClassBuilderTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="32" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,7 +132,7 @@
       <file leaf-file-name="ResourceLoader.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/util/ResourceLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="27" selection-start="945" selection-end="945" vertical-scroll-proportion="0.8083067">
+            <state line="27" column="19" selection-start="687" selection-end="687" vertical-scroll-proportion="0.61661345">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -831,13 +834,15 @@
     <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/ApplicationContextClassBuilderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="32" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/util/ResourceLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="27" selection-start="945" selection-end="945" vertical-scroll-proportion="0.8083067">
+        <state line="27" column="19" selection-start="687" selection-end="687" vertical-scroll-proportion="0.61661345">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
