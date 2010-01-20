@@ -6,6 +6,7 @@ import springclean.exception.Defect;
 import static springclean.xml.XomUtils.parse;
 
 import java.io.File;
+import java.io.InputStream;
 import java.net.URISyntaxException;
 
 public class ResourceLoader {
@@ -35,7 +36,8 @@ public class ResourceLoader {
 
     public String loadString(String name) {
         try {
-            String fileData = IOUtils.toString(loader.getClass().getResourceAsStream(name));
+            InputStream asStream = loader.getClass().getResourceAsStream(name);
+            String fileData = IOUtils.toString(asStream);
             return fileData.replaceAll("    ", "");
         } catch (Exception e) {
             throw new RuntimeException(name, e);
