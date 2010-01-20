@@ -5,6 +5,7 @@ import org.daisychain.source.SourcePackage;
 import org.daisychain.source.util.IndentingStringWriter;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
+import org.junit.Ignore;
 import org.junit.Test;
 import springclean.AbstractSpringCleanTestCase;
 import springclean.domain.ApplicationContext;
@@ -16,6 +17,7 @@ import java.io.StringWriter;
 public class ApplicationContextClassBuilderTest extends AbstractSpringCleanTestCase {
 
     @Test
+    @Ignore
     public void test() throws Exception {
         final File file = rl.loadFile("data/ApplicationContextSourceFileBuilderTestContext.xml");
         final ApplicationContext applicationContext = new XmlApplicationContext(file);

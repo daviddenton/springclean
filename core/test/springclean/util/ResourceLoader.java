@@ -27,7 +27,7 @@ public class ResourceLoader {
 
     public File loadFile(String name) {
         try {
-            File tmpFile = new File(name);
+            File tmpFile = new File("build", name);
             tmpFile.createNewFile();
             IOUtils.copy(this.loader.getClass().getResourceAsStream(name), new FileOutputStream(tmpFile));
             return tmpFile;
