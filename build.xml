@@ -47,12 +47,17 @@
     <macrodef name="compile-module">
         <attribute name="classpathref"/>
         <sequential>
-            <path id="test-classpath">
+            <compile-jar srcdir="client/src" jarfile="${artifact}-client.jar" classpathref="@{classpathref}"/>
+            <path id="core-classpath">
                 <path refid="@{classpathref}"/>
+                <pathelement location="build/jars/${artifact}-client.jar"/>
+            </path>
+            <compile-jar srcdir="core/src" jarfile="${artifact}.jar" classpathref="core-classpath"/>
+            <path id="test-classpath">
+                <path refid="core-classpath"/>
                 <pathelement location="build/jars/${artifact}.jar"/>
             </path>
-            <compile-jar srcdir="src/main" jarfile="${artifact}.jar" classpathref="@{classpathref}"/>
-            <compile-jar srcdir="src/test" jarfile="${ant.project.name}-test-${version}.jar"
+            <compile-jar srcdir="core/test" jarfile="${ant.project.name}-test-${version}.jar"
                          classpathref="test-classpath"/>
         </sequential>
     </macrodef>
@@ -78,7 +83,7 @@
                 <formatter type="xml"/>
 
                 <batchtest todir="${test.output.dir}">
-                    <fileset dir="src/test">
+                    <fileset dir="core/test">
                         <include name="**/*Test.java"/>
                         <exclude name="**/Abstract*Test.java"/>
                     </fileset>

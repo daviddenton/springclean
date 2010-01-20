@@ -1,12 +1,11 @@
 package springclean.util;
 
 import nu.xom.Document;
+import org.apache.commons.io.IOUtils;
 import springclean.exception.Defect;
 import static springclean.xml.XomUtils.parse;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.net.URISyntaxException;
 
 public class ResourceLoader {
@@ -36,17 +35,8 @@ public class ResourceLoader {
 
     public String loadString(String name) {
         try {
-            StringBuffer fileData = new StringBuffer(1000);
-            BufferedReader reader = new BufferedReader(new FileReader(loader.getClass().getResource(name).getPath()));
-            char[] buf = new char[1024];
-            int numRead;
-            while ((numRead = reader.read(buf)) != -1) {
-                String readData = String.valueOf(buf, 0, numRead);
-                fileData.append(readData);
-                buf = new char[1024];
-            }
-            reader.close();
-            return fileData.toString().replaceAll("    ", "");
+            String fileData = IOUtils.toString(loader.getClass().getResourceAsStream(name));
+            return fileData.replaceAll("    ", "");
         } catch (Exception e) {
             throw new RuntimeException(name, e);
         }
