@@ -6,8 +6,9 @@ import springclean.exception.Defect;
 import static springclean.xml.XomUtils.parse;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
-import java.net.URISyntaxException;
 
 public class ResourceLoader {
     private final Object loader;
@@ -26,11 +27,12 @@ public class ResourceLoader {
 
     public File loadFile(String name) {
         try {
-            return new File(this.loader.getClass().getResource(name).toURI());
-        } catch (NullPointerException e) {
-            throw new Defect("Can't find " + name, e);
-        } catch (URISyntaxException e) {
-            throw new Defect("Can't load " + name, e);
+            File tmpFile = new File(name);
+            tmpFile.createNewFile();
+            IOUtils.copy(this.loader.getClass().getResourceAsStream(name), new FileOutputStream(tmpFile));
+            return tmpFile;
+        } catch (IOException e) {
+            throw new Defect("Can't copy to " + name, e);
         }
     }
 

@@ -119,7 +119,7 @@
                 use="true"
                 windowtitle="springclean"
                 classpathref="test-classpath">
-            <packageset dir="src/main" defaultexcludes="yes">
+            <packageset dir="core/src" defaultexcludes="yes">
                 <include name="**"/>
             </packageset>
         </javadoc>
