@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/generate/setterInjection/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/setterInjection/ApplicationContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.ipr" afterPath="$PROJECT_DIR$/springclean.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/generate/constructorInjection/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/constructorInjection/ApplicationContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/generate/destroyMethod/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/destroyMethod/ApplicationContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/generate/initMethod/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/initMethod/ApplicationContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/domain/BeanBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/BeanBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/generate/ApplicationContextClassBuilder.java" afterPath="$PROJECT_DIR$/core/src/springclean/generate/ApplicationContextClassBuilder.java" />
-    </list>
+    <list default="true" readonly="true" name="Default" comment="" />
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
   </component>
