@@ -3,7 +3,6 @@ package springclean.generate.constructorInjection;
 import springclean.generate.data.AnonymousBean;
 import springclean.generate.data.ConstructorInjectedBean;
 import springclean.generate.data.NoDependencyBean;
-import springclean.Stoppable;
 
 public class ApplicationContext {
     public final NoDependencyBean noDependencyBean;

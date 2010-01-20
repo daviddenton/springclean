@@ -2,12 +2,8 @@ package springclean.domain;
 
 import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Maps.newHashMap;
-import org.daisychain.source.AClass;
-import org.daisychain.source.Constructor;
-import static org.daisychain.source.ConstructorBuilder.aConstructor;
-import org.daisychain.source.ExistingClass;
-import org.daisychain.source.Method;
-import static org.daisychain.source.MethodBuilder.aMethod;
+import org.daisychain.source.*;
+import static org.daisychain.source.DaisyChain.a;
 import springclean.exception.Defect;
 import springclean.generate.ContextElement;
 import static springclean.generate.ContextElementBuilder.aContextElement;
@@ -17,10 +13,10 @@ import java.util.Map;
 
 public class BeanBuilder {
 
-    AClass aClass = new ExistingClass(String.class);
+    AClass aClass = a(Modifier.publicFinal).generatedClass("TestClass").build();
     List<ConstructorArg> constructorArgs = newArrayList();
     Map<Property, Method> properties = newHashMap();
-    Constructor constructor = aConstructor().build();
+    Constructor constructor = a(Modifier.Public).constructor(a(Modifier.publicFinal).generatedClass("TestClass").build()).build();
     Method initMethod;
     Method destroyMethod;
     Method factoryMethod;
@@ -65,7 +61,7 @@ public class BeanBuilder {
     }
 
     public BeanBuilder withProperty(Property property) {
-        return withProperty(property, aMethod().withName(property.name().setterName()).build());
+        return withProperty(property, a(Modifier.publicFinal).concreteMethodReturning(property.name().setterName(), ExistingClass.VOID).build());
     }
 
     public BeanBuilder withProperty(Property property, Method setterMethod) {
@@ -110,12 +106,12 @@ public class BeanBuilder {
             }
 
             public Method initMethod() {
-                if(!hasInitMethod()) throw new Defect("No init method defined");
+                if (!hasInitMethod()) throw new Defect("No init method defined");
                 return initMethod;
             }
 
             public Method destroyMethod() {
-                if(!hasDestroyMethod()) throw new Defect("No destroy method defined");
+                if (!hasDestroyMethod()) throw new Defect("No destroy method defined");
                 return destroyMethod;
             }
 
@@ -124,7 +120,7 @@ public class BeanBuilder {
             }
 
             public Method factoryMethod() {
-                if(!hasFactoryMethod()) throw new Defect("No factory method defined");
+                if (!hasFactoryMethod()) throw new Defect("No factory method defined");
                 return factoryMethod;
             }
 

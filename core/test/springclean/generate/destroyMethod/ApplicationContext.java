@@ -1,6 +1,6 @@
 package springclean.generate.destroyMethod;
 
-import springclean.Stoppable;
+import springclean.client.Stoppable;
 import springclean.generate.data.DestroyableBean;
 
 public class ApplicationContext implements Stoppable {

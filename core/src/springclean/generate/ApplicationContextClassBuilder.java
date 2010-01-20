@@ -5,7 +5,7 @@ import org.daisychain.source.*;
 import static org.daisychain.source.DaisyChain.a;
 import static org.daisychain.source.Modifier.Public;
 import static org.daisychain.source.Modifier.publicFinal;
-import springclean.Stoppable;
+import springclean.client.Stoppable;
 import springclean.domain.ApplicationContext;
 import springclean.domain.IdentifiedBean;
 
