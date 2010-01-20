@@ -2,20 +2,10 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/domain/BeanBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/BeanBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/domain" afterPath="$PROJECT_DIR$/core/test/springclean/domain" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/util" afterPath="$PROJECT_DIR$/core/test/springclean/util" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/domain/PropertyBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/PropertyBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/domain/IdentifiedBeanBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/IdentifiedBeanBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/generate/ContextElementBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/ContextElementBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/domain/ReferenceBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/ReferenceBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/domain/ApplicationContextBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/ApplicationContextBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/domain/ConstructorArgBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/ConstructorArgBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/domain/BeanSetBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/BeanSetBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/util/ResourceLoader.java" afterPath="$PROJECT_DIR$/core/test/springclean/util/ResourceLoader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/domain/BeanListBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/BeanListBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.ipr" afterPath="$PROJECT_DIR$/springclean.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test-support/src/springclean/domain/BeanCollectionBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/BeanCollectionBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/core.iml" afterPath="$PROJECT_DIR$/core/core.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/client.iml" afterPath="$PROJECT_DIR$/client/client.iml" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,13 +82,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanSetBuilder.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BeanSetBuilder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/domain/BeanSetBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="28" selection-start="768" selection-end="768" vertical-scroll-proportion="0.77227724">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="4" column="7" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceLoader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/util/ResourceLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="9" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeanBuilder.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/domain/BeanBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="32" selection-start="861" selection-end="861" vertical-scroll-proportion="0.02970297">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -195,6 +201,14 @@
           <option name="myItemId" value="test" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="domain" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -210,7 +224,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
+          <option name="myItemId" value="test" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -497,10 +511,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/domain/BeanSetBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="28" selection-start="768" selection-end="768" vertical-scroll-proportion="0.77227724">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="4" column="7" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/util/ResourceLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="9" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/domain/BeanBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="32" selection-start="861" selection-end="861" vertical-scroll-proportion="0.02970297">
+          <folding />
         </state>
       </provider>
     </entry>

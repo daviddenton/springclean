@@ -10,6 +10,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="client" />
     <orderEntry type="library" name="support" level="project" />
+    <orderEntry type="library" name="distributed" level="project" />
   </component>
 </module>
 
