@@ -9,7 +9,7 @@ public class ApplicationContext {
 
     public final ConstructorInjectedBean aConstructorInjectedBean;
 
-    public ApplicationContext(final NoDependencyBean noDependencyBean) {
+    public ApplicationContext(final NoDependencyBean noDependencyBean) throws Exception {
         anotherNoDependencyBean = new NoDependencyBean();
         aConstructorInjectedBean = new ConstructorInjectedBean(anotherNoDependencyBean, noDependencyBean, new AnonymousBean(), 1);
     }

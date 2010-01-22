@@ -62,6 +62,7 @@ public class ApplicationContextClassBuilder {
             final Set<Instance> constructorParameters = newHashSet();
             final Set<Instance> externalDependencies = externallyDefinedDependencies(applicationContext);
             final GeneratedConstructor constructor = a(Public).constructor(contextClass).build();
+            constructor.addException(new ExistingClass(Exception.class));
             while (true) {
                 try {
                     for (IdentifiedBean target : applicationContext.beans()) {

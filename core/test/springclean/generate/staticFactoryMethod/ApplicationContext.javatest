@@ -3,7 +3,7 @@ public class ApplicationContext {
 
     public final StaticFactoryMethodBean aStaticFactoryMethodBean;
 
-    public ApplicationContext() {
+    public ApplicationContext() throws Exception {
         noDependencyBean = new NoDependencyBean();
         aStaticFactoryMethodBean = StaticFactoryMethodBean.staticFactoryMethod(noDependencyBean);
     }

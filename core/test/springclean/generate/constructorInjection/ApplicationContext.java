@@ -11,7 +11,7 @@ public class ApplicationContext {
 
     public final ConstructorInjectedBean aConstructorInjectedBean;
 
-    public ApplicationContext() {
+    public ApplicationContext() throws Exception {
         noDependencyBean = new NoDependencyBean();
         anotherNoDependencyBean = new NoDependencyBean();
         aConstructorInjectedBean = new ConstructorInjectedBean(anotherNoDependencyBean, noDependencyBean, new AnonymousBean(), 1);

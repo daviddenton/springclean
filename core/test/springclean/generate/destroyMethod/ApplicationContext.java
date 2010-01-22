@@ -6,7 +6,7 @@ import springclean.generate.data.DestroyableBean;
 public class ApplicationContext implements Stoppable {
     public final DestroyableBean destroyableBean;
 
-    public ApplicationContext() {
+    public ApplicationContext() throws Exception {
         destroyableBean = new DestroyableBean();
     }
 

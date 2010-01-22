@@ -3,7 +3,7 @@ public class ApplicationContext {
 
     public final SetterInjectedBean setterInjectedBean;
 
-    public ApplicationContext() {
+    public ApplicationContext() throws Exception {
         noDependencyBean = new NoDependencyBean();
         setterInjectedBean = noDependencyBean.factoryMethod(noDependencyBean);
     }

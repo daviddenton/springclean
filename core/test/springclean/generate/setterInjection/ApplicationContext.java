@@ -9,7 +9,7 @@ public class ApplicationContext {
 
     public final SetterInjectedBean aSetterInjectedBean;
 
-    public ApplicationContext() {
+    public ApplicationContext() throws Exception {
         noDependencyBean = new NoDependencyBean();
         aSetterInjectedBean = new SetterInjectedBean() {{
             setNoDependencyBean(noDependencyBean);
