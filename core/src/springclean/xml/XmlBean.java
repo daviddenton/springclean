@@ -4,6 +4,7 @@ import static com.google.common.collect.Lists.newArrayList;
 import nu.xom.Element;
 import org.daisychain.source.*;
 import org.daisychain.util.SimpleFunctor;
+import org.springframework.beans.factory.InitializingBean;
 import springclean.domain.ApplicationContext;
 import springclean.domain.Bean;
 import springclean.domain.ConstructorArg;
@@ -127,6 +128,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     protected ConstructionStrategy constructionStrategy() {
         if(hasFactoryBean() && hasFactoryMethod()) return new FactoryBeanConstructionStrategy(factoryBean(), this);
         if(hasFactoryMethod()) return new StaticFactoryMethodBeanConstructionStrategy(this);
+        if(clazz().implementsInterface(InitializingBean.class)) return new FactoryBeanConstructionStrategy(factoryBean(), this);
         return new StandardBeanConstructionStrategy(this);
     }
 
