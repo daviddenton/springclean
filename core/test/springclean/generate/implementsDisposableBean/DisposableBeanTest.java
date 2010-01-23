@@ -1,4 +1,4 @@
-package springclean.generate.disposableBean;
+package springclean.generate.implementsDisposableBean;
 
 import springclean.generate.AbstractFeatureTest;
 

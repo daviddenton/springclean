@@ -1,4 +1,4 @@
-package springclean.generate.initializingBean;
+package springclean.generate.implementsInitializingBean;
 
 import springclean.generate.data.AnInitializingBean;
 
