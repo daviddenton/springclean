@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" name="Default" comment="">
+    <list default="true" readonly="true" name="Default" comment="dirty - features!">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.javatest" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.javatest" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/generate/SpringFactoryBeanConstructionStrategy.java" afterPath="$PROJECT_DIR$/core/src/springclean/generate/SpringFactoryBeanConstructionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/xml/XmlBean.java" afterPath="$PROJECT_DIR$/core/src/springclean/xml/XmlBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,34 +80,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/destroyMethod/ApplicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/constructorInjection/ApplicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="152" selection-end="238" vertical-scroll-proportion="-3.4285715">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ApplicationContext.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+            <state line="5" column="30" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,16 +94,7 @@
       <file leaf-file-name="ApplicationContext.javatest" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.javatest">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="40" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/ConstructionStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+            <state line="12" column="1" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,25 +112,29 @@
       <file leaf-file-name="XmlBean.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/xml/XmlBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="16" selection-start="4835" selection-end="4835" vertical-scroll-proportion="0.0">
+            <state line="136" column="70" selection-start="5178" selection-end="5178" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1264265776000" expanded="false" signature="33:697" placeholder="..." />
-                <marker date="1264265776000" expanded="false" signature="33:697" placeholder="..." />
-                <marker date="1264265776000" expanded="true" signature="1925:2064" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="2116:2457" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="2260:2420" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="2310:2410" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="2507:2840" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="2649:2803" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="2699:2793" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="2892:3097" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="3141:3246" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="3283:3892" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="3931:3983" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="4022:4337" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="4383:4621" placeholder="{...}" />
-                <marker date="1264265776000" expanded="true" signature="4681:4757" placeholder="{...}" />
+                <marker date="1264267503000" expanded="false" signature="33:697" placeholder="..." />
+                <marker date="1264267503000" expanded="true" signature="1925:2064" placeholder="{...}" />
+                <marker date="1264267503000" expanded="true" signature="2116:2457" placeholder="{...}" />
+                <marker date="1264267503000" expanded="true" signature="2260:2420" placeholder="{...}" />
+                <marker date="1264267503000" expanded="true" signature="2310:2410" placeholder="{...}" />
+                <marker date="1264267503000" expanded="true" signature="2507:2840" placeholder="{...}" />
+                <marker date="1264267503000" expanded="true" signature="2649:2803" placeholder="{...}" />
+                <marker date="1264267503000" expanded="true" signature="2699:2793" placeholder="{...}" />
+                <marker date="1264267503000" expanded="true" signature="2892:3097" placeholder="{...}" />
+                <marker date="1264267503000" expanded="true" signature="3141:3246" placeholder="{...}" />
+                <marker date="1264267503000" expanded="true" signature="3283:3373" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractFeatureTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/AbstractFeatureTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="16" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,7 +144,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="19" column="17" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1264265776000" expanded="false" signature="38:717" placeholder="..." />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,10 +153,28 @@
       <file leaf-file-name="SpringFactoryBeanConstructionStrategy.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/SpringFactoryBeanConstructionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="46" selection-start="643" selection-end="643" vertical-scroll-proportion="0.518732">
+            <state line="47" column="0" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.44444445">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HasImports.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/daisy-chain-1.0.jar!/org/daisychain/source/HasImports.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/domain/Bean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="17" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1314,27 +1306,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/domain/Bean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/staticFactoryMethod/ApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/AbstractFeatureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/data/AStringFactoryBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="72" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
@@ -1379,13 +1350,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.javatest">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="40" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/ConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="17" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
@@ -1400,48 +1364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/CustomFactoryBeanConstructionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1264265776000" expanded="false" signature="38:717" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/xml/XmlBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="16" selection-start="4835" selection-end="4835" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1264265776000" expanded="false" signature="33:697" placeholder="..." />
-            <marker date="1264265776000" expanded="false" signature="33:697" placeholder="..." />
-            <marker date="1264265776000" expanded="true" signature="1925:2064" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="2116:2457" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="2260:2420" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="2310:2410" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="2507:2840" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="2649:2803" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="2699:2793" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="2892:3097" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="3141:3246" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="3283:3892" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="3931:3983" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="4022:4337" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="4383:4621" placeholder="{...}" />
-            <marker date="1264265776000" expanded="true" signature="4681:4757" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="394" selection-end="394" vertical-scroll-proportion="-5.142857">
@@ -1452,9 +1374,74 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/domain/Bean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/AbstractFeatureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="16" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.javatest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/CustomFactoryBeanConstructionStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="17" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/daisy-chain-1.0.jar!/org/daisychain/source/HasImports.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="30" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/xml/XmlBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="70" selection-start="5178" selection-end="5178" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1264267503000" expanded="false" signature="33:697" placeholder="..." />
+            <marker date="1264267503000" expanded="true" signature="1925:2064" placeholder="{...}" />
+            <marker date="1264267503000" expanded="true" signature="2116:2457" placeholder="{...}" />
+            <marker date="1264267503000" expanded="true" signature="2260:2420" placeholder="{...}" />
+            <marker date="1264267503000" expanded="true" signature="2310:2410" placeholder="{...}" />
+            <marker date="1264267503000" expanded="true" signature="2507:2840" placeholder="{...}" />
+            <marker date="1264267503000" expanded="true" signature="2649:2803" placeholder="{...}" />
+            <marker date="1264267503000" expanded="true" signature="2699:2793" placeholder="{...}" />
+            <marker date="1264267503000" expanded="true" signature="2892:3097" placeholder="{...}" />
+            <marker date="1264267503000" expanded="true" signature="3141:3246" placeholder="{...}" />
+            <marker date="1264267503000" expanded="true" signature="3283:3373" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/SpringFactoryBeanConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="46" selection-start="643" selection-end="643" vertical-scroll-proportion="0.518732">
+        <state line="47" column="0" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.44444445">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

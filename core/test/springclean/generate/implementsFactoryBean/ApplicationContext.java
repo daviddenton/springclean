@@ -6,11 +6,11 @@ import springclean.generate.data.NoDependencyBean;
 public class ApplicationContext {
     public final NoDependencyBean noDependencyBean;
 
-    public final String aString;
+    public final AStringFactoryBean aString;
 
     public ApplicationContext() throws Exception {
         noDependencyBean = new NoDependencyBean();
-        aString = (String) new AStringFactoryBean() {{
+        aString = (AStringFactoryBean) new AStringFactoryBean() {{
             setNoDependencyBean(noDependencyBean);
         }}.getObject();
     }
