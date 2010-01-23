@@ -2,11 +2,8 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.xml" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/springclean/generate/SpringFactoryBeanConstructionStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/xml/XmlBean.java" afterPath="$PROJECT_DIR$/core/src/springclean/xml/XmlBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/src/springclean/generate/FactoryBeanConstructionStrategy.java" afterPath="$PROJECT_DIR$/core/src/springclean/generate/CustomFactoryBeanConstructionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/generate/SpringFactoryBeanConstructionStrategy.java" afterPath="$PROJECT_DIR$/core/src/springclean/generate/SpringFactoryBeanConstructionStrategy.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -147,21 +144,22 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="132" column="16" selection-start="4835" selection-end="4835" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1264265726000" expanded="false" signature="33:697" placeholder="..." />
-                <marker date="1264265726000" expanded="true" signature="1925:2064" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="2116:2457" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="2260:2420" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="2310:2410" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="2507:2840" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="2649:2803" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="2699:2793" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="2892:3097" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="3141:3246" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="3283:3892" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="3931:3983" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="4022:4337" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="4383:4621" placeholder="{...}" />
-                <marker date="1264265726000" expanded="true" signature="4681:4757" placeholder="{...}" />
+                <marker date="1264265776000" expanded="false" signature="33:697" placeholder="..." />
+                <marker date="1264265776000" expanded="false" signature="33:697" placeholder="..." />
+                <marker date="1264265776000" expanded="true" signature="1925:2064" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="2116:2457" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="2260:2420" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="2310:2410" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="2507:2840" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="2649:2803" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="2699:2793" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="2892:3097" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="3141:3246" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="3283:3892" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="3931:3983" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="4022:4337" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="4383:4621" placeholder="{...}" />
+                <marker date="1264265776000" expanded="true" signature="4681:4757" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -170,25 +168,29 @@
       <file leaf-file-name="CustomFactoryBeanConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/CustomFactoryBeanConstructionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="17" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="19" column="17" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1264265776000" expanded="false" signature="38:717" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringFactoryBeanConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SpringFactoryBeanConstructionStrategy.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/SpringFactoryBeanConstructionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="11" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="17" column="46" selection-start="643" selection-end="643" vertical-scroll-proportion="0.518732">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="394" selection-end="394" vertical-scroll-proportion="0.33128834">
+            <state line="9" column="0" selection-start="394" selection-end="394" vertical-scroll-proportion="-5.142857">
               <folding />
             </state>
           </provider>
@@ -1400,8 +1402,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/CustomFactoryBeanConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="17" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="19" column="17" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1264265776000" expanded="false" signature="38:717" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1409,29 +1413,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="132" column="16" selection-start="4835" selection-end="4835" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1264265726000" expanded="false" signature="33:697" placeholder="..." />
-            <marker date="1264265726000" expanded="true" signature="1925:2064" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="2116:2457" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="2260:2420" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="2310:2410" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="2507:2840" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="2649:2803" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="2699:2793" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="2892:3097" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="3141:3246" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="3283:3892" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="3931:3983" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="4022:4337" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="4383:4621" placeholder="{...}" />
-            <marker date="1264265726000" expanded="true" signature="4681:4757" placeholder="{...}" />
+            <marker date="1264265776000" expanded="false" signature="33:697" placeholder="..." />
+            <marker date="1264265776000" expanded="false" signature="33:697" placeholder="..." />
+            <marker date="1264265776000" expanded="true" signature="1925:2064" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="2116:2457" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="2260:2420" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="2310:2410" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="2507:2840" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="2649:2803" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="2699:2793" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="2892:3097" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="3141:3246" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="3283:3892" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="3931:3983" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="4022:4337" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="4383:4621" placeholder="{...}" />
+            <marker date="1264265776000" expanded="true" signature="4681:4757" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/SpringFactoryBeanConstructionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="11" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1446,12 +1444,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsFactoryBean/ApplicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="394" selection-end="394" vertical-scroll-proportion="0.33128834">
+        <state line="9" column="0" selection-start="394" selection-end="394" vertical-scroll-proportion="-5.142857">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/SpringFactoryBeanConstructionStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="46" selection-start="643" selection-end="643" vertical-scroll-proportion="0.518732">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

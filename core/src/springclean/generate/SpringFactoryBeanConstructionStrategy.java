@@ -1,8 +1,11 @@
 package springclean.generate;
 
+import org.daisychain.source.AClass;
 import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
+import org.daisychain.source.util.IndentingStringWriter;
 
+import java.io.IOException;
 import java.util.Set;
 
 public class SpringFactoryBeanConstructionStrategy implements ConstructionStrategy {
@@ -13,7 +16,17 @@ public class SpringFactoryBeanConstructionStrategy implements ConstructionStrate
     }
 
     public AssignableStatement asStatement() {
-        return innerConstructionStrategy.asStatement();
+        final AssignableStatement innerStatement = innerConstructionStrategy.asStatement();
+        return new AssignableStatement() {
+            public Set<AClass> getImports() {
+                return innerStatement.getImports();
+            }
+
+            public void appendSource(IndentingStringWriter indentingStringWriter) throws IOException {
+                innerStatement.appendSource(indentingStringWriter);
+                indentingStringWriter.append(".getObject()");
+            }
+        };
     }
 
     public Set<Instance> dependencies() {
