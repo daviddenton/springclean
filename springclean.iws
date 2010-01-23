@@ -2,16 +2,14 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/initializingBean/InitializingBeanTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsInitializingBean/InitializingBeanTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/disposableBean/ApplicationContext.javatest" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsDisposableBean/ApplicationContext.javatest" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/initializingBean/ApplicationContext.javatest" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsInitializingBean/ApplicationContext.javatest" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/initializingBean/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsInitializingBean/ApplicationContext.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/initializingBean/ApplicationContext.xml" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsInitializingBean/ApplicationContext.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/initializingBean" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsInitializingBean" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/disposableBean/DisposableBeanTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsDisposableBean/DisposableBeanTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/disposableBean/ApplicationContext.xml" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsDisposableBean/ApplicationContext.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/disposableBean" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsDisposableBean" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/disposableBean/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsDisposableBean/ApplicationContext.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/customFactoryBean/ApplicationContext.xml" afterPath="$PROJECT_DIR$/core/test/springclean/generate/factoryBean/ApplicationContext.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/customFactoryBean" afterPath="$PROJECT_DIR$/core/test/springclean/generate/factoryBean" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/test/springclean/generate/factoryBean/FactoryBeanTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/implementsDisposableBean/DisposableBeanTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsDisposableBean/ImplementsDisposableBeanTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/factoryBean/CustomFactoryBeanTest.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/customFactoryBean/ApplicationContext.javatest" afterPath="$PROJECT_DIR$/core/test/springclean/generate/factoryBean/ApplicationContext.javatest" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/implementsInitializingBean/InitializingBeanTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/implementsInitializingBean/ImplementsInitializingBeanTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/generate/customFactoryBean/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/generate/factoryBean/ApplicationContext.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,26 +112,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisposableBeanTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsDisposableBean/DisposableBeanTest.java">
+      <file leaf-file-name="ImplementsDisposableBeanTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsDisposableBean/ImplementsDisposableBeanTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="26" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+            <state line="4" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImplementsInitializingBeanTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsInitializingBean/ImplementsInitializingBeanTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ApplicationContext.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/customFactoryBean/ApplicationContext.java">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/factoryBean/ApplicationContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+            <state line="5" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ApplicationContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/customFactoryBean/ApplicationContext.xml">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/factoryBean/ApplicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -144,10 +151,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomFactoryBeanTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/customFactoryBean/CustomFactoryBeanTest.java">
+      <file leaf-file-name="FactoryBeanTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/factoryBean/FactoryBeanTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="1" selection-start="164" selection-end="165" vertical-scroll-proportion="0.16393442">
+            <state line="4" column="13" selection-start="106" selection-end="106" vertical-scroll-proportion="0.13832854">
               <folding />
             </state>
           </provider>
@@ -162,15 +169,6 @@
           </provider>
           <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnInitializingBean.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/data/AnInitializingBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -582,6 +580,36 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="factoryBean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="generate" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
           <option name="myItemId" value="destroyMethod" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
@@ -613,36 +641,6 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="data" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="springclean" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="springclean" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="generate" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="customFactoryBean" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -881,8 +879,8 @@
       <recent name="microtypes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomFactoryBeanTest">
-    <tempConfiguration default="false" name="CustomFactoryBeanTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+  <component name="RunManager" selected="JUnit.FactoryBeanTest">
+    <tempConfiguration default="false" name="FactoryBeanTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <pattern>
         <option name="PATTERN" value="springclean.generate.customFactoryBean.*" />
         <option name="ENABLED" value="true" />
@@ -890,8 +888,8 @@
       <module name="core" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="springclean.generate.customFactoryBean" />
-      <option name="MAIN_CLASS_NAME" value="springclean.generate.customFactoryBean.CustomFactoryBeanTest" />
+      <option name="PACKAGE_NAME" value="springclean.generate.factoryBean" />
+      <option name="MAIN_CLASS_NAME" value="springclean.generate.factoryBean.FactoryBeanTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -1034,6 +1032,34 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
     </configuration>
+    <configuration default="false" name="FactoryBeanTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+      <pattern>
+        <option name="PATTERN" value="springclean.generate.customFactoryBean.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+      <module name="core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="springclean.generate.factoryBean" />
+      <option name="MAIN_CLASS_NAME" value="springclean.generate.factoryBean.FactoryBeanTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CustomFactoryBeanTest" />
     </list>
@@ -1153,13 +1179,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/generate/StaticFactoryMethodBeanConstructionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/AbstractFeatureTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="16" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
@@ -1245,21 +1264,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsDisposableBean/DisposableBeanTest.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/factoryBean/ApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+        <state line="5" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/customFactoryBean/ApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/customFactoryBean/ApplicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/factoryBean/ApplicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1269,9 +1281,23 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/customFactoryBean/CustomFactoryBeanTest.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsDisposableBean/ImplementsDisposableBeanTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="164" selection-end="165" vertical-scroll-proportion="0.16393442">
+        <state line="4" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/implementsInitializingBean/ImplementsInitializingBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/generate/factoryBean/FactoryBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="106" selection-end="106" vertical-scroll-proportion="0.13832854">
           <folding />
         </state>
       </provider>

@@ -1,4 +1,4 @@
-package springclean.generate.customFactoryBean;
+package springclean.generate.factoryBean;
 
 import springclean.generate.data.NoDependencyBean;
 import springclean.generate.data.SetterInjectedBean;
