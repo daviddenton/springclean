@@ -12,17 +12,16 @@ import springclean.domain.ConstructorArg;
 import springclean.domain.Property;
 import springclean.domain.Reference;
 import static springclean.generate.ContextElement.DependencyExtractor.allDependenciesOf;
-import springclean.xml.SimpleReference;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
-public class FactoryBeanConstructionStrategy implements ConstructionStrategy {
+public class CustomFactoryBeanConstructionStrategy implements ConstructionStrategy {
     private final Reference reference;
     private final Bean bean;
 
-    public FactoryBeanConstructionStrategy(Reference reference, Bean bean) {
+    public CustomFactoryBeanConstructionStrategy(Reference reference, Bean bean) {
         this.reference = reference;
         this.bean = bean;
     }
@@ -30,7 +29,7 @@ public class FactoryBeanConstructionStrategy implements ConstructionStrategy {
     public AssignableStatement asStatement() {
         final List<AssignableStatement> argumentStatements = newArrayList();
 
-        int count=0;
+        int count = 0;
         for (ConstructorArg constructorArg : bean.constructorArgs()) {
             argumentStatements.add(constructorArg.referencedObject().asContextElement(bean.factoryMethod().parameters().get(count++).instance.aClass).asStatement());
         }

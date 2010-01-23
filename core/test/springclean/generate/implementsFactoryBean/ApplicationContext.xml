@@ -4,5 +4,7 @@
 <beans>
     <bean id="noDependencyBean" class="springclean.generate.data.NoDependencyBean"/>
 
-    <bean id="aString" class="springclean.generate.data.AStringFactoryBean"/>
+    <bean id="aString" class="springclean.generate.data.AStringFactoryBean">
+        <property name="noDependencyBean" ref="noDependencyBean"/>
+    </bean>
 </beans>

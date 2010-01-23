@@ -5,6 +5,7 @@ import nu.xom.Element;
 import org.daisychain.source.*;
 import org.daisychain.util.SimpleFunctor;
 import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
 import springclean.domain.ApplicationContext;
 import springclean.domain.Bean;
@@ -129,10 +130,13 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     protected ConstructionStrategy constructionStrategy() {
-        if (hasFactoryBean() && hasFactoryMethod()) return new FactoryBeanConstructionStrategy(factoryBean(), this);
+        if (hasFactoryBean() && hasFactoryMethod())
+            return new CustomFactoryBeanConstructionStrategy(factoryBean(), this);
         if (hasFactoryMethod()) return new StaticFactoryMethodBeanConstructionStrategy(this);
+        if (clazz().implementsInterface(FactoryBean.class))
+            return new SpringFactoryBeanConstructionStrategy(new StandardBeanConstructionStrategy(this));
         if (clazz().implementsInterface(InitializingBean.class))
-            return new FactoryBeanConstructionStrategy(factoryBean(), this);
+            return new CustomFactoryBeanConstructionStrategy(factoryBean(), this);
         return new StandardBeanConstructionStrategy(this);
     }
 
