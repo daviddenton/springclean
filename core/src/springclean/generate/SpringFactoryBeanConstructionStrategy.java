@@ -3,6 +3,7 @@ package springclean.generate;
 import org.daisychain.source.AClass;
 import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
+import org.daisychain.source.body.Cast;
 import org.daisychain.source.util.IndentingStringWriter;
 
 import java.io.IOException;
@@ -15,28 +16,6 @@ public class SpringFactoryBeanConstructionStrategy implements ConstructionStrate
     public SpringFactoryBeanConstructionStrategy(AClass castClass, ConstructionStrategy innerConstructionStrategy) {
         this.castClass = castClass;
         this.innerConstructionStrategy = innerConstructionStrategy;
-    }
-
-    public static class Cast implements AssignableStatement {
-
-        private final AClass castToType;
-        private final AssignableStatement targetStatement;
-
-        public Cast(AClass castToType, AssignableStatement targetStatement) {
-            this.castToType = castToType;
-            this.targetStatement = targetStatement;
-        }
-
-        public Set<AClass> getImports() {
-            Set<AClass> imports = targetStatement.getImports();
-            imports.addAll(castToType.getImports());
-            return imports;
-        }
-
-        public void appendSource(IndentingStringWriter indentingStringWriter) throws IOException {
-            indentingStringWriter.append("(").append(castToType.simpleName()).append(") ");
-            targetStatement.appendSource(indentingStringWriter);
-        }
     }
 
     public AssignableStatement asStatement() {
