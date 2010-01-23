@@ -1,4 +1,4 @@
-package springclean.generate.imports;
+package springclean.generate.importedBeans;
 
 import org.junit.After;
 import springclean.generate.AbstractFeatureTest;

@@ -1,4 +1,4 @@
-package springclean.generate.imports;
+package springclean.generate.importedBeans;
 
 import springclean.generate.data.AnonymousBean;
 import springclean.generate.data.ConstructorInjectedBean;
