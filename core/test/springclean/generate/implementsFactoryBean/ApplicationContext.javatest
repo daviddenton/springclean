@@ -1,0 +1,8 @@
+public class ApplicationContext {
+    public final String aString;
+
+    public ApplicationContext() throws Exception {
+        aString = (String) new AStringFactoryBean().getObject();
+    }
+
+}
