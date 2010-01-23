@@ -4,6 +4,12 @@ import org.springframework.beans.factory.FactoryBean;
 
 public class AStringFactoryBean implements FactoryBean {
 
+    private NoDependencyBean noDependencyBean;
+
+    public void setNoDependencyBean(NoDependencyBean noDependencyBean) {
+        this.noDependencyBean = noDependencyBean;
+    }
+
     public Object getObject() throws Exception {
         return "aString";
     }
