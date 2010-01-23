@@ -4,6 +4,7 @@ import static com.google.common.collect.Lists.newArrayList;
 import nu.xom.Element;
 import org.daisychain.source.*;
 import org.daisychain.util.SimpleFunctor;
+import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import springclean.domain.ApplicationContext;
 import springclean.domain.Bean;
@@ -33,7 +34,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     public boolean hasDestroyMethod() {
-        return hasAttribute("destroy-method");
+        return hasAttribute("destroy-method") || clazz().implementsInterface(DisposableBean.class);
     }
 
     private boolean hasFactoryMethod() {
@@ -45,7 +46,9 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     public Method destroyMethod() {
-        return new MethodFinder<ExistingMethod>(clazz()).method(attributeValue("destroy-method"), 0);
+        if (!hasDestroyMethod()) throw new Defect("No destroy method on " + this);
+        String methodName = hasAttribute("destroy-method") ? attributeValue("destroy-method") : "destroy";
+        return new MethodFinder<ExistingMethod>(clazz()).method(methodName, 0);
     }
 
     public Method factoryMethod() {
@@ -54,7 +57,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
 
     public List<ConstructorArg> constructorArgs() {
         final List<ConstructorArg> dependencies = newArrayList();
-            loop(element.query("constructor-arg"), new SimpleFunctor<Element>() {
+        loop(element.query("constructor-arg"), new SimpleFunctor<Element>() {
             public void execute(Element target) {
                 dependencies.add(new XmlConstructorArg(target, applicationContext));
             }
@@ -74,8 +77,8 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     private AClass<ExistingMethod> factoryClass() {
-        if(hasAttribute("class")) return clazz();
-        if(hasFactoryBean()) return factoryBean().clazz();
+        if (hasAttribute("class")) return clazz();
+        if (hasFactoryBean()) return factoryBean().clazz();
         throw new XomProcessingException("Can't determine factory class for " + this);
     }
 
@@ -88,7 +91,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
         String className;
         if (hasAttribute("class")) {
             className = element.getAttributeValue("class");
-        } else if(hasFactoryBean()) {
+        } else if (hasFactoryBean()) {
             className = factoryClass().method(attributeValue("factory-method"), constructorArgs().size()).returnType().name();
         } else {
             throw new XomProcessingException("Can't work out class for " + this);
@@ -126,9 +129,10 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     protected ConstructionStrategy constructionStrategy() {
-        if(hasFactoryBean() && hasFactoryMethod()) return new FactoryBeanConstructionStrategy(factoryBean(), this);
-        if(hasFactoryMethod()) return new StaticFactoryMethodBeanConstructionStrategy(this);
-        if(clazz().implementsInterface(InitializingBean.class)) return new FactoryBeanConstructionStrategy(factoryBean(), this);
+        if (hasFactoryBean() && hasFactoryMethod()) return new FactoryBeanConstructionStrategy(factoryBean(), this);
+        if (hasFactoryMethod()) return new StaticFactoryMethodBeanConstructionStrategy(this);
+        if (clazz().implementsInterface(InitializingBean.class))
+            return new FactoryBeanConstructionStrategy(factoryBean(), this);
         return new StandardBeanConstructionStrategy(this);
     }
 
