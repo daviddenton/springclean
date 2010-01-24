@@ -4,9 +4,6 @@ finish lists, sets and maps
 
 application contexts in the classpath
 
-FactoryBean interface -
-ignore type of bean in generated field and use result of getObjectClassWhatever method in FactoryBean class instead
-
 InitialisingBean - afterpropertiesset
 
 DisposableBean - same as destroy method

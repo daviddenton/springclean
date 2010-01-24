@@ -131,6 +131,10 @@ public class BeanBuilder {
                 return properties.get(property);
             }
 
+            public boolean isAbstract() {
+                return false;
+            }
+
             public ContextElement asContextElement(AClass aClass) {
                 return contextElement;
             }

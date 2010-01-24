@@ -27,7 +27,7 @@ public class ApplicationContextClassBuilder {
         final ClassMethod method = stopMethod().override();
         GeneratedClass contextClass = classBuilder.build();
         for (IdentifiedBean target : applicationContext.beans()) {
-            if (target.hasDestroyMethod()) {
+            if (!target.isAbstract() && target.hasDestroyMethod()) {
                 final Arguments arguments = new Arguments();
                 method.addStatement(new Instance(target.id().value, target.clazz()).call(target.destroyMethod().name(), arguments.asStatements()));
                 classBuilder.implementing(new ExistingClass(Stoppable.class));
@@ -63,10 +63,13 @@ public class ApplicationContextClassBuilder {
             final Set<Instance> externalDependencies = externallyDefinedDependencies(applicationContext);
             final GeneratedConstructor constructor = a(Public).constructor(contextClass).build();
             constructor.addException(new ExistingClass(Exception.class));
+
             while (true) {
                 try {
                     for (IdentifiedBean target : applicationContext.beans()) {
                         Instance instance = new Instance(target.id().value, target.clazz());
+                        if (target.isAbstract()) processedBeans.add(instance);
+
                         ContextElement candidate = target.asContextElement(target.clazz());
                         if (!processedBeans.contains(instance)) {
 

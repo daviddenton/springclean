@@ -12,7 +12,8 @@ import java.util.List;
 public class IdentifiedBeanBuilder extends BeanBuilder {
     private SpringId springId = springId("springId");
 
-    private IdentifiedBeanBuilder() {}
+    private IdentifiedBeanBuilder() {
+    }
 
     public static IdentifiedBeanBuilder anIdentifiedBean() {
         return new IdentifiedBeanBuilder();
@@ -34,6 +35,10 @@ public class IdentifiedBeanBuilder extends BeanBuilder {
                 return newArrayList(properties.keySet());
             }
 
+            public boolean isAbstract() {
+                return false;
+            }
+
             public List<ConstructorArg> constructorArgs() {
                 return constructorArgs;
             }
@@ -47,12 +52,12 @@ public class IdentifiedBeanBuilder extends BeanBuilder {
             }
 
             public Method initMethod() {
-                if(!hasInitMethod()) throw new Defect();
+                if (!hasInitMethod()) throw new Defect();
                 return initMethod;
             }
 
             public Method destroyMethod() {
-                if(!hasDestroyMethod()) throw new Defect();
+                if (!hasDestroyMethod()) throw new Defect();
                 return destroyMethod;
             }
 
@@ -61,7 +66,7 @@ public class IdentifiedBeanBuilder extends BeanBuilder {
             }
 
             public Method factoryMethod() {
-                if(!hasFactoryMethod()) throw new Defect("No factory method defined");
+                if (!hasFactoryMethod()) throw new Defect("No factory method defined");
                 return factoryMethod;
             }
 

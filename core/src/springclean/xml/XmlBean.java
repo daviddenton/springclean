@@ -125,6 +125,10 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
         throw new Defect("Not sure which setter method to use for " + property.name());
     }
 
+    public boolean isAbstract() {
+        return attributeValueEquals("abstract", "true") || attributeValueEquals("scope", "prototype");
+    }
+
     public ContextElement asContextElement(AClass aClass) {
         return new BeanContextElement(this, constructionStrategy());
     }

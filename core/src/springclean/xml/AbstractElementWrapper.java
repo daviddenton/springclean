@@ -22,6 +22,10 @@ class AbstractElementWrapper {
         return element.getAttributeValue(name);
     }
 
+    protected boolean attributeValueEquals(String name, String value) {
+        return hasAttribute(name) && value.equalsIgnoreCase(element.getAttributeValue(name));
+    }
+
     @Override
     public String toString() {
         return element.toXML();
