@@ -1,9 +1,11 @@
 package springclean.xml;
 
 import nu.xom.Element;
-import springclean.domain.SpringManagedObject;
 import springclean.domain.ApplicationContext;
+import springclean.domain.IdentifiedBean;
+import springclean.domain.SpringId;
 import static springclean.domain.SpringId.springId;
+import springclean.domain.SpringManagedObject;
 import springclean.exception.Defect;
 
 public class XmlConstructionDependency extends AbstractElementWrapper {
@@ -12,9 +14,13 @@ public class XmlConstructionDependency extends AbstractElementWrapper {
     }
 
     public SpringManagedObject referencedObject() {
-        if(hasAttribute("ref")) return new SimpleReference(springId(attributeValue("ref")), applicationContext);
+        if (hasAttribute("ref")) {
+            SpringId id = springId(attributeValue("ref"));
+            IdentifiedBean identifiedBean = applicationContext.findBean(id);
+            return identifiedBean.isAbstract() ? identifiedBean : new SimpleReference(id, applicationContext);
+        }
 
-        if(hasAttribute("value")) return new XmlPrimitiveValue(attributeValue("value"), applicationContext);
+        if (hasAttribute("value")) return new XmlPrimitiveValue(attributeValue("value"), applicationContext);
 
         Element child = element.getChildElements().get(0);
         try {
@@ -27,27 +33,27 @@ public class XmlConstructionDependency extends AbstractElementWrapper {
 
     private enum XmlSpringManagedObjects {
         LIST() {
-           SpringManagedObject value(Element element, ApplicationContext applicationContext) {
+            SpringManagedObject value(Element element, ApplicationContext applicationContext) {
                 return new XmlBeanList(element, applicationContext);
             }},
         SET() {
-           SpringManagedObject value(Element element, ApplicationContext applicationContext) {
+            SpringManagedObject value(Element element, ApplicationContext applicationContext) {
                 return new XmlBeanSet(element, applicationContext);
             }},
         REF() {
-           SpringManagedObject value(Element element, ApplicationContext applicationContext) {
+            SpringManagedObject value(Element element, ApplicationContext applicationContext) {
                 return new XmlReference(element, applicationContext);
             }},
         BEAN() {
-           SpringManagedObject value(Element element, ApplicationContext applicationContext) {
+            SpringManagedObject value(Element element, ApplicationContext applicationContext) {
                 return new XmlBean(element, applicationContext);
             }},
         VALUE() {
-           SpringManagedObject value(Element element, ApplicationContext applicationContext) {
+            SpringManagedObject value(Element element, ApplicationContext applicationContext) {
                 return new XmlPrimitiveValue(element.getValue(), applicationContext);
             }},
         NULL() {
-           SpringManagedObject value(Element element, ApplicationContext applicationContext) {
+            SpringManagedObject value(Element element, ApplicationContext applicationContext) {
                 return new NullValue();
             }};
 
