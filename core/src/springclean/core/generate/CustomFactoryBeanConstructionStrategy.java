@@ -8,7 +8,6 @@ import org.daisychain.source.body.AssignableStatement;
 import org.daisychain.source.body.MethodCall;
 import org.daisychain.source.util.IndentingStringWriter;
 import springclean.core.domain.Bean;
-import springclean.core.domain.ConstructorArg;
 import springclean.core.domain.Property;
 import springclean.core.domain.Reference;
 import static springclean.core.generate.ContextElement.DependencyExtractor.allDependenciesOf;
@@ -29,9 +28,8 @@ public class CustomFactoryBeanConstructionStrategy implements ConstructionStrate
     public AssignableStatement asStatement() {
         final List<AssignableStatement> argumentStatements = newArrayList();
 
-        int count = 0;
-        for (ConstructorArg constructorArg : bean.constructorArgs()) {
-            argumentStatements.add(constructorArg.referencedObject().asContextElement(bean.factoryMethod().parameters().get(count++).instance.aClass).asStatement());
+        for (int i = 0; i < bean.constructorArgs().size(); i++) {
+            argumentStatements.add(bean.constructorArgs().get(i).referencedObject().asContextElement(bean.factoryMethod().parameters().get(i).instance.aClass).asStatement());
         }
 
         return new AssignableStatement() {
