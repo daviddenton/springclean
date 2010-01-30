@@ -4,9 +4,11 @@ import nu.xom.Element;
 import org.daisychain.source.AClass;
 import org.daisychain.source.ExistingMethod;
 import springclean.core.domain.ApplicationContext;
+import springclean.core.domain.IdentifiedBean;
 import springclean.core.domain.Reference;
 import springclean.core.domain.SpringId;
 import static springclean.core.domain.SpringId.springId;
+import springclean.core.generate.ContextElement;
 import springclean.core.generate.RefContextElement;
 
 public class XmlReference extends AbstractElementWrapper implements Reference {
@@ -40,8 +42,9 @@ public class XmlReference extends AbstractElementWrapper implements Reference {
         return id != null ? id.hashCode() : 0;
     }
 
-    public RefContextElement asContextElement(AClass aClass) {
-        return new RefContextElement(this, aClass);
+    public ContextElement asContextElement(AClass aClass) {
+        IdentifiedBean identifiedBean = applicationContext.findBean(id());
+        return identifiedBean.isAbstract() ? identifiedBean.asContextElement(aClass) : new RefContextElement(this, aClass);
     }
 
     public AClass<ExistingMethod> clazz() {

@@ -30,7 +30,7 @@ public class XmlIdentifiedBean extends XmlBean implements IdentifiedBean {
     }
 
     public ContextElement asContextElement(AClass aClass) {
-        ConstructionStrategy constructionStrategy = new IdentifiedBeanConstructionStrategy(this, constructionStrategy());
+        ConstructionStrategy constructionStrategy = isAbstract() ? constructionStrategy() : new IdentifiedBeanConstructionStrategy(this, constructionStrategy());
         return new BeanContextElement(this, constructionStrategy);
     }
 
