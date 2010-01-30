@@ -6,12 +6,7 @@ application contexts in the classpath
 
 InitialisingBean - afterpropertiesset
 
-DisposableBean - same as destroy method
-
 aliases and names (multiple values in the bean "name" attribute)
-
-prototype scope - copy of each bean created each time
-
 
 default-init-method
 
