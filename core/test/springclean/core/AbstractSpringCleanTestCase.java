@@ -1,4 +1,4 @@
-package springclean;
+package springclean.core;
 
 import springclean.util.ResourceLoader;
 

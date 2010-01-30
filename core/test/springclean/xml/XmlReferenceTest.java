@@ -4,9 +4,9 @@ import nu.xom.Element;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
-import springclean.AbstractSpringCleanTestCase;
-import static springclean.domain.SpringId.springId;
+import springclean.core.AbstractSpringCleanTestCase;
 import static springclean.domain.ApplicationContextBuilder.anApplicationContext;
+import static springclean.domain.SpringId.springId;
 
 public class XmlReferenceTest extends AbstractSpringCleanTestCase {
     private final Element element = rl.loadDocument("XmlReferenceTest.xml").getRootElement();

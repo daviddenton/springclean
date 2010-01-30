@@ -3,9 +3,9 @@ package springclean.xml;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
-import springclean.AbstractSpringCleanTestCase;
-import static springclean.domain.SpringId.springId;
+import springclean.core.AbstractSpringCleanTestCase;
 import static springclean.domain.ApplicationContextBuilder.anApplicationContext;
+import static springclean.domain.SpringId.springId;
 
 public class XmlIdentifiedBeanTest extends AbstractSpringCleanTestCase {
 

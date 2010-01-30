@@ -7,7 +7,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 import org.junit.Ignore;
 import org.junit.Test;
-import springclean.AbstractSpringCleanTestCase;
+import springclean.core.AbstractSpringCleanTestCase;
 import springclean.domain.ApplicationContext;
 import springclean.generate.ApplicationContextClassBuilder;
 import springclean.xml.XmlApplicationContext;

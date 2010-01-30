@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
-import springclean.AbstractSpringCleanTestCase;
+import springclean.core.AbstractSpringCleanTestCase;
 import static springclean.domain.ApplicationContextBuilder.anApplicationContext;
 
 import java.util.ArrayList;

@@ -4,7 +4,7 @@ import static org.daisychain.util.TestHelper.assertSource;
 import static org.hamcrest.CoreMatchers.equalTo;
 import org.junit.After;
 import org.junit.Test;
-import springclean.AbstractSpringCleanTestCase;
+import springclean.core.AbstractSpringCleanTestCase;
 import springclean.domain.ApplicationContext;
 import springclean.generate.ApplicationContextClassBuilder;
 import springclean.xml.XmlApplicationContext;

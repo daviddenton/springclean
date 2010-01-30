@@ -4,7 +4,7 @@ import static org.hamcrest.Matchers.equalTo;
 import org.junit.After;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
-import springclean.AbstractSpringCleanTestCase;
+import springclean.core.AbstractSpringCleanTestCase;
 import static springclean.domain.ContextName.contextName;
 
 import java.io.File;
