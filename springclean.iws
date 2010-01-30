@@ -2,7 +2,7 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
     </list>
     <ignored path="springclean.iws" />
@@ -145,10 +145,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlBean.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="XmlBean.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="39" selection-start="5572" selection-end="5572" vertical-scroll-proportion="0.0">
+            <state line="139" column="64" selection-start="5452" selection-end="5452" vertical-scroll-proportion="0.62393165">
               <folding />
             </state>
           </provider>
@@ -163,11 +163,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomFactoryBeanConstructionStrategy.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CustomFactoryBeanConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.17094018">
-              <folding />
+            <state line="30" column="0" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -943,13 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="39" selection-start="5572" selection-end="5572" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StandardBeanConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="40" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
@@ -999,7 +994,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.17094018">
+        <state line="30" column="0" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="64" selection-start="5452" selection-end="5452" vertical-scroll-proportion="0.62393165">
           <folding />
         </state>
       </provider>

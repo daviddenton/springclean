@@ -139,8 +139,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
         if (hasFactoryMethod()) return new StaticFactoryMethodBeanConstructionStrategy(this);
         if (clazz().implementsInterface(FactoryBean.class))
             return new SpringFactoryBeanConstructionStrategy(clazz(), new StandardBeanConstructionStrategy(this));
-        if (clazz().implementsInterface(InitializingBean.class))
-            new StandardBeanConstructionStrategy(this);
+        if (clazz().implementsInterface(InitializingBean.class)) new StandardBeanConstructionStrategy(this);
         return new StandardBeanConstructionStrategy(this);
     }
 
