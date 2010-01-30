@@ -34,8 +34,6 @@ p-namespace
 
 
 
-singleton?!?!?
-
 abstact and parent beans - somehow lookup and inherit the dependencies from the parent
 
 proxies and pointcuts
