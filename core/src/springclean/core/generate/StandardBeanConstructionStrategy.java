@@ -4,7 +4,6 @@ import static com.google.common.collect.Lists.newArrayList;
 import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
 import springclean.core.domain.Bean;
-import springclean.core.domain.ConstructorArg;
 import springclean.core.domain.Property;
 import static springclean.core.generate.ContextElement.DependencyExtractor.allDependenciesOf;
 
@@ -32,9 +31,8 @@ public class StandardBeanConstructionStrategy implements ConstructionStrategy {
 
     private static List<ContextElement> constructorInjectedDependencies(final Bean bean) {
         final List<ContextElement> injectedDependencies = newArrayList();
-        int count = 0;
-        for (ConstructorArg constructorArg : bean.constructorArgs()) {
-            injectedDependencies.add(constructorArg.referencedObject().asContextElement(bean.constructor().parameters().get(count++).instance.aClass));
+        for (int i = 0; i < bean.constructorArgs().size(); i++) {
+            injectedDependencies.add(bean.constructorArgs().get(i).referencedObject().asContextElement(bean.constructor().parameters().get(i).instance.aClass));
         }
         return injectedDependencies;
     }

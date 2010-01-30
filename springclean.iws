@@ -2,11 +2,8 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/ConstructorInjection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/StandardBeanConstructionStrategy.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/StandardBeanConstructionStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/SetterInjection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/NestedStatement.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,8 +91,10 @@
       <file leaf-file-name="StandardBeanConstructionStrategy.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StandardBeanConstructionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="5" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.39759037">
-              <folding />
+            <state line="33" column="0" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.27710843">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,6 +105,7 @@
             <state line="11" column="28" selection-start="393" selection-end="408" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1264856407000" expanded="true" signature="680:758" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -127,7 +127,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="0" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1264856407000" expanded="true" signature="43:689" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1169,7 +1169,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1264856407000" expanded="true" signature="43:689" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1188,14 +1188,17 @@
         <state line="11" column="28" selection-start="393" selection-end="408" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1264856407000" expanded="true" signature="680:758" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StandardBeanConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.39759037">
-          <folding />
+        <state line="33" column="0" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.27710843">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
