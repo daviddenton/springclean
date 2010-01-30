@@ -8,9 +8,8 @@ import static org.junit.Assert.assertThat;
 import org.junit.Ignore;
 import org.junit.Test;
 import springclean.core.AbstractSpringCleanTestCase;
-import springclean.domain.ApplicationContext;
-import springclean.generate.ApplicationContextClassBuilder;
-import springclean.xml.XmlApplicationContext;
+import springclean.core.domain.ApplicationContext;
+import springclean.core.xml.XmlApplicationContext;
 
 import java.io.File;
 import java.io.StringWriter;

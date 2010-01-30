@@ -2,9 +2,11 @@ package springclean.domain;
 
 import org.daisychain.source.AClass;
 import org.daisychain.source.ExistingClass;
+import springclean.core.domain.Reference;
+import springclean.core.domain.SpringId;
+import static springclean.core.domain.SpringId.springId;
+import springclean.core.generate.ContextElement;
 import springclean.core.generate.ContextElementBuilder;
-import static springclean.domain.SpringId.springId;
-import springclean.generate.ContextElement;
 
 public class ReferenceBuilder {
     private SpringId springId = springId("springId");

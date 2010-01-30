@@ -3,8 +3,9 @@ package springclean.domain;
 import static com.google.common.collect.Lists.newArrayList;
 import org.daisychain.source.AClass;
 import org.daisychain.source.ExistingClass;
+import springclean.core.domain.SpringManagedObject;
+import springclean.core.generate.ContextElement;
 import static springclean.core.generate.ContextElementBuilder.aContextElement;
-import springclean.generate.ContextElement;
 
 import java.util.List;
 

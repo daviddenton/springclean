@@ -4,9 +4,12 @@ import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Maps.newHashMap;
 import org.daisychain.source.*;
 import static org.daisychain.source.DaisyChain.a;
+import springclean.core.domain.Bean;
+import springclean.core.domain.ConstructorArg;
+import springclean.core.domain.Property;
+import springclean.core.exception.Defect;
+import springclean.core.generate.ContextElement;
 import static springclean.core.generate.ContextElementBuilder.aContextElement;
-import springclean.exception.Defect;
-import springclean.generate.ContextElement;
 
 import java.util.List;
 import java.util.Map;
@@ -21,7 +24,7 @@ public class BeanBuilder {
     Method destroyMethod;
     Method factoryMethod;
     ContextElement contextElement = aContextElement().build();
-    Reference factoryBean;
+    springclean.core.domain.Reference factoryBean;
 
     BeanBuilder() {
     }
@@ -40,7 +43,7 @@ public class BeanBuilder {
         return this;
     }
 
-    public BeanBuilder withFactoryBean(Reference reference) {
+    public BeanBuilder withFactoryBean(springclean.core.domain.Reference reference) {
         this.factoryBean = reference;
         return this;
     }

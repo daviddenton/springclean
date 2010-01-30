@@ -2,8 +2,8 @@ package springclean.util;
 
 import nu.xom.Document;
 import org.apache.commons.io.IOUtils;
-import springclean.exception.Defect;
-import static springclean.xml.XomUtils.parse;
+import springclean.core.exception.Defect;
+import static springclean.core.xml.XomUtils.parse;
 
 import java.io.File;
 import java.io.FileOutputStream;

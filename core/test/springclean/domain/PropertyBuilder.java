@@ -1,19 +1,23 @@
 package springclean.domain;
 
+import springclean.core.domain.Property;
+import springclean.core.domain.PropertyName;
+import static springclean.core.domain.PropertyName.propertyName;
+import springclean.core.domain.SpringManagedObject;
 import static springclean.domain.BeanBuilder.aBean;
-import static springclean.domain.PropertyName.propertyName;
 
 public class PropertyBuilder {
 
     private PropertyName propertyName = propertyName("propertyName");
     private SpringManagedObject springManagedObject = aBean().build();
 
-    private PropertyBuilder() {}
+    private PropertyBuilder() {
+    }
 
     public static PropertyBuilder aProperty() {
         return new PropertyBuilder();
     }
-    
+
     public PropertyBuilder withPropertyName(PropertyName propertyName) {
         this.propertyName = propertyName;
         return this;

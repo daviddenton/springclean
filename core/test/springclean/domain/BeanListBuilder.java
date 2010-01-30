@@ -2,11 +2,14 @@ package springclean.domain;
 
 import org.daisychain.source.AClass;
 import org.daisychain.util.Functor;
-import springclean.generate.ContextElement;
+import springclean.core.domain.BeanList;
+import springclean.core.domain.SpringManagedObject;
+import springclean.core.generate.ContextElement;
 
 public class BeanListBuilder extends BeanCollectionBuilder<BeanListBuilder> {
 
-    private BeanListBuilder() {}
+    private BeanListBuilder() {
+    }
 
     public static BeanListBuilder aBeanList() {
         return new BeanListBuilder();

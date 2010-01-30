@@ -5,7 +5,8 @@ import org.junit.After;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
 import springclean.core.AbstractSpringCleanTestCase;
-import static springclean.domain.ContextName.contextName;
+import static springclean.core.domain.ContextName.contextName;
+import springclean.core.xml.XmlApplicationContext;
 
 import java.io.File;
 

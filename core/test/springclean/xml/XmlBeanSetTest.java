@@ -6,6 +6,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
 import springclean.core.AbstractSpringCleanTestCase;
+import springclean.core.xml.XmlBeanSet;
 import static springclean.domain.ApplicationContextBuilder.anApplicationContext;
 
 import java.util.HashSet;

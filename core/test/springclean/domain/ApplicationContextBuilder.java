@@ -1,8 +1,12 @@
 package springclean.domain;
 
 import static com.google.common.collect.Lists.newArrayList;
-import static springclean.domain.ContextName.contextName;
-import springclean.xml.XomProcessingException;
+import springclean.core.domain.ApplicationContext;
+import springclean.core.domain.ContextName;
+import static springclean.core.domain.ContextName.contextName;
+import springclean.core.domain.IdentifiedBean;
+import springclean.core.domain.SpringId;
+import springclean.core.xml.XomProcessingException;
 
 import java.io.File;
 import java.util.Collection;

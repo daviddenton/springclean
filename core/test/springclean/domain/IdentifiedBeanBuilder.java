@@ -3,9 +3,13 @@ package springclean.domain;
 import static com.google.common.collect.Lists.newArrayList;
 import org.daisychain.source.AClass;
 import org.daisychain.source.Method;
-import static springclean.domain.SpringId.springId;
-import springclean.exception.Defect;
-import springclean.generate.ContextElement;
+import springclean.core.domain.ConstructorArg;
+import springclean.core.domain.IdentifiedBean;
+import springclean.core.domain.Property;
+import springclean.core.domain.SpringId;
+import static springclean.core.domain.SpringId.springId;
+import springclean.core.exception.Defect;
+import springclean.core.generate.ContextElement;
 
 import java.util.List;
 

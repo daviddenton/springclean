@@ -4,7 +4,6 @@ import static com.google.common.collect.Sets.newHashSet;
 import static org.daisychain.source.AssignableStatementBuilder.anAssignableStatement;
 import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
-import springclean.generate.ContextElement;
 
 import java.util.Set;
 
