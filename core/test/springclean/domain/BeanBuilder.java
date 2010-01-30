@@ -4,9 +4,9 @@ import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Maps.newHashMap;
 import org.daisychain.source.*;
 import static org.daisychain.source.DaisyChain.a;
+import static springclean.core.generate.ContextElementBuilder.aContextElement;
 import springclean.exception.Defect;
 import springclean.generate.ContextElement;
-import static springclean.generate.ContextElementBuilder.aContextElement;
 
 import java.util.List;
 import java.util.Map;

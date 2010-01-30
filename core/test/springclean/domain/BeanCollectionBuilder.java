@@ -3,8 +3,8 @@ package springclean.domain;
 import static com.google.common.collect.Lists.newArrayList;
 import org.daisychain.source.AClass;
 import org.daisychain.source.ExistingClass;
+import static springclean.core.generate.ContextElementBuilder.aContextElement;
 import springclean.generate.ContextElement;
-import static springclean.generate.ContextElementBuilder.aContextElement;
 
 import java.util.List;
 

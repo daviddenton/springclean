@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <bean id="noDependencyBean" class="springclean.core.generate.data.NoDependencyBean"/>
+
+    <bean id="setterInjectedBean" factory-bean="noDependencyBean" factory-method="factoryMethod">
+        <constructor-arg ref="noDependencyBean"/>
+    </bean>
+</beans>
