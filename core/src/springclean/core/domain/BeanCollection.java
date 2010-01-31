@@ -1,11 +1,11 @@
 package springclean.core.domain;
 
 import org.daisychain.source.AClass;
-import org.daisychain.util.Functor;
+
+import java.util.List;
 
 public interface BeanCollection extends Value {
     AClass clazz();
 
-    <E extends Throwable> void forAllMembers(Functor<SpringManagedObject, E> functor) throws E;
-
+    List<SpringManagedObject> members();
 }
