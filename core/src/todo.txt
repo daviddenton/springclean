@@ -4,8 +4,6 @@ finish lists, sets and maps
 
 application contexts in the classpath
 
-InitialisingBean - afterpropertiesset
-
 aliases and names (multiple values in the bean "name" attribute)
 
 default-init-method

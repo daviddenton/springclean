@@ -2,9 +2,8 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/FactoryMethodInvocation.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/FactoryMethodInvocation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/todo.txt" afterPath="$PROJECT_DIR$/core/src/todo.txt" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,15 +80,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HasImports.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/daisy-chain-1.0.jar!/org/daisychain/source/HasImports.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CustomFactoryBeanConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -128,10 +118,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlBean.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="XmlBean.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="38" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.4017094">
+            <state line="55" column="5" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/todo.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.16393442">
               <folding />
             </state>
           </provider>
@@ -806,13 +805,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/domain/BeanCollectionBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/domain/ReferenceBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="32" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
@@ -919,7 +911,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="38" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.4017094">
+        <state line="55" column="5" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.16393442">
           <folding />
         </state>
       </provider>
