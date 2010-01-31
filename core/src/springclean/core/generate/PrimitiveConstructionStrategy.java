@@ -16,11 +16,11 @@ import java.util.List;
 import java.util.Set;
 
 
-public class PrimitiveContextElement implements ContextElement {
+public class PrimitiveConstructionStrategy implements ConstructionStrategy {
     private final String content;
     private final AClass type;
 
-    public PrimitiveContextElement(String content, AClass type) {
+    public PrimitiveConstructionStrategy(String content, AClass type) {
         this.content = (!new ExistingClass(String.class, (List<? extends AClass>) Collections.EMPTY_LIST).equals(type) && "".equals(content)) ? null : content;
         this.type = type;
     }

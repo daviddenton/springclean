@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Set;
 
 
-public class CollectionContextElement implements ContextElement {
+public class CollectionContextElement implements ConstructionStrategy {
     public final List<SpringManagedObject> members = new ArrayList<SpringManagedObject>();
     private final AClass collectionType;
     private final AClass castTo;

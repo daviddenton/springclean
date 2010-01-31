@@ -7,29 +7,29 @@ import org.daisychain.source.body.AssignableStatement;
 
 import java.util.Set;
 
-public class ContextElementBuilder {
+public class ConstructionStrategyBuilder {
     private Set<Instance> dependencies = newHashSet();
     private AssignableStatement statement = anAssignableStatement().build();
 
-    private ContextElementBuilder() {
+    private ConstructionStrategyBuilder() {
     }
 
-    public static ContextElementBuilder aContextElement() {
-        return new ContextElementBuilder();
+    public static ConstructionStrategyBuilder aConstructionStrategy() {
+        return new ConstructionStrategyBuilder();
     }
 
-    public ContextElementBuilder withDependency(Instance dependency) {
+    public ConstructionStrategyBuilder withDependency(Instance dependency) {
         this.dependencies.add(dependency);
         return this;
     }
 
-    public ContextElementBuilder whichProducesStatement(AssignableStatement statement) {
+    public ConstructionStrategyBuilder whichProducesStatement(AssignableStatement statement) {
         this.statement = statement;
         return this;
     }
 
-    public ContextElement build() {
-        return new ContextElement() {
+    public ConstructionStrategy build() {
+        return new ConstructionStrategy() {
 
             public Set<Instance> dependencies() {
                 return dependencies;

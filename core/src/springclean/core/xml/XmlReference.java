@@ -9,7 +9,7 @@ import springclean.core.domain.Reference;
 import springclean.core.domain.SpringId;
 import static springclean.core.domain.SpringId.springId;
 import springclean.core.generate.ConstructionStrategy;
-import springclean.core.generate.RefContextElement;
+import springclean.core.generate.RefConstructionStrategy;
 
 public class XmlReference extends AbstractElementWrapper implements Reference {
     public XmlReference(Element referenceNode, ApplicationContext applicationContext) {
@@ -44,7 +44,7 @@ public class XmlReference extends AbstractElementWrapper implements Reference {
 
     public ConstructionStrategy asConstructionStrategy(AClass aClass) {
         IdentifiedBean identifiedBean = applicationContext.findBean(id());
-        return identifiedBean.isAbstract() ? identifiedBean.asConstructionStrategy(aClass) : new RefContextElement(this, aClass);
+        return identifiedBean.isAbstract() ? identifiedBean.asConstructionStrategy(aClass) : new RefConstructionStrategy(this, aClass);
     }
 
     public AClass<ExistingMethod> clazz() {

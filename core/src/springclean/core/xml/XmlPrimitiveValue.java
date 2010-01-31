@@ -4,7 +4,7 @@ import org.daisychain.source.AClass;
 import springclean.core.domain.ApplicationContext;
 import springclean.core.domain.Value;
 import springclean.core.generate.ConstructionStrategy;
-import springclean.core.generate.PrimitiveContextElement;
+import springclean.core.generate.PrimitiveConstructionStrategy;
 
 public class XmlPrimitiveValue implements Value {
 
@@ -17,7 +17,7 @@ public class XmlPrimitiveValue implements Value {
     }
 
     public ConstructionStrategy asConstructionStrategy(AClass aClass) {
-        return new PrimitiveContextElement(rawValue, aClass);
+        return new PrimitiveConstructionStrategy(rawValue, aClass);
     }
 
 

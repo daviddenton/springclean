@@ -9,8 +9,7 @@ import springclean.core.domain.ConstructorArg;
 import springclean.core.domain.Property;
 import springclean.core.exception.Defect;
 import springclean.core.generate.ConstructionStrategy;
-import springclean.core.generate.ContextElement;
-import static springclean.core.generate.ContextElementBuilder.aContextElement;
+import static springclean.core.generate.ConstructionStrategyBuilder.aConstructionStrategy;
 
 import java.util.List;
 import java.util.Map;
@@ -24,7 +23,7 @@ public class BeanBuilder {
     Method initMethod;
     Method destroyMethod;
     Method factoryMethod;
-    ContextElement contextElement = aContextElement().build();
+    ConstructionStrategy constructionStrategy = aConstructionStrategy().build();
     springclean.core.domain.Reference factoryBean;
 
     BeanBuilder() {
@@ -78,8 +77,8 @@ public class BeanBuilder {
         return this;
     }
 
-    public BeanBuilder whichProducesContextElement(ContextElement contextElement) {
-        this.contextElement = contextElement;
+    public BeanBuilder whichProducesConstructionStrategy(ConstructionStrategy constructionStrategy) {
+        this.constructionStrategy = constructionStrategy;
         return this;
     }
 
@@ -140,7 +139,7 @@ public class BeanBuilder {
             }
 
             public ConstructionStrategy asConstructionStrategy(AClass aClass) {
-                return contextElement;
+                return constructionStrategy;
             }
         };
     }

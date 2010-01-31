@@ -5,7 +5,7 @@ import org.daisychain.source.body.AssignableStatement;
 import springclean.core.domain.Bean;
 import static springclean.core.domain.Property.Util.propertyInjectedDependencies;
 import springclean.core.domain.Reference;
-import static springclean.core.generate.ContextElement.DependencyExtractor.allDependenciesOf;
+import static springclean.core.generate.ConstructionStrategy.Util.allDependenciesOf;
 
 import java.util.Set;
 

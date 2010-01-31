@@ -28,7 +28,7 @@ public class BeanSetBuilder extends BeanCollectionBuilder<BeanSetBuilder> {
             }
 
             public ConstructionStrategy asConstructionStrategy(AClass aClass) {
-                return contextElement;
+                return constructionStrategy;
             }
         };
     }

@@ -6,7 +6,7 @@ import springclean.core.domain.ApplicationContext;
 import springclean.core.domain.Reference;
 import springclean.core.domain.SpringId;
 import springclean.core.generate.ConstructionStrategy;
-import springclean.core.generate.RefContextElement;
+import springclean.core.generate.RefConstructionStrategy;
 
 public class SimpleReference implements Reference {
     private final SpringId id;
@@ -22,7 +22,7 @@ public class SimpleReference implements Reference {
     }
 
     public ConstructionStrategy asConstructionStrategy(AClass aClass) {
-        return new RefContextElement(this, aClass);
+        return new RefConstructionStrategy(this, aClass);
     }
 
     public AClass<ExistingMethod> clazz() {

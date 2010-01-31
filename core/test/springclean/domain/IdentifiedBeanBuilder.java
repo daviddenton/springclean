@@ -86,7 +86,7 @@ public class IdentifiedBeanBuilder extends BeanBuilder {
             }
 
             public ConstructionStrategy asConstructionStrategy(AClass aClass) {
-                return contextElement;
+                return constructionStrategy;
             }
 
             public SpringId id() {

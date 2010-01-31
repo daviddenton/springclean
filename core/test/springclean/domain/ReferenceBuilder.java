@@ -6,12 +6,11 @@ import springclean.core.domain.Reference;
 import springclean.core.domain.SpringId;
 import static springclean.core.domain.SpringId.springId;
 import springclean.core.generate.ConstructionStrategy;
-import springclean.core.generate.ContextElement;
-import springclean.core.generate.ContextElementBuilder;
+import springclean.core.generate.ConstructionStrategyBuilder;
 
 public class ReferenceBuilder {
     private SpringId springId = springId("springId");
-    private ContextElement contextElement = ContextElementBuilder.aContextElement().build();
+    private ConstructionStrategy constructionStrategy = ConstructionStrategyBuilder.aConstructionStrategy().build();
     private AClass aClass = new ExistingClass(String.class);
 
     private ReferenceBuilder() {
@@ -31,8 +30,8 @@ public class ReferenceBuilder {
         return this;
     }
 
-    public ReferenceBuilder whichProducesContextElement(ContextElement contextElement) {
-        this.contextElement = contextElement;
+    public ReferenceBuilder whichProducesConstructionStrategy(ConstructionStrategy constructionStrategy) {
+        this.constructionStrategy = constructionStrategy;
         return this;
     }
 
@@ -43,7 +42,7 @@ public class ReferenceBuilder {
             }
 
             public ConstructionStrategy asConstructionStrategy(AClass aClass) {
-                return contextElement;
+                return constructionStrategy;
             }
 
             public AClass clazz() {

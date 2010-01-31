@@ -11,10 +11,10 @@ import static java.util.Collections.singleton;
 import java.util.Set;
 
 
-public class RefContextElement implements ContextElement {
+public class RefConstructionStrategy implements ConstructionStrategy {
     private final Instance instance;
 
-    public RefContextElement(Reference reference, AClass clazz) {
+    public RefConstructionStrategy(Reference reference, AClass clazz) {
         instance = new Instance(reference.id().value, clazz);
     }
 
