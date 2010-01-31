@@ -1,6 +1,8 @@
 package springclean.core.generate;
 
+import com.google.common.base.Function;
 import static com.google.common.collect.Lists.newArrayList;
+import static com.google.common.collect.Lists.transform;
 import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
 import springclean.core.domain.Bean;
@@ -22,11 +24,11 @@ public class StandardBeanConstructionStrategy implements ConstructionStrategy {
     }
 
     private static List<ContextElement> propertyInjectedDependencies(final Bean bean) {
-        final List<ContextElement> injectedDependencies = newArrayList();
-        for (Property property : bean.setterDependencies()) {
-            injectedDependencies.add(property.referencedObject().asContextElement(bean.setter(property).parameters().get(0).instance.aClass));
-        }
-        return injectedDependencies;
+        return transform(bean.setterDependencies(), new Function<Property, ContextElement>() {
+            public ContextElement apply(Property property) {
+                return property.referencedObject().asContextElement(bean.setter(property).parameters().get(0).instance.aClass);
+            }
+        });
     }
 
     private static List<ContextElement> constructorInjectedDependencies(final Bean bean) {
