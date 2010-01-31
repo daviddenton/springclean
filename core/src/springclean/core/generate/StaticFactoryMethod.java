@@ -1,6 +1,7 @@
 package springclean.core.generate;
 
 import org.daisychain.source.AClass;
+import static org.daisychain.source.HasImports.ImportExtractor.extractImportsFrom;
 import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
 import org.daisychain.source.util.IndentingStringWriter;
@@ -24,7 +25,7 @@ public class StaticFactoryMethod implements AssignableStatement {
     }
 
     public Set<AClass> getImports() {
-        return org.daisychain.source.HasImports.ImportExtractor.extractImportsFrom(argumentStatements);
+        return extractImportsFrom(argumentStatements);
     }
 
     public void appendSource(IndentingStringWriter writer) throws IOException {

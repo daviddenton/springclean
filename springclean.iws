@@ -2,9 +2,7 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethodBeanConstructionStrategy.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethodBeanConstructionStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethod.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethod.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,8 +104,10 @@
       <file leaf-file-name="StaticFactoryMethodBeanConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethodBeanConstructionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="31" column="0" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1264934194000" expanded="false" signature="43:421" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,8 +115,10 @@
       <file leaf-file-name="StaticFactoryMethod.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.115015976">
-              <folding />
+            <state line="27" column="20" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.4600639">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1191,15 +1193,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethodBeanConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="31" column="0" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1264934194000" expanded="false" signature="43:421" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.115015976">
-          <folding />
+        <state line="27" column="20" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.4600639">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
