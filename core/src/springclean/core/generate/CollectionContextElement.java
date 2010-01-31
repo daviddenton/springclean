@@ -12,7 +12,7 @@ import springclean.core.domain.BeanCollection;
 import springclean.core.domain.SpringManagedObject;
 
 import java.io.IOException;
-import java.util.Collections;
+import static java.util.Collections.EMPTY_LIST;
 import static java.util.Collections.singletonList;
 import java.util.List;
 import java.util.Set;
@@ -30,7 +30,7 @@ public class CollectionContextElement implements ConstructionStrategy {
     }
 
     public AssignableStatement asStatement() {
-        Method addMethod = new MethodFinder(beanCollection.clazz()).method("add", 1);
+        Method addMethod = new MethodFinder<ExistingMethod>(beanCollection.clazz()).method("add", 1);
         final List<AssignableStatement> postConstructionStatements = newArrayList();
 
         for (SpringManagedObject member : beanCollection.members()) {
@@ -44,7 +44,7 @@ public class CollectionContextElement implements ConstructionStrategy {
             }
 
             public void appendSource(IndentingStringWriter writer) throws IOException {
-                beanCollection.clazz().instantiate(Collections.EMPTY_LIST).appendSource(writer);
+                beanCollection.clazz().instantiate(EMPTY_LIST).appendSource(writer);
                 loop(postConstructionStatements)
                         .withPrefix(new InitializerBlockStart())
                         .andForEach(generateSource()).seperatedBy(";\n")
