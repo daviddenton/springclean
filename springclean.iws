@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" name="Default" comment="dirty - feature work">
+    <list default="true" readonly="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethod.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethod.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,10 +62,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ConstructorInvocation.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ConstructorInvocation.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructorInvocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="19" selection-start="637" selection-end="637" vertical-scroll-proportion="0.49726775">
+            <state line="18" column="19" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FactoryMethodInvocation.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FactoryMethodInvocation.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/FactoryMethodInvocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0">
+            <state line="20" column="11" selection-start="754" selection-end="754" vertical-scroll-proportion="0.33333334">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,15 +134,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanContextElement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/BeanContextElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -155,7 +146,16 @@
       <file leaf-file-name="CustomFactoryBeanConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="26" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0">
+            <state line="24" column="33" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Property.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/Property.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="17" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -743,13 +743,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlSpringManagedObjectFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/RefContextElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
@@ -803,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="26" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/Bean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
@@ -825,15 +811,6 @@
           <folding>
             <marker date="1264965619000" expanded="true" signature="41:258" placeholder="..." />
             <marker date="1264965619000" expanded="true" signature="41:101" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/FactoryMethodInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -861,7 +838,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructorInvocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="19" selection-start="637" selection-end="637" vertical-scroll-proportion="0.49726775">
+        <state line="18" column="19" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="33" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/FactoryMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="11" selection-start="754" selection-end="754" vertical-scroll-proportion="0.33333334">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
