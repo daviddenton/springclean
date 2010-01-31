@@ -7,16 +7,16 @@ import springclean.core.domain.IdentifiedBean;
 import java.util.Set;
 
 public class IdentifiedBeanConstructionStrategy implements ConstructionStrategy {
-    private final IdentifiedBean bean;
     private final ConstructionStrategy innerConstructionStrategy;
+    private final Instance instance;
 
     public IdentifiedBeanConstructionStrategy(IdentifiedBean bean, ConstructionStrategy innerConstructionStrategy) {
-        this.bean = bean;
         this.innerConstructionStrategy = innerConstructionStrategy;
+        instance = new Instance(bean.id().value, bean.clazz());
     }
 
     public AssignableStatement asStatement() {
-        return new Instance(bean.id().value, bean.clazz()).reference.assignTo(innerConstructionStrategy.asStatement());
+        return instance.reference.assignTo(innerConstructionStrategy.asStatement());
     }
 
     public Set<Instance> dependencies() {
