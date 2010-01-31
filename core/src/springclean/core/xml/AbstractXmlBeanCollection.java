@@ -9,6 +9,7 @@ import springclean.core.domain.BeanCollection;
 import springclean.core.domain.SpringManagedObject;
 import springclean.core.generate.CollectionContextElement;
 import springclean.core.generate.ConstructionStrategy;
+import static springclean.core.xml.XmlSpringManagedObjects.springManagedObjectFor;
 import static springclean.core.xml.XomUtils.loop;
 
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ public abstract class AbstractXmlBeanCollection extends AbstractElementWrapper i
         final List<SpringManagedObject> members = new ArrayList<SpringManagedObject>();
         loop(element.getChildElements(), new SimpleFunctor<Element>() {
             public void execute(Element target) {
-                members.add(XmlSpringManagedObjectFactory.build(target, applicationContext));
+                members.add(springManagedObjectFor(target, applicationContext));
             }
         });
         return members;
