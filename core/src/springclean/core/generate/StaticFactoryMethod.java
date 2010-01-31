@@ -13,15 +13,12 @@ import java.util.List;
 import java.util.Set;
 
 public class StaticFactoryMethod implements AssignableStatement {
-    private final List<AssignableStatement> argumentStatements = com.google.common.collect.Lists.newArrayList();
+    private final List<AssignableStatement> argumentStatements;
     private final Bean bean;
 
     public StaticFactoryMethod(Bean bean) {
         this.bean = bean;
-        for (int i = 0; i < bean.constructorArgs().size(); i++) {
-            ConstructorArg constructorArg = bean.constructorArgs().get(i);
-            argumentStatements.add(constructorArg.referencedObject().asContextElement(bean.factoryMethod().parameters().get(i).instance.aClass).asStatement());
-        }
+        argumentStatements = ConstructorArg.Util.asStatements(bean.factoryMethod(), bean.constructorArgs());
     }
 
     public Set<AClass> getImports() {
