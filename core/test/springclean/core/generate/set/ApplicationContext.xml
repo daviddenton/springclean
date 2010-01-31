@@ -9,6 +9,7 @@
             <set>
                 <bean class="springclean.core.generate.data.NoDependencyBean"/>
                 <ref bean="aNoDependencyBean"/>
+                <value>aString</value>
             </set>
         </property>
     </bean>
