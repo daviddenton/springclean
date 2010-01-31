@@ -9,7 +9,6 @@ import springclean.core.domain.SpringId;
 import static springclean.core.domain.SpringId.springId;
 import springclean.core.generate.BeanContextElement;
 import springclean.core.generate.ConstructionStrategy;
-import springclean.core.generate.ContextElement;
 import springclean.core.generate.IdentifiedBeanConstructionStrategy;
 
 public class XmlIdentifiedBean extends XmlBean implements IdentifiedBean {
@@ -29,7 +28,7 @@ public class XmlIdentifiedBean extends XmlBean implements IdentifiedBean {
         throw new XomProcessingException("can't work out id for bean " + element.toXML());
     }
 
-    public ContextElement asContextElement(AClass aClass) {
+    public ConstructionStrategy asConstructionStrategy(AClass aClass) {
         ConstructionStrategy constructionStrategy = isAbstract() ? constructionStrategy() : new IdentifiedBeanConstructionStrategy(this, constructionStrategy());
         return new BeanContextElement(constructionStrategy);
     }

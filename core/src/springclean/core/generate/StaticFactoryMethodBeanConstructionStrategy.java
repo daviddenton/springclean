@@ -22,9 +22,9 @@ public class StaticFactoryMethodBeanConstructionStrategy implements Construction
     }
 
     public Set<Instance> dependencies() {
-        return allDependenciesOf(transform(bean.setterDependencies(), new Function<Property, ContextElement>() {
-            public ContextElement apply(Property property) {
-                return property.referencedObject().asContextElement(bean.setter(property).parameters().get(0).instance.aClass);
+        return allDependenciesOf(transform(bean.setterDependencies(), new Function<Property, ConstructionStrategy>() {
+            public ConstructionStrategy apply(Property property) {
+                return property.referencedObject().asConstructionStrategy(bean.setter(property).parameters().get(0).instance.aClass);
             }
         }));
     }

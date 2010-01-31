@@ -5,6 +5,7 @@ import org.daisychain.source.ExistingMethod;
 import springclean.core.domain.ApplicationContext;
 import springclean.core.domain.Reference;
 import springclean.core.domain.SpringId;
+import springclean.core.generate.ConstructionStrategy;
 import springclean.core.generate.RefContextElement;
 
 public class SimpleReference implements Reference {
@@ -20,7 +21,7 @@ public class SimpleReference implements Reference {
         return id;
     }
 
-    public RefContextElement asContextElement(AClass aClass) {
+    public ConstructionStrategy asConstructionStrategy(AClass aClass) {
         return new RefContextElement(this, aClass);
     }
 

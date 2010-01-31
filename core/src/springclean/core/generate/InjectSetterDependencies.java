@@ -22,7 +22,7 @@ public class InjectSetterDependencies implements AssignableStatement {
 
     public InjectSetterDependencies(Bean bean) {
         for (Property property : bean.setterDependencies()) {
-            AssignableStatement assignableStatement = property.referencedObject().asContextElement(bean.setter(property).parameters().get(0).instance.aClass).asStatement();
+            AssignableStatement assignableStatement = property.referencedObject().asConstructionStrategy(bean.setter(property).parameters().get(0).instance.aClass).asStatement();
             postConstructionStatements.add(bean.setter(property).call(Collections.singletonList(assignableStatement)));
         }
 

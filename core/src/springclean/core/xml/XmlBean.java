@@ -129,7 +129,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
         return attributeValueEquals("abstract", "true") || attributeValueEquals("scope", "prototype");
     }
 
-    public ContextElement asContextElement(AClass aClass) {
+    public ConstructionStrategy asConstructionStrategy(AClass aClass) {
         return new BeanContextElement(constructionStrategy());
     }
 

@@ -8,6 +8,7 @@ import springclean.core.domain.Bean;
 import springclean.core.domain.ConstructorArg;
 import springclean.core.domain.Property;
 import springclean.core.exception.Defect;
+import springclean.core.generate.ConstructionStrategy;
 import springclean.core.generate.ContextElement;
 import static springclean.core.generate.ContextElementBuilder.aContextElement;
 
@@ -138,7 +139,7 @@ public class BeanBuilder {
                 return false;
             }
 
-            public ContextElement asContextElement(AClass aClass) {
+            public ConstructionStrategy asConstructionStrategy(AClass aClass) {
                 return contextElement;
             }
         };

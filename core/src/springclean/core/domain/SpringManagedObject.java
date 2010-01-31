@@ -1,8 +1,8 @@
 package springclean.core.domain;
 
 import org.daisychain.source.AClass;
-import springclean.core.generate.ContextElement;
+import springclean.core.generate.ConstructionStrategy;
 
 public interface SpringManagedObject {
-    ContextElement asContextElement(AClass aClass);
+    ConstructionStrategy asConstructionStrategy(AClass aClass);
 }

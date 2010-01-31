@@ -35,7 +35,7 @@ public class ApplicationContextConstructorBuilder {
                     Instance instance = new Instance(target.id().value, target.clazz());
                     if (target.isAbstract()) processedBeans.add(instance);
 
-                    ContextElement candidate = target.asContextElement(target.clazz());
+                    ConstructionStrategy candidate = target.asConstructionStrategy(target.clazz());
                     if (!processedBeans.contains(instance)) {
 
                         for (Instance dependency : candidate.dependencies()) {

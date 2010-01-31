@@ -9,7 +9,7 @@ import springclean.core.domain.Property;
 import springclean.core.domain.SpringId;
 import static springclean.core.domain.SpringId.springId;
 import springclean.core.exception.Defect;
-import springclean.core.generate.ContextElement;
+import springclean.core.generate.ConstructionStrategy;
 
 import java.util.List;
 
@@ -85,7 +85,7 @@ public class IdentifiedBeanBuilder extends BeanBuilder {
                 return properties.get(property);
             }
 
-            public ContextElement asContextElement(AClass aClass) {
+            public ConstructionStrategy asConstructionStrategy(AClass aClass) {
                 return contextElement;
             }
 

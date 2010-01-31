@@ -5,6 +5,7 @@ import org.daisychain.source.ExistingClass;
 import springclean.core.domain.Reference;
 import springclean.core.domain.SpringId;
 import static springclean.core.domain.SpringId.springId;
+import springclean.core.generate.ConstructionStrategy;
 import springclean.core.generate.ContextElement;
 import springclean.core.generate.ContextElementBuilder;
 
@@ -41,7 +42,7 @@ public class ReferenceBuilder {
                 return springId;
             }
 
-            public ContextElement asContextElement(AClass aClass) {
+            public ConstructionStrategy asConstructionStrategy(AClass aClass) {
                 return contextElement;
             }
 

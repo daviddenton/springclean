@@ -4,7 +4,7 @@ import org.daisychain.source.AClass;
 import org.daisychain.util.Functor;
 import springclean.core.domain.BeanSet;
 import springclean.core.domain.SpringManagedObject;
-import springclean.core.generate.ContextElement;
+import springclean.core.generate.ConstructionStrategy;
 
 public class BeanSetBuilder extends BeanCollectionBuilder<BeanSetBuilder> {
 
@@ -27,7 +27,7 @@ public class BeanSetBuilder extends BeanCollectionBuilder<BeanSetBuilder> {
                 }
             }
 
-            public ContextElement asContextElement(AClass aClass) {
+            public ConstructionStrategy asConstructionStrategy(AClass aClass) {
                 return contextElement;
             }
         };

@@ -2,10 +2,26 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/IdentifiedBeanConstructionStrategy.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/IdentifiedBeanConstructionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/SetterInjection.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/SetterInjection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/SimpleReference.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/SimpleReference.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethodBeanConstructionStrategy.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethodBeanConstructionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/domain/ReferenceBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/ReferenceBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlReference.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlReference.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/domain/ConstructorArg.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/domain/ConstructorArg.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/domain/BeanSetBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/BeanSetBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/InjectSetterDependencies.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/InjectSetterDependencies.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/domain/BeanBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/BeanBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/domain/Property.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/domain/Property.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/domain/BeanListBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/BeanListBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/domain/IdentifiedBeanBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/domain/IdentifiedBeanBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/AbstractXmlBeanCollection.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/AbstractXmlBeanCollection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/BeanContextElement.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/BeanContextElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/CollectionContextElement.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/CollectionContextElement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/NullValue.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/NullValue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/domain/SpringManagedObject.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/domain/SpringManagedObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlPrimitiveValue.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlPrimitiveValue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/ApplicationContextConstructorBuilder.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/ApplicationContextConstructorBuilder.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,10 +80,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ConstructorInvocation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructorInvocation.java">
+      <file leaf-file-name="BeanContextElement.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/BeanContextElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+            <state line="13" column="24" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,21 +91,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanContextElement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/BeanContextElement.java">
+      <file leaf-file-name="XmlBean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+            <state line="132" column="37" selection-start="4921" selection-end="4921" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomFactoryBeanConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java">
+      <file leaf-file-name="XmlIdentifiedBean.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="75" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+            <state line="31" column="34" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.33333334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationContextConstructorBuilder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ApplicationContextConstructorBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="63" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1264965778000" expanded="true" signature="43:407" placeholder="..." />
+                <marker date="1264966322000" expanded="false" signature="43:477" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringManagedObject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/SpringManagedObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="47" selection-start="191" selection-end="213" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1264966420000" expanded="false" signature="41:125" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Property.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/Property.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="99" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConstructorArg.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/ConstructorArg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="43" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1264966420000" expanded="false" signature="41:264" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -98,8 +156,10 @@
       <file leaf-file-name="IdentifiedBeanConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/IdentifiedBeanConstructionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="55" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="22" column="55" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1264966213000" expanded="false" signature="43:199" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,47 +173,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StaticFactoryMethodBeanConstructionStrategy.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StaticFactoryMethodBeanConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethodBeanConstructionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="38" selection-start="171" selection-end="171" vertical-scroll-proportion="0.14457831">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Property.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/Property.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="43" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollectionContextElement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CollectionContextElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="15" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructionStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContextElement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ContextElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="36" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="24" column="113" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -677,7 +703,7 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2418136" sideWeight="0.65954196" order="0" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977098" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" />
@@ -685,7 +711,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24853064" sideWeight="0.6610687" order="1" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977098" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
@@ -740,46 +766,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="44" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="36" selection-start="2147" selection-end="2147" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/ConstructorArg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="43" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1264965619000" expanded="true" signature="41:258" placeholder="..." />
-            <marker date="1264965619000" expanded="true" signature="41:101" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/SpringFactoryBeanConstructionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="41" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ApplicationContextConstructorBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="52" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1264966058000" expanded="false" signature="43:477" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ApplicationContextClassBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
@@ -790,7 +776,9 @@
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CollectionContextElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="15" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1264966213000" expanded="false" signature="43:520" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -806,20 +794,6 @@
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="17" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/BeanContextElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="43" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -842,8 +816,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/IdentifiedBeanConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="55" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="22" column="55" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1264966213000" expanded="false" signature="43:199" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -854,9 +830,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ApplicationContextConstructorBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="63" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1264966322000" expanded="false" signature="43:477" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/SpringManagedObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="47" selection-start="191" selection-end="213" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1264966420000" expanded="false" signature="41:125" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/ConstructorArg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="43" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1264966420000" expanded="false" signature="41:264" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethodBeanConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="171" selection-end="171" vertical-scroll-proportion="0.14457831">
+        <state line="24" column="113" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="99" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/BeanContextElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="24" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="37" selection-start="4921" selection-end="4921" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="34" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>

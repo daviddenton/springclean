@@ -8,6 +8,7 @@ import springclean.core.domain.ApplicationContext;
 import springclean.core.domain.BeanCollection;
 import springclean.core.domain.SpringManagedObject;
 import springclean.core.generate.CollectionContextElement;
+import springclean.core.generate.ConstructionStrategy;
 import static springclean.core.xml.XomUtils.loop;
 
 public abstract class AbstractXmlBeanCollection extends AbstractElementWrapper implements BeanCollection {
@@ -27,7 +28,7 @@ public abstract class AbstractXmlBeanCollection extends AbstractElementWrapper i
         });
     }
 
-    public CollectionContextElement asContextElement(AClass aClass) {
+    public ConstructionStrategy asConstructionStrategy(AClass aClass) {
         return new CollectionContextElement(this, clazz());
     }
 
