@@ -1,6 +1,11 @@
 package springclean.core.generate;
 
+import static com.google.common.collect.Sets.newHashSet;
 import org.daisychain.source.*;
+import static org.daisychain.source.DaisyChain.a;
+import static org.daisychain.source.Modifier.Public;
+import static org.daisychain.source.Modifier.publicFinal;
+import static org.daisychain.source.Parameter.ParameterModifier.Final;
 import springclean.core.domain.ApplicationContext;
 import springclean.core.domain.IdentifiedBean;
 
@@ -18,10 +23,10 @@ public class ApplicationContextConstructorBuilder {
     }
 
     public Constructor build() {
-        final Set<Instance> processedBeans = com.google.common.collect.Sets.newHashSet();
-        final Set<Instance> constructorParameters = com.google.common.collect.Sets.newHashSet();
+        final Set<Instance> processedBeans = newHashSet();
+        final Set<Instance> constructorParameters = newHashSet();
         final Set<Instance> externalDependencies = externallyDefinedDependencies(applicationContext);
-        final GeneratedConstructor constructor = org.daisychain.source.DaisyChain.a(org.daisychain.source.Modifier.Public).constructor(contextClass).build();
+        final GeneratedConstructor constructor = a(Public).constructor(contextClass).build();
         constructor.addException(new ExistingClass(Exception.class));
 
         while (true) {
@@ -39,14 +44,14 @@ public class ApplicationContextConstructorBuilder {
                             else if (!processedBeans.contains(dependency)) throw new UnresolvedDependency();
                         }
 
-                        contextClass.addField(org.daisychain.source.DaisyChain.a(org.daisychain.source.Modifier.publicFinal).generatedField(instance).build());
+                        contextClass.addField(a(publicFinal).generatedField(instance).build());
                         constructor.addStatement(candidate.asStatement());
                         processedBeans.add(instance);
                     }
                 }
 
                 for (Instance constructorParameter : constructorParameters) {
-                    constructor.addParameter(new Parameter(Parameter.ParameterModifier.Final, constructorParameter));
+                    constructor.addParameter(new Parameter(Final, constructorParameter));
                 }
                 break;
             } catch (UnresolvedDependency e) {
@@ -56,7 +61,7 @@ public class ApplicationContextConstructorBuilder {
     }
 
     private Set<Instance> externallyDefinedDependencies(ApplicationContext applicationContext) {
-        final Set<Instance> dependencies = com.google.common.collect.Sets.newHashSet();
+        final Set<Instance> dependencies = newHashSet();
         for (IdentifiedBean target : applicationContext.importedBeans()) {
             dependencies.add(new Instance(target.id().value, target.clazz()));
 
