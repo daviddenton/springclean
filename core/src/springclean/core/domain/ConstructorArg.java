@@ -1,6 +1,8 @@
 package springclean.core.domain;
 
 import static com.google.common.collect.Lists.newArrayList;
+import org.daisychain.source.Method;
+import org.daisychain.source.body.AssignableStatement;
 import springclean.core.generate.ContextElement;
 
 import java.util.List;
@@ -15,5 +17,14 @@ public interface ConstructorArg extends InjectedDependency {
             }
             return injectedDependencies;
         }
+
+        public static List<AssignableStatement> asStatements(Method method, List<ConstructorArg> constructorArgs) {
+            final List<AssignableStatement> constructorStatements = newArrayList();
+            for (int i = 0; i < constructorArgs.size(); i++) {
+                constructorStatements.add(constructorArgs.get(i).referencedObject().asContextElement(method.parameters().get(i).instance.aClass).asStatement());
+            }
+            return constructorStatements;
+        }
+
     }
 }
