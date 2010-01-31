@@ -8,10 +8,10 @@ import org.daisychain.source.util.IndentingStringWriter;
 import java.io.IOException;
 import java.util.Set;
 
-public class FactoryBeanStatement implements AssignableStatement {
+public class SpringFactoryBeanInvocation implements AssignableStatement {
     private final AssignableStatement innerStatement;
 
-    public FactoryBeanStatement(AClass castClass, AssignableStatement assignableStatement) {
+    public SpringFactoryBeanInvocation(AClass castClass, AssignableStatement assignableStatement) {
         innerStatement = new Cast(castClass, assignableStatement);
     }
 

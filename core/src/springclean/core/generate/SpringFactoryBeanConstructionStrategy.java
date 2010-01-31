@@ -16,7 +16,7 @@ public class SpringFactoryBeanConstructionStrategy implements ConstructionStrate
     }
 
     public AssignableStatement asStatement() {
-        return new FactoryBeanStatement(castClass, innerConstructionStrategy.asStatement());
+        return new SpringFactoryBeanInvocation(castClass, innerConstructionStrategy.asStatement());
     }
 
     public Set<Instance> dependencies() {

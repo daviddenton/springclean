@@ -40,7 +40,7 @@ public class StandardBeanConstructionStrategy implements ConstructionStrategy {
     }
 
     public AssignableStatement asStatement() {
-        return new NestedStatement(new ConstructorInjection(bean), new SetterInjection(bean));
+        return new NestedStatement(new ConstructorInvocation(bean), new SetterInjection(bean));
     }
 
     public Set<Instance> dependencies() {

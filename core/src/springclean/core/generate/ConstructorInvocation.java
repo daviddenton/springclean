@@ -11,12 +11,12 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
-public class ConstructorInjection implements AssignableStatement {
+public class ConstructorInvocation implements AssignableStatement {
 
     private final Bean bean;
     private final List<AssignableStatement> constructorStatements = newArrayList();
 
-    public ConstructorInjection(Bean bean) {
+    public ConstructorInvocation(Bean bean) {
         this.bean = bean;
         for (int i = 0; i < bean.constructorArgs().size(); i++) {
             constructorStatements.add(bean.constructorArgs().get(i).referencedObject().asContextElement(bean.constructor().parameters().get(i).instance.aClass).asStatement());

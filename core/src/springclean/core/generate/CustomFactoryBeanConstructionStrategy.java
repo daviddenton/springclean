@@ -1,18 +1,13 @@
 package springclean.core.generate;
 
 import static com.google.common.collect.Lists.newArrayList;
-import org.daisychain.source.AClass;
-import static org.daisychain.source.HasImports.ImportExtractor.extractImportsFrom;
 import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
-import org.daisychain.source.body.MethodCall;
-import org.daisychain.source.util.IndentingStringWriter;
 import springclean.core.domain.Bean;
 import springclean.core.domain.Property;
 import springclean.core.domain.Reference;
 import static springclean.core.generate.ContextElement.DependencyExtractor.allDependenciesOf;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
@@ -26,21 +21,7 @@ public class CustomFactoryBeanConstructionStrategy implements ConstructionStrate
     }
 
     public AssignableStatement asStatement() {
-        final List<AssignableStatement> argumentStatements = newArrayList();
-
-        for (int i = 0; i < bean.constructorArgs().size(); i++) {
-            argumentStatements.add(bean.constructorArgs().get(i).referencedObject().asContextElement(bean.factoryMethod().parameters().get(i).instance.aClass).asStatement());
-        }
-
-        return new AssignableStatement() {
-            public Set<AClass> getImports() {
-                return extractImportsFrom(argumentStatements);
-            }
-
-            public void appendSource(IndentingStringWriter writer) throws IOException {
-                new MethodCall(new org.daisychain.source.Reference(reference.id().value), bean.factoryMethod(), argumentStatements).appendSource(writer);
-            }
-        };
+        return new FactoryMethodInvocation(bean, CustomFactoryBeanConstructionStrategy.this.reference);
 
     }
 
@@ -51,4 +32,5 @@ public class CustomFactoryBeanConstructionStrategy implements ConstructionStrate
         }
         return allDependenciesOf(injectedDependencies);
     }
+
 }
