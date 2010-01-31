@@ -7,7 +7,6 @@ import springclean.core.domain.ApplicationContext;
 import springclean.core.domain.IdentifiedBean;
 import springclean.core.domain.SpringId;
 import static springclean.core.domain.SpringId.springId;
-import springclean.core.generate.BeanContextElement;
 import springclean.core.generate.ConstructionStrategy;
 import springclean.core.generate.IdentifiedBeanConstructionStrategy;
 
@@ -29,8 +28,7 @@ public class XmlIdentifiedBean extends XmlBean implements IdentifiedBean {
     }
 
     public ConstructionStrategy asConstructionStrategy(AClass aClass) {
-        ConstructionStrategy constructionStrategy = isAbstract() ? constructionStrategy() : new IdentifiedBeanConstructionStrategy(this, constructionStrategy());
-        return new BeanContextElement(constructionStrategy);
+        return isAbstract() ? constructionStrategy() : new IdentifiedBeanConstructionStrategy(this, constructionStrategy());
     }
 
     @Override
