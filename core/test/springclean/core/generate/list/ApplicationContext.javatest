@@ -1,0 +1,13 @@
+public class ApplicationContext {
+    private final SetterInjectedBean setterInjectedBean;
+
+    public ApplicationContext() throws Exception {
+        setterInjectedBean = new SetterInjectedBean() {{
+            setAList(new ArrayList() {{
+                add(new NoDependencyBean());
+                add("aString");
+            }});
+        }};
+    }
+
+}
