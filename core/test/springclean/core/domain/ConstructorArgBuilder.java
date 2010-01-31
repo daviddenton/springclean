@@ -1,8 +1,6 @@
-package springclean.domain;
+package springclean.core.domain;
 
-import springclean.core.domain.ConstructorArg;
-import springclean.core.domain.SpringManagedObject;
-import static springclean.domain.BeanBuilder.aBean;
+import static springclean.core.domain.BeanBuilder.aBean;
 
 public class ConstructorArgBuilder {
     private SpringManagedObject springManagedObject = aBean().build();

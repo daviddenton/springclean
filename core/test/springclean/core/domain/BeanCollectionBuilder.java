@@ -1,9 +1,8 @@
-package springclean.domain;
+package springclean.core.domain;
 
 import static com.google.common.collect.Lists.newArrayList;
 import org.daisychain.source.AClass;
 import org.daisychain.source.ExistingClass;
-import springclean.core.domain.SpringManagedObject;
 import springclean.core.generate.ConstructionStrategy;
 import static springclean.core.generate.ConstructionStrategyBuilder.aConstructionStrategy;
 

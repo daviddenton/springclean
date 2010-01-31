@@ -2,8 +2,35 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/domain/ReferenceBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/domain/ReferenceBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/domain/ApplicationContextBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/domain/ApplicationContextBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlIdentifiedBeanTest_constructor.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_constructor.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlIdentifiedBeanTest_name.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_name.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlApplicationContextTest_imported.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlApplicationContextTest_imported.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/domain/BeanCollectionBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/domain/BeanCollectionBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlReferenceTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlReferenceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlIdentifiedBeanTest_id.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_id.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/domain/PropertyBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/domain/PropertyBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlBeanListTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanListTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/AbstractSpringCleanTestCase.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/AbstractSpringCleanTestCase.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlApplicationContextTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlApplicationContextTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/domain/ConstructorArgBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/domain/ConstructorArgBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/domain/BeanBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/domain/BeanBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlReferenceTest.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlReferenceTest.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/domain/BeanListBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/domain/BeanListBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/test/springclean/core/util" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlBeanSetTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanSetTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlBeanSetTest.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanSetTest.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlApplicationContextTest_main.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlApplicationContextTest_main.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlIdentifiedBeanTest_guessName.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_guessName.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/util/ResourceLoader.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/util/ResourceLoader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlIdentifiedBeanTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/todo.txt" afterPath="$PROJECT_DIR$/core/src/todo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlApplicationContextTest_doubleImported.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlApplicationContextTest_doubleImported.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/domain/BeanSetBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/domain/BeanSetBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/domain/IdentifiedBeanBuilder.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/domain/IdentifiedBeanBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/core/test/springclean/xml/XmlBeanListTest.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanListTest.xml" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,93 +89,100 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RefConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/RefConstructionStrategy.java">
+      <file leaf-file-name="XmlApplicationContextTest_doubleImported.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlApplicationContextTest_doubleImported.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="27" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlApplicationContextTest_imported.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlApplicationContextTest_imported.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlApplicationContextTest_main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlApplicationContextTest_main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlBeanListTest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanListTest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Instance.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/daisy-chain-1.0.jar!/org/daisychain/source/Instance.class">
+      <file leaf-file-name="XmlBeanSetTest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanSetTest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="61" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomFactoryBeanConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java">
+      <file leaf-file-name="XmlIdentifiedBeanTest_constructor.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_constructor.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="22" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConstructorInvocation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructorInvocation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="33" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SetterInjection.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/SetterInjection.java">
+      <file leaf-file-name="XmlIdentifiedBeanTest_guessName.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_guessName.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="28" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bean.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/Bean.java">
+      <file leaf-file-name="XmlIdentifiedBeanTest_id.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_id.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="12" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlBean.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
+      <file leaf-file-name="XmlIdentifiedBeanTest_name.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_name.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="5" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/todo.txt">
+      <file leaf-file-name="XmlReferenceTest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlReferenceTest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.16393442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaticFactoryMethodInvocation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethodInvocation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="17" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InjectSetterDependencies.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/InjectSetterDependencies.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="30" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,114 +226,6 @@
           <option name="myItemId" value="core" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="springclean" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="distributed" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="springclean" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="distributed" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="daisy-chain-1.0.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="org" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="daisychain" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="springclean" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="distributed" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="daisy-chain-1.0.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="org" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="daisychain" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="source" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="springclean" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="distributed" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="daisy-chain-1.0.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -329,7 +255,11 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
+          <option name="myItemId" value="test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -347,7 +277,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
+          <option name="myItemId" value="test" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -373,7 +303,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
+          <option name="myItemId" value="test" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -403,7 +333,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
+          <option name="myItemId" value="test" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -415,7 +345,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="generate" />
+          <option name="myItemId" value="util" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -433,7 +363,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
+          <option name="myItemId" value="test" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -446,6 +376,24 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="domain" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="test" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -805,120 +753,123 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/domain/ReferenceBuilder.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/util/ResourceLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/PrimitiveConstructionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0">
+        <state line="12" column="13" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructionStrategy.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanSetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/IdentifiedBeanConstructionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="41" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
+        <state line="13" column="13" selection-start="452" selection-end="452" vertical-scroll-proportion="0.13675214">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/SpringFactoryBeanConstructionStrategy.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlReferenceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="70" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
+        <state line="11" column="13" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/daisy-chain-1.0.jar!/org/daisychain/source/HasImports.class">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlApplicationContextTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlReferenceTest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/daisy-chain-1.0.jar!/org/daisychain/source/Instance.class">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlApplicationContextTest_imported.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="61" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlApplicationContextTest_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanSetTest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/RefConstructionStrategy.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanListTest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="27" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CustomFactoryBeanConstructionStrategy.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_constructor.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="22" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructorInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="33" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/InjectSetterDependencies.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_name.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="30" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StaticFactoryMethodInvocation.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_guessName.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="17" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/SetterInjection.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlApplicationContextTest_doubleImported.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="28" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/Bean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlIdentifiedBeanTest_id.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="5" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.16393442">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

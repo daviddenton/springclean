@@ -1,12 +1,9 @@
-package springclean.domain;
+package springclean.core.domain;
 
 import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Maps.newHashMap;
 import org.daisychain.source.*;
 import static org.daisychain.source.DaisyChain.a;
-import springclean.core.domain.Bean;
-import springclean.core.domain.ConstructorArg;
-import springclean.core.domain.Property;
 import springclean.core.exception.Defect;
 import springclean.core.generate.ConstructionStrategy;
 import static springclean.core.generate.ConstructionStrategyBuilder.aConstructionStrategy;

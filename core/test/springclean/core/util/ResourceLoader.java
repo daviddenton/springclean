@@ -1,4 +1,4 @@
-package springclean.util;
+package springclean.core.util;
 
 import nu.xom.Document;
 import org.apache.commons.io.IOUtils;

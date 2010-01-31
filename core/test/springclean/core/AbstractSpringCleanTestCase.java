@@ -1,6 +1,6 @@
 package springclean.core;
 
-import springclean.util.ResourceLoader;
+import springclean.core.util.ResourceLoader;
 
 public abstract class AbstractSpringCleanTestCase {
     protected final ResourceLoader rl = new ResourceLoader(this);

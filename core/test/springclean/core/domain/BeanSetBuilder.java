@@ -1,9 +1,7 @@
-package springclean.domain;
+package springclean.core.domain;
 
 import org.daisychain.source.AClass;
 import org.daisychain.util.Functor;
-import springclean.core.domain.BeanSet;
-import springclean.core.domain.SpringManagedObject;
 import springclean.core.generate.ConstructionStrategy;
 
 public class BeanSetBuilder extends BeanCollectionBuilder<BeanSetBuilder> {

@@ -1,9 +1,7 @@
-package springclean.domain;
+package springclean.core.domain;
 
 import org.daisychain.source.AClass;
 import org.daisychain.source.ExistingClass;
-import springclean.core.domain.Reference;
-import springclean.core.domain.SpringId;
 import static springclean.core.domain.SpringId.springId;
 import springclean.core.generate.ConstructionStrategy;
 import springclean.core.generate.ConstructionStrategyBuilder;

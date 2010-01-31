@@ -1,4 +1,4 @@
-package springclean.xml;
+package springclean.core.xml;
 
 import org.daisychain.util.IndexingFunctor;
 import static org.hamcrest.Matchers.equalTo;
@@ -6,17 +6,16 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
 import springclean.core.AbstractSpringCleanTestCase;
-import springclean.core.xml.XmlBeanList;
-import static springclean.domain.ApplicationContextBuilder.anApplicationContext;
+import static springclean.core.domain.ApplicationContextBuilder.anApplicationContext;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
-public class XmlBeanListTest extends AbstractSpringCleanTestCase {
-    private XmlBeanList xmlBeanList = new XmlBeanList(rl.loadDocument("XmlBeanListTest.xml").getRootElement(), anApplicationContext().build());
+public class XmlBeanSetTest extends AbstractSpringCleanTestCase {
+    private XmlBeanSet xmlBeanSet = new XmlBeanSet(rl.loadDocument("XmlBeanSetTest.xml").getRootElement(), anApplicationContext().build());
 
     @Test
     public void clazz() {
-        assertThat(xmlBeanList.clazz().name(), equalTo(ArrayList.class.getName()));
+        assertThat(xmlBeanSet.clazz().name(), equalTo(HashSet.class.getName()));
     }
 
     @Test
@@ -26,7 +25,7 @@ public class XmlBeanListTest extends AbstractSpringCleanTestCase {
                 assertNotNull(target);
             }
         };
-        xmlBeanList.forAllMembers(functor);
+        xmlBeanSet.forAllMembers(functor);
         assertThat(functor.count(), equalTo(1));
     }
 }

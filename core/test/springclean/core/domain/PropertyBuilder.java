@@ -1,10 +1,7 @@
-package springclean.domain;
+package springclean.core.domain;
 
-import springclean.core.domain.Property;
-import springclean.core.domain.PropertyName;
+import static springclean.core.domain.BeanBuilder.aBean;
 import static springclean.core.domain.PropertyName.propertyName;
-import springclean.core.domain.SpringManagedObject;
-import static springclean.domain.BeanBuilder.aBean;
 
 public class PropertyBuilder {
 
