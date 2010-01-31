@@ -4,7 +4,6 @@ import static com.google.common.collect.Lists.newArrayList;
 import org.daisychain.source.AClass;
 import static org.daisychain.source.HasImports.ImportExtractor.extractImportsFrom;
 import org.daisychain.source.body.AssignableStatement;
-import org.daisychain.source.util.DynamicContent;
 import org.daisychain.source.util.IndentingStringWriter;
 import static org.daisychain.source.util.ListAppender.generateSource;
 import static org.daisychain.source.util.ListAppender.loop;
@@ -41,18 +40,6 @@ public class SetterInjection implements AssignableStatement {
                 .andForEach(generateSource()).seperatedBy(";\n")
                 .withSuffix(new InitializerBlockEnd())
                 .to(writer);
-    }
-
-    private static class InitializerBlockEnd implements DynamicContent {
-        public void append(IndentingStringWriter writer) throws IOException {
-            writer.append(";").exdent().newLine().append("}}");
-        }
-    }
-
-    private static class InitializerBlockStart implements DynamicContent {
-        public void append(IndentingStringWriter writer) throws IOException {
-            writer.indent().append(" {{").newLine();
-        }
     }
 
 }

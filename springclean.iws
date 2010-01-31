@@ -2,14 +2,10 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanListTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanListTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/test/springclean/core/domain/BeanSetBuilder.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/AbstractXmlBeanCollection.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/AbstractXmlBeanCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/SetterInjection.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/SetterInjection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/CollectionContextElement.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/CollectionContextElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanSetTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanSetTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/test/springclean/core/domain/BeanListBuilder.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/domain/BeanCollection.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/domain/BeanCollection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/InitializerBlockStart.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/InitializerBlockEnd.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,8 +76,10 @@
       <file leaf-file-name="AbstractXmlBeanCollection.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/AbstractXmlBeanCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="34" column="0" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1264971629000" expanded="false" signature="38:542" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,16 +87,47 @@
       <file leaf-file-name="XmlBeanListTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0">
+            <state line="17" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1264971629000" expanded="false" signature="38:309" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionContextElement.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CollectionContextElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="46" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SetterInjection.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/SetterInjection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="1" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.79545456">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionContextElement.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CollectionContextElement.java">
+      <file leaf-file-name="InitializerBlockStart.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/InitializerBlockStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="41" selection-start="669" selection-end="669" vertical-scroll-proportion="0.21761657">
+            <state line="7" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InitializerBlockEnd.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/InitializerBlockEnd.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,8 +136,10 @@
       <file leaf-file-name="XmlBeanSetTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanSetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="17" column="0" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1264971629000" expanded="false" signature="38:307" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,26 +156,10 @@
       <file leaf-file-name="BeanCollection.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Value.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/Value.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="17" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bean.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/Bean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="266" selection-end="308" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="10" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1264971629000" expanded="false" signature="41:94" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -966,13 +981,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/SetterInjection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlProperty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="11" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0">
@@ -1024,8 +1032,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="10" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1264971629000" expanded="false" signature="41:94" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1038,28 +1048,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/AbstractXmlBeanCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="34" column="0" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1264971629000" expanded="false" signature="38:542" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanSetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="17" column="0" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1264971629000" expanded="false" signature="38:307" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/XmlBeanListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="17" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1264971629000" expanded="false" signature="38:309" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/CollectionContextElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="41" selection-start="669" selection-end="669" vertical-scroll-proportion="0.21761657">
+        <state line="24" column="46" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/InitializerBlockEnd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/InitializerBlockStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/SetterInjection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="1" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.79545456">
           <folding />
         </state>
       </provider>
