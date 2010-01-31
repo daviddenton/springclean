@@ -4,9 +4,7 @@ import static org.apache.commons.lang.builder.ToStringBuilder.reflectionToString
 import static org.apache.commons.lang.builder.ToStringStyle.SHORT_PREFIX_STYLE;
 import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
-import static springclean.core.generate.ContextElement.DependencyExtractor.allDependenciesOf;
 
-import static java.util.Arrays.asList;
 import java.util.Set;
 
 public class BeanContextElement implements ContextElement {
@@ -18,7 +16,7 @@ public class BeanContextElement implements ContextElement {
     }
 
     public Set<Instance> dependencies() {
-        return allDependenciesOf(asList(constructionStrategy));
+        return constructionStrategy.dependencies();
     }
 
     @Override

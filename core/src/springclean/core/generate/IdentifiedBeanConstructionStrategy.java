@@ -3,9 +3,7 @@ package springclean.core.generate;
 import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
 import springclean.core.domain.IdentifiedBean;
-import static springclean.core.generate.ContextElement.DependencyExtractor.allDependenciesOf;
 
-import static java.util.Arrays.asList;
 import java.util.Set;
 
 public class IdentifiedBeanConstructionStrategy implements ConstructionStrategy {
@@ -22,6 +20,6 @@ public class IdentifiedBeanConstructionStrategy implements ConstructionStrategy 
     }
 
     public Set<Instance> dependencies() {
-        return allDependenciesOf(asList(innerConstructionStrategy));
+        return innerConstructionStrategy.dependencies();
     }
 }

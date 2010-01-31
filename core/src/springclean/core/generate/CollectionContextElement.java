@@ -1,7 +1,7 @@
 package springclean.core.generate;
 
 import static com.google.common.collect.Sets.newHashSet;
-import org.apache.commons.lang.builder.ToStringBuilder;
+import static org.apache.commons.lang.builder.ToStringBuilder.reflectionToString;
 import org.daisychain.source.AClass;
 import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
@@ -39,7 +39,7 @@ public class CollectionContextElement implements ContextElement {
 
     @Override
     public String toString() {
-        return ToStringBuilder.reflectionToString(this);
+        return reflectionToString(this);
     }
 
 }
