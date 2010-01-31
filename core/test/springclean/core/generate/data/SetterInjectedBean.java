@@ -1,10 +1,12 @@
 package springclean.core.generate.data;
 
 import java.util.List;
+import java.util.Set;
 
 public class SetterInjectedBean {
 
     private List aList;
+    private Set aSet;
     private NoDependencyBean noDependencyBean;
     private AnImportedBean anImportedBean;
     private AnonymousBean anonymousBean;
@@ -14,6 +16,10 @@ public class SetterInjectedBean {
 
     public void setAnImportedBean(AnImportedBean anImportedBean) {
         this.anImportedBean = anImportedBean;
+    }
+
+    public void setASet(Set aSet) {
+        this.aSet = aSet;
     }
 
     public void setAList(List aList) {
