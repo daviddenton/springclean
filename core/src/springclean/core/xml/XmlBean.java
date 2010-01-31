@@ -31,7 +31,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     public boolean hasInitMethod() {
-        return hasAttribute("init-method");
+        return hasAttribute("init-method") || clazz().implementsInterface(InitializingBean.class);
     }
 
     public boolean hasDestroyMethod() {
@@ -43,7 +43,10 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     public Method initMethod() {
-        return new MethodFinder<ExistingMethod>(clazz()).method(attributeValue("init-method"), 0);
+        MethodFinder<ExistingMethod> methodFinder = new MethodFinder<ExistingMethod>(clazz());
+        if (hasAttribute("init-method")) return methodFinder.method(attributeValue("init-method"), 0);
+        if (clazz().implementsInterface(InitializingBean.class)) return methodFinder.method("afterPropertiesSet", 0);
+        throw new Defect("No init method defined on " + this);
     }
 
     public Method destroyMethod() {

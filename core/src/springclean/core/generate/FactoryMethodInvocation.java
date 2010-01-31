@@ -21,7 +21,6 @@ public class FactoryMethodInvocation implements AssignableStatement {
     public FactoryMethodInvocation(Bean bean, Reference reference) {
         this.bean = bean;
         argumentStatements = asStatements(bean.factoryMethod(), bean.constructorArgs());
-
         this.reference = reference;
     }
 
