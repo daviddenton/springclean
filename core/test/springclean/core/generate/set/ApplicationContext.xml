@@ -4,12 +4,11 @@
 <beans>
     <bean id="aNoDependencyBean" class="springclean.core.generate.data.NoDependencyBean"/>
 
-    <bean id="aSetterInjectedBean" class="springclean.core.generate.data.SetterInjectedBean">
+    <bean id="setterInjectedBean" class="springclean.core.generate.data.SetterInjectedBean">
         <property name="aSet">
             <set>
                 <bean class="springclean.core.generate.data.NoDependencyBean"/>
                 <ref bean="aNoDependencyBean"/>
-                <value>null</value>
             </set>
         </property>
     </bean>

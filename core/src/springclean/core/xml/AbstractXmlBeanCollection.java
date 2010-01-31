@@ -34,7 +34,7 @@ public abstract class AbstractXmlBeanCollection extends AbstractElementWrapper i
     }
 
     public ConstructionStrategy asConstructionStrategy(AClass aClass) {
-        return new CollectionContextElement(this, clazz());
+        return new CollectionContextElement(this);
     }
 
     public AClass clazz() {
