@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,8 +109,10 @@
       <file leaf-file-name="ConstructorArgs.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="18" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1265321822000" expanded="false" signature="38:161" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,7 +120,7 @@
       <file leaf-file-name="ConstructorArgsTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="29" selection-start="922" selection-end="922" vertical-scroll-proportion="0.6885246">
+            <state line="34" column="0" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.36065573">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -976,14 +977,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="18" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1265321822000" expanded="false" signature="38:161" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="29" selection-start="922" selection-end="922" vertical-scroll-proportion="0.6885246">
+        <state line="34" column="0" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.36065573">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

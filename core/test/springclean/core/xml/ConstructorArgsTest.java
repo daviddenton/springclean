@@ -14,24 +14,33 @@ public class ConstructorArgsTest {
     // situation 3: overridden indexed dependencies in subclass - indexes must match
 
     @Test(expected = Defect.class)
-    public void noMixingOfIndexedAndNonIndexedArgsLocally() throws Exception {
+    public void noMixingOfIndexedAndNonIndexedArgs_construction() throws Exception {
         argsWith(unindexedArg);
     }
 
     @Test(expected = Defect.class)
-    public void argsNotConsecutiveIndexedLocally() throws Exception {
+    public void argsNotConsecutiveIndexed_construction() throws Exception {
         argsWith(arg(0), arg(1));
     }
 
     @Test(expected = Defect.class)
-    public void duplicateArgsLocally() throws Exception {
+    public void duplicateArgs_construction() throws Exception {
         argsWith(arg(0), arg(0));
     }
 
+    @Test(expected = Defect.class)
+    public void noMixingOfIndexedAndNonIndexedArgs_inMerge() throws Exception {
+        argsWith(unindexedArg).mergeIn(argsWith(arg(1)));
+    }
 
     @Test(expected = Defect.class)
-    public void noMixingOfIndexedAndNonIndexedArgsInMerge() throws Exception {
-        argsWith(unindexedArg).mergeIn(argsWith(arg(1)));
+    public void argsNotConsecutiveIndexed_inMerge() throws Exception {
+        argsWith(arg(0)).mergeIn(argsWith(arg(1)));
+    }
+
+    @Test(expected = Defect.class)
+    public void duplicateArgs_inMerge() throws Exception {
+        argsWith(arg(0)).mergeIn(argsWith(arg(0)));
     }
 
     private ConstructorArg arg(int index) {
