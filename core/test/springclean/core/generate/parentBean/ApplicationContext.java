@@ -30,7 +30,7 @@ public class ApplicationContext implements Stoppable {
             setAnonymousBean3(new AnonymousBean());
         }};
         anotherDualInjectedBean = new DualInjectedBean(new NoDependencyBean(), noDependencyBean) {{
-            setAnonymousBean(anAnonymousBean);
+            setAnonymousBean(new AnonymousBean());
             setAnonymousBean2(new AnonymousBean());
         }};
         yetAnotherDualInjectedBean = new DualInjectedBean(noDependencyBean, new NoDependencyBean());

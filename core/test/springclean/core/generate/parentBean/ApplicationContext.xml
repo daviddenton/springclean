@@ -33,7 +33,6 @@
         <constructor-arg index="0">
             <bean class="springclean.core.generate.data.NoDependencyBean"/>
         </constructor-arg>
-        <property name="anonymousBean" ref="anAnonymousBean"/>
         <property name="anonymousBean2">
             <bean class="springclean.core.generate.data.AnonymousBean"/>
         </property>
