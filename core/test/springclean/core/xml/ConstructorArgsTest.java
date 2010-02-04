@@ -15,6 +15,18 @@ public class ConstructorArgsTest {
     ConstructorArg unindexedArg = aConstructorArg().build();
 
     @Test
+    public void mergingWithAllInSub() throws Exception {
+        ConstructorArg arg0 = arg(0);
+        assertThat(argsWith().mergeIn(argsWith(arg0)).constructorArgs(), matchesIndexed(arg0));
+    }
+
+    @Test
+    public void mergingWithAllInSuper() throws Exception {
+        ConstructorArg arg0 = arg(0);
+        assertThat(argsWith(arg0).mergeIn(argsWith()).constructorArgs(), matchesIndexed(arg0));
+    }
+
+    @Test
     public void mergingWithoutClash() throws Exception {
         ConstructorArg arg0 = arg(0);
         ConstructorArg arg1 = arg(1);
