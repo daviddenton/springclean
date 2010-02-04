@@ -16,7 +16,6 @@ public class ConstructorArgs {
         this.localConstructorArgs = localConstructorArgs;
         verifyIndexedIntegity(localConstructorArgs);
         verifyIndexDuplicates(localConstructorArgs);
-        verifyIndexContinuity(localConstructorArgs);
     }
 
     public ConstructorArgs(ConstructorArg... localConstructorArgs) throws IllegalConstructorArgs {
@@ -35,6 +34,7 @@ public class ConstructorArgs {
         for (Integer index : mapped.keySet()) {
             mergedList.add(mapped.get(index));
         }
+        verifyIndexContinuity(mergedList);
         return new ConstructorArgs(mergedList);
     }
 

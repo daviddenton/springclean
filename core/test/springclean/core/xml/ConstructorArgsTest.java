@@ -18,7 +18,7 @@ public class ConstructorArgsTest {
     public void mergingWithoutClash() throws Exception {
         ConstructorArg arg0 = arg(0);
         ConstructorArg arg1 = arg(1);
-        assertThat(argsWith(arg1).mergeIn(argsWith(arg0)).constructorArgs(), matchesIndexed(arg0, arg1));
+        assertThat(argsWith(arg0).mergeIn(argsWith(arg1)).constructorArgs(), matchesIndexed(arg0, arg1));
     }
 
     @Test
@@ -31,11 +31,6 @@ public class ConstructorArgsTest {
     @Test(expected = ConstructorArgs.IllegalConstructorArgs.class)
     public void noMixingOfIndexedAndNonIndexedArgs_construction() throws Exception {
         argsWith(unindexedArg, arg(1));
-    }
-
-    @Test(expected = ConstructorArgs.IllegalConstructorArgs.class)
-    public void argsNotConsecutiveIndexed_construction() throws Exception {
-        argsWith(arg(0), arg(2));
     }
 
     @Test(expected = ConstructorArgs.IllegalConstructorArgs.class)
