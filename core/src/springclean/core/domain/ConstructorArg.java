@@ -9,6 +9,10 @@ import java.util.List;
 
 public interface ConstructorArg extends InjectedDependency {
 
+    boolean isIndexed();
+
+    int index();
+
     public static class Util {
         public static List<ConstructionStrategy> constructorInjectedDependencies(final Bean bean) {
             final List<ConstructionStrategy> injectedDependencies = newArrayList();

@@ -10,4 +10,11 @@ public class XmlConstructorArg extends XmlConstructionDependency implements Cons
         super(constructorArgElement, applicationContext);
     }
 
+    public boolean isIndexed() {
+        return hasAttribute("index");
+    }
+
+    public int index() {
+        return Integer.parseInt(attributeValue("index"));
+    }
 }
