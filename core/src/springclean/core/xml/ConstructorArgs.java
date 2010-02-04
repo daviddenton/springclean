@@ -27,7 +27,7 @@ public class ConstructorArgs {
         List<ConstructorArg> inheritedArgs = inheritedConstructorArgs.constructorArgs();
         List<ConstructorArg> entireList = new ArrayList<ConstructorArg>(localConstructorArgs);
         entireList.addAll(inheritedArgs);
-        verifyIndexContinuity(entireList);
+        verifyIndexedIntegity(entireList);
 
         Map<Integer, ConstructorArg> mapped = newHashMap();
         for (ConstructorArg inheritedConstructorArg : inheritedArgs) {
