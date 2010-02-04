@@ -14,14 +14,14 @@ public class ConstructorArgsTest {
 
     ConstructorArg unindexedArg = aConstructorArg().build();
 
-    @Test(expected = ConstructorArgs.IllegalConstructorArgs.class)
+    @Test
     public void mergingWithoutClash() throws Exception {
         ConstructorArg arg0 = arg(0);
         ConstructorArg arg1 = arg(1);
         assertThat(argsWith(arg1).mergeIn(argsWith(arg0)).constructorArgs(), matchesIndexed(arg0, arg1));
     }
 
-    @Test(expected = ConstructorArgs.IllegalConstructorArgs.class)
+    @Test
     public void mergingWithIndexClash() throws Exception {
         ConstructorArg subclassArg0 = arg(0);
         ConstructorArg superArg0 = arg(0);
@@ -56,11 +56,6 @@ public class ConstructorArgsTest {
     @Test(expected = ConstructorArgs.IllegalConstructorArgs.class)
     public void argsNotConsecutiveIndexed_inMerge() throws Exception {
         argsWith(arg(0)).mergeIn(argsWith(arg(2)));
-    }
-
-    @Test(expected = ConstructorArgs.IllegalConstructorArgs.class)
-    public void duplicateArgIndexes_inMerge() throws Exception {
-        argsWith(arg(0)).mergeIn(argsWith(arg(0)));
     }
 
     private ConstructorArg arg(int index) {

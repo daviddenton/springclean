@@ -4,6 +4,7 @@
     <list default="true" readonly="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstructorArgs.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ConstructorArgs.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="75" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.5409836">
+            <state line="33" column="57" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstructorArgsTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ConstructorArgsTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="16" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0">
+            <state line="60" column="43" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.7948718">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -562,8 +563,8 @@
       <recent name="microtypes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConstructorArgsTest.argsNotConsecutiveIndexed_construction">
-    <tempConfiguration default="false" name="ConstructorArgsTest.argsNotConsecutiveIndexed_construction" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+  <component name="RunManager" selected="JUnit.ConstructorArgsTest">
+    <tempConfiguration default="false" name="ConstructorArgsTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <pattern>
         <option name="PATTERN" value="springclean.core.xml.*" />
         <option name="ENABLED" value="true" />
@@ -573,8 +574,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="springclean.core.xml" />
       <option name="MAIN_CLASS_NAME" value="springclean.core.xml.ConstructorArgsTest" />
-      <option name="METHOD_NAME" value="argsNotConsecutiveIndexed_construction" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -745,7 +746,7 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CustomFactoryBeanTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ConstructorArgsTest.argsNotConsecutiveIndexed_construction" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ConstructorArgsTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -793,7 +794,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="25" width="1239" height="778" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Web Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
@@ -810,7 +811,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24853064" sideWeight="0.6610687" order="1" side_tool="false" />
       <window_info id="Changes" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977098" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977098" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
@@ -975,18 +976,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="16" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0">
+        <state line="33" column="57" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="75" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.5409836">
+        <state line="60" column="43" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.7948718">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

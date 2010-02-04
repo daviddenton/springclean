@@ -1,10 +1,12 @@
 package springclean.core.xml;
 
 import static com.google.common.collect.Lists.newArrayList;
+import static com.google.common.collect.Maps.newHashMap;
 import static com.google.common.collect.Sets.newHashSet;
 import springclean.core.domain.ConstructorArg;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class ConstructorArgs {
@@ -22,7 +24,18 @@ public class ConstructorArgs {
     }
 
     public ConstructorArgs mergeIn(ConstructorArgs inheritedConstructorArgs) throws IllegalConstructorArgs {
-        return this;
+        Map<Integer, ConstructorArg> mapped = newHashMap();
+        for (ConstructorArg inheritedConstructorArg : inheritedConstructorArgs.constructorArgs()) {
+            mapped.put(inheritedConstructorArg.index(), inheritedConstructorArg);
+        }
+        for (ConstructorArg localConstructorArg : localConstructorArgs) {
+            mapped.put(localConstructorArg.index(), localConstructorArg);
+        }
+        List<ConstructorArg> mergedList = newArrayList();
+        for (Integer index : mapped.keySet()) {
+            mergedList.add(mapped.get(index));
+        }
+        return new ConstructorArgs(mergedList);
     }
 
     public List<ConstructorArg> constructorArgs() {
@@ -35,7 +48,7 @@ public class ConstructorArgs {
             if (constructorArg.isIndexed()) indexedCount++;
         }
         if (indexedCount != 0 && indexedCount != constructorArgs.size()) {
-            throw new IllegalConstructorArgs();
+            throw new IllegalConstructorArgs("Inconsistent indexing in constructor args");
         }
     }
 
@@ -43,14 +56,16 @@ public class ConstructorArgs {
         Set<Integer> indexes = indexesFrom(constructorArgs);
         int runningIndex = 0;
         for (Integer index : indexes) {
-            if (index != runningIndex++) throw new IllegalConstructorArgs();
+            if (index != runningIndex)
+                throw new IllegalConstructorArgs("Expected index " + runningIndex + " but got " + index);
+            runningIndex++;
         }
     }
 
     private void verifyIndexDuplicates(List<ConstructorArg> constructorArgs) throws IllegalConstructorArgs {
         Set<Integer> indexes = indexesFrom(constructorArgs);
         if (!indexes.isEmpty() && indexes.size() != constructorArgs.size()) {
-            throw new IllegalConstructorArgs();
+            throw new IllegalConstructorArgs("Duplicate index encountered");
         }
     }
 
@@ -63,5 +78,8 @@ public class ConstructorArgs {
     }
 
     public class IllegalConstructorArgs extends Exception {
+        public IllegalConstructorArgs(String message) {
+            super(message);
+        }
     }
 }
