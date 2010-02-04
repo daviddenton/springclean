@@ -3,6 +3,8 @@
 
 <beans>
 
+    <bean id="anAnonymousBean" class="springclean.core.generate.data.AnonymousBean"/>
+
     <bean id="overridingPrototypeNoDependencyBean" scope="prototype"
           class="springclean.core.generate.data.NoDependencyBean"/>
 
@@ -22,15 +24,22 @@
         <property name="anonymousBean">
             <bean class="springclean.core.generate.data.AnonymousBean"/>
         </property>
+        <property name="anonymousBean3">
+            <bean class="springclean.core.generate.data.AnonymousBean"/>
+        </property>
     </bean>
 
-    <bean id="anotherDualInjectedBean" parent="abstractBean">
+    <bean id="anotherDualInjectedBean" parent="aDualInjectedBean">
         <constructor-arg index="0">
             <bean class="springclean.core.generate.data.NoDependencyBean"/>
         </constructor-arg>
+        <property name="anonymousBean" ref="anAnonymousBean"/>
+        <property name="anonymousBean2">
+            <bean class="springclean.core.generate.data.AnonymousBean"/>
+        </property>
     </bean>
 
-    <bean id="yetAnotherDualInjectedBean" parent="abstractBean">
+    <bean id="yetAnotherDualInjectedBean" parent="aDualInjectedBean">
         <constructor-arg index="1" ref="overridingPrototypeNoDependencyBean"/>
     </bean>
 

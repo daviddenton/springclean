@@ -7,6 +7,8 @@ import springclean.core.generate.data.DualInjectedBean;
 import springclean.core.generate.data.NoDependencyBean;
 
 public class ApplicationContext implements Stoppable {
+    public final AnonymousBean anAnonymousBean;
+
     public final NoDependencyBean noDependencyBean;
 
     public final NoDependencyBean overridingNoDependencyBean;
@@ -20,12 +22,17 @@ public class ApplicationContext implements Stoppable {
     public final DestroyableBean destroyableBean;
 
     public ApplicationContext() throws Exception {
+        anAnonymousBean = new AnonymousBean();
         noDependencyBean = new NoDependencyBean();
         overridingNoDependencyBean = new NoDependencyBean();
         aDualInjectedBean = new DualInjectedBean(noDependencyBean, noDependencyBean) {{
             setAnonymousBean(new AnonymousBean());
+            setAnonymousBean3(new AnonymousBean());
         }};
-        anotherDualInjectedBean = new DualInjectedBean(new NoDependencyBean(), noDependencyBean);
+        anotherDualInjectedBean = new DualInjectedBean(new NoDependencyBean(), noDependencyBean) {{
+            setAnonymousBean(anAnonymousBean);
+            setAnonymousBean2(new AnonymousBean());
+        }};
         yetAnotherDualInjectedBean = new DualInjectedBean(noDependencyBean, new NoDependencyBean());
         destroyableBean = new DestroyableBean();
     }

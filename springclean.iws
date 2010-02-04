@@ -2,6 +2,8 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/data/DualInjectedBean.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/data/DualInjectedBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.javatest" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.javatest" />
@@ -78,19 +80,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ParentBeanTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ParentBeanTest.java">
+      <file leaf-file-name="ApplicationContext.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+            <state line="32" column="0" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.57377046">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationContext.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.java">
+      <file leaf-file-name="DualInjectedBean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/data/DualInjectedBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="4" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.8032787">
+            <state line="23" column="65" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,7 +101,7 @@
       <file leaf-file-name="ApplicationContext.javatest" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.javatest">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="4" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0">
+            <state line="35" column="1" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +110,7 @@
       <file leaf-file-name="ApplicationContext.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="62" selection-start="1279" selection-end="1291" vertical-scroll-proportion="-10.285714">
+            <state line="35" column="0" selection-start="1442" selection-end="1442" vertical-scroll-proportion="-10.857142">
               <folding />
             </state>
           </provider>
@@ -375,6 +377,40 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="parentBean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="generate" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="data" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -789,7 +825,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="25" width="1239" height="778" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Web Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
@@ -806,7 +842,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24853064" sideWeight="0.6610687" order="1" side_tool="false" />
       <window_info id="Changes" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977098" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977098" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
@@ -861,13 +897,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructorInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StandardBeanConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
@@ -961,9 +990,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/data/DualInjectedBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="65" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.javatest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="1" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="62" selection-start="1279" selection-end="1291" vertical-scroll-proportion="-10.285714">
+        <state line="35" column="0" selection-start="1442" selection-end="1442" vertical-scroll-proportion="-10.857142">
           <folding />
         </state>
       </provider>
@@ -971,16 +1014,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.javatest">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="4" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="4" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.8032787">
+        <state line="32" column="0" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.57377046">
           <folding />
         </state>
       </provider>
