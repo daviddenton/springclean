@@ -7,10 +7,7 @@ import org.daisychain.util.SimpleFunctor;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
-import springclean.core.domain.ApplicationContext;
-import springclean.core.domain.Bean;
-import springclean.core.domain.ConstructorArg;
-import springclean.core.domain.Property;
+import springclean.core.domain.*;
 import static springclean.core.domain.SpringId.springId;
 import springclean.core.exception.Defect;
 import springclean.core.generate.*;
@@ -26,6 +23,25 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
         this.applicationContext = applicationContext;
     }
 
+    protected XmlIdentifiedBean parent() {
+        if (!hasParent()) throw new Defect("No parent for " + this);
+        return (XmlIdentifiedBean) applicationContext.findBean(SpringId.springId(attributeValue("parent")));
+    }
+
+    protected boolean hasAttribute(String name) {
+        boolean localResult = super.hasAttribute(name);
+        return localResult || (hasParent() && parent().hasAttribute(name));
+    }
+
+    protected String attributeValue(String name) {
+        if (super.hasAttribute(name)) return super.attributeValue(name);
+        return parent().attributeValue(name);
+    }
+
+    private boolean hasParent() {
+        return super.hasAttribute("parent");
+    }
+
     public AClass<ExistingMethod> clazz() {
         return new ExistingClass(beanClass());
     }
@@ -35,17 +51,20 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     public boolean hasDestroyMethod() {
-        return hasAttribute("destroy-method") || clazz().implementsInterface(DisposableBean.class);
+        boolean localResult = hasAttribute("destroy-method") || clazz().implementsInterface(DisposableBean.class);
+        return localResult || (hasParent() && parent().hasDestroyMethod());
     }
 
-    private boolean hasFactoryMethod() {
-        return hasAttribute("factory-method");
+    protected boolean hasFactoryMethod() {
+        boolean localResult = hasAttribute("factory-method");
+        return localResult || (hasParent() && parent().hasFactoryMethod());
     }
 
     public Method initMethod() {
         MethodFinder<ExistingMethod> methodFinder = new MethodFinder<ExistingMethod>(clazz());
         if (hasAttribute("init-method")) return methodFinder.method(attributeValue("init-method"), 0);
         if (clazz().implementsInterface(InitializingBean.class)) return methodFinder.method("afterPropertiesSet", 0);
+        if (hasParent()) return parent().initMethod();
         throw new Defect("No init method defined on " + this);
     }
 
@@ -97,6 +116,8 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
             className = element.getAttributeValue("class");
         } else if (hasFactoryBean()) {
             className = factoryClass().method(attributeValue("factory-method"), constructorArgs().size()).returnType().name();
+        } else if (hasParent()) {
+            return parent().beanClass();
         } else {
             throw new XomProcessingException("Can't work out class for " + this);
         }
@@ -109,7 +130,8 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     private boolean hasFactoryBean() {
-        return hasAttribute("factory-bean");
+        boolean localResult = hasAttribute("factory-bean");
+        return localResult || (hasParent() && parent().hasFactoryMethod());
     }
 
     public Constructor constructor() {
