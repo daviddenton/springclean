@@ -25,7 +25,7 @@
     </bean>
 
     <bean id="anotherDualInjectedBean" parent="abstractBean">
-        <constructor-arg index="1">
+        <constructor-arg index="0">
             <bean class="springclean.core.generate.data.NoDependencyBean"/>
         </constructor-arg>
     </bean>

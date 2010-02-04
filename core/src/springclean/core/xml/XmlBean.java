@@ -13,6 +13,7 @@ import springclean.core.exception.Defect;
 import springclean.core.generate.*;
 import static springclean.core.xml.XomUtils.loop;
 
+import java.util.Collections;
 import java.util.List;
 
 public class XmlBean extends AbstractElementWrapper implements Bean {
@@ -78,6 +79,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
         return new MethodFinder<ExistingMethod>(factoryClass()).method(attributeValue("factory-method"), constructorArgs().size());
     }
 
+
     public List<ConstructorArg> constructorArgs() {
         final List<ConstructorArg> dependencies = newArrayList();
         loop(element.query("constructor-arg"), new SimpleFunctor<Element>() {
@@ -85,7 +87,9 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
                 dependencies.add(new XmlConstructorArg(target, applicationContext));
             }
         });
-        return dependencies;
+        ConstructorArgs localConstructorArgs = new ConstructorArgs(dependencies);
+        ConstructorArgs inheritedConstructorArgs = new ConstructorArgs(hasParent() ? parent().constructorArgs() : Collections.EMPTY_LIST);
+        return localConstructorArgs.mergeIn(inheritedConstructorArgs).constructorArgs();
     }
 
 

@@ -17,7 +17,7 @@ public class ApplicationContext implements Stoppable {
         aDualInjectedBean = new DualInjectedBean(noDependencyBean, noDependencyBean) {{
             setAnonymousBean(new AnonymousBean());
         }};
-        anotherDualInjectedBean = new DualInjectedBean(noDependencyBean, new NoDependencyBean()) {{
+        anotherDualInjectedBean = new DualInjectedBean(new NoDependencyBean(), new NoDependencyBean()) {{
             setAnonymousBean(new AnonymousBean());
         }};
         yetAnotherDualInjectedBean = new DualInjectedBean(noDependencyBean, overridingNoDependencyBean) {{
