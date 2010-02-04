@@ -113,11 +113,9 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
 
         String className;
         if (hasAttribute("class")) {
-            className = element.getAttributeValue("class");
+            className = attributeValue("class");
         } else if (hasFactoryBean()) {
             className = factoryClass().method(attributeValue("factory-method"), constructorArgs().size()).returnType().name();
-        } else if (hasParent()) {
-            return parent().beanClass();
         } else {
             throw new XomProcessingException("Can't work out class for " + this);
         }
