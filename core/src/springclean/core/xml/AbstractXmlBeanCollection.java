@@ -17,6 +17,7 @@ import java.util.List;
 
 public abstract class AbstractXmlBeanCollection extends AbstractElementWrapper implements BeanCollection {
 
+
     private final ExistingClass existingClass;
 
     public AbstractXmlBeanCollection(Element beanNode, ExistingClass existingClass, ApplicationContext applicationContext) {
