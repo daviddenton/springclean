@@ -14,6 +14,7 @@ public class ConstructorArgs {
         this.localConstructorArgs = localConstructorArgs;
         verifyIndexedIntegity(localConstructorArgs);
         verifyIndexDuplicates(localConstructorArgs);
+        verifyIndexContinuity(localConstructorArgs);
     }
 
     public ConstructorArgs(ConstructorArg... localConstructorArgs) throws IllegalConstructorArgs {
@@ -35,6 +36,14 @@ public class ConstructorArgs {
         }
         if (indexedCount != 0 && indexedCount != constructorArgs.size()) {
             throw new IllegalConstructorArgs();
+        }
+    }
+
+    private void verifyIndexContinuity(List<ConstructorArg> constructorArgs) throws IllegalConstructorArgs {
+        Set<Integer> indexes = indexesFrom(constructorArgs);
+        int runningIndex = 0;
+        for (Integer index : indexes) {
+            if (index != runningIndex++) throw new IllegalConstructorArgs();
         }
     }
 
