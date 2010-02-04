@@ -34,6 +34,11 @@ public class ConstructorArgsTest {
     }
 
     @Test(expected = Defect.class)
+    public void noMixingOfNonIndexedAndIndexedArgs_inMerge() throws Exception {
+        argsWith(arg(0)).mergeIn(argsWith(unindexedArg));
+    }
+
+    @Test(expected = Defect.class)
     public void argsNotConsecutiveIndexed_inMerge() throws Exception {
         argsWith(arg(0)).mergeIn(argsWith(arg(1)));
     }

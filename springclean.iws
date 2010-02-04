@@ -2,7 +2,6 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" />
     </list>
     <ignored path="springclean.iws" />
@@ -120,7 +119,7 @@
       <file leaf-file-name="ConstructorArgsTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.36065573">
+            <state line="12" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.16393442">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -986,7 +985,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.36065573">
+        <state line="12" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.16393442">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
