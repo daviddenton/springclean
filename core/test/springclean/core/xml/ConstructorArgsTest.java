@@ -23,7 +23,14 @@ public class ConstructorArgsTest {
     public void mergingWithoutClash() throws Exception {
         ConstructorArg arg0 = arg(0);
         ConstructorArg arg1 = arg(1);
-        assertThat(argsWith(arg0).mergeIn(argsWith(arg1)).constructorArgs(), matchesIndexed(arg0, arg1));
+        assertThat(argsWith(arg1).mergeIn(argsWith(arg0)).constructorArgs(), matchesIndexed(arg0, arg1));
+    }
+
+    @Test(expected = Defect.class)
+    public void mergingWithIndexClash() throws Exception {
+        ConstructorArg subclassArg0 = arg(0);
+        ConstructorArg superArg0 = arg(0);
+        assertThat(argsWith(subclassArg0).mergeIn(argsWith(superArg0)).constructorArgs(), matchesIndexed(subclassArg0));
     }
 
     @Test(expected = Defect.class)
