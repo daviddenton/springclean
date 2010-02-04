@@ -2,9 +2,8 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,20 +36,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" line="55" class="springclean.core.xml.ConstructorArgs" package="springclean.core.xml">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" line="36" class="springclean.core.xml.ConstructorArgs" package="springclean.core.xml">
+      <breakpoint url="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" line="61" class="springclean.core.xml.ConstructorArgs" package="springclean.core.xml">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -133,10 +119,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstructorArgs.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ConstructorArgs.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="5" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.4863388">
+            <state line="28" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,10 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstructorArgsTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ConstructorArgsTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="30" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.0">
+            <state line="49" column="0" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.43589744">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1008,18 +994,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="30" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.0">
+        <state line="28" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="5" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.4863388">
+        <state line="49" column="0" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.43589744">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

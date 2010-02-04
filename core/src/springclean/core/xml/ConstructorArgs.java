@@ -5,6 +5,7 @@ import static com.google.common.collect.Maps.newHashMap;
 import static com.google.common.collect.Sets.newHashSet;
 import springclean.core.domain.ConstructorArg;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -23,8 +24,13 @@ public class ConstructorArgs {
     }
 
     public ConstructorArgs mergeIn(ConstructorArgs inheritedConstructorArgs) throws IllegalConstructorArgs {
+        List<ConstructorArg> inheritedArgs = inheritedConstructorArgs.constructorArgs();
+        List<ConstructorArg> entireList = new ArrayList<ConstructorArg>(localConstructorArgs);
+        entireList.addAll(inheritedArgs);
+        verifyIndexContinuity(entireList);
+
         Map<Integer, ConstructorArg> mapped = newHashMap();
-        for (ConstructorArg inheritedConstructorArg : inheritedConstructorArgs.constructorArgs()) {
+        for (ConstructorArg inheritedConstructorArg : inheritedArgs) {
             mapped.put(inheritedConstructorArg.index(), inheritedConstructorArg);
         }
         for (ConstructorArg localConstructorArg : localConstructorArgs) {
