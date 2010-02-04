@@ -18,11 +18,12 @@ public class ApplicationContext implements Stoppable {
             setAnonymousBean(new AnonymousBean());
         }};
         anotherDualInjectedBean = new DualInjectedBean(new NoDependencyBean(), noDependencyBean);
-        yetAnotherDualInjectedBean = new DualInjectedBean(noDependencyBean, overridingNoDependencyBean);
+        yetAnotherDualInjectedBean = new DualInjectedBean(noDependencyBean, new NoDependencyBean());
         destroyableBean = new DestroyableBean();
     }
 
     public void stop() throws Exception {
         destroyableBean.destroyMethod();
     }
+    
 }
