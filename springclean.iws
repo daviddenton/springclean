@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.javatest" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.javatest" />
     </list>
@@ -97,19 +96,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationContext.javatest" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ApplicationContext.javatest" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.javatest">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="1" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.93442625">
+            <state line="34" column="1" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="1089" selection-end="1089" vertical-scroll-proportion="-5.714286">
+            <state line="30" column="41" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.4869565">
               <folding />
             </state>
           </provider>
@@ -996,16 +995,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1089" selection-end="1089" vertical-scroll-proportion="-5.714286">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="1" selection-start="305" selection-end="1577" vertical-scroll-proportion="0.0">
@@ -1015,9 +1004,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.javatest">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="1" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.93442625">
+        <state line="34" column="1" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="41" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.4869565">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
       </provider>
     </entry>
   </component>

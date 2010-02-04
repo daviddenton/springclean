@@ -24,9 +24,6 @@
         <property name="anonymousBean">
             <bean class="springclean.core.generate.data.AnonymousBean"/>
         </property>
-        <property name="anonymousBean3">
-            <bean class="springclean.core.generate.data.AnonymousBean"/>
-        </property>
     </bean>
 
     <bean id="anotherDualInjectedBean" parent="aDualInjectedBean">
