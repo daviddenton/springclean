@@ -24,7 +24,7 @@ public class ConstructorArgsTest {
     }
 
     @Test(expected = Defect.class)
-    public void duplicateArgs_construction() throws Exception {
+    public void duplicateArgIndexes_construction() throws Exception {
         argsWith(arg(0), arg(0));
     }
 
@@ -44,7 +44,7 @@ public class ConstructorArgsTest {
     }
 
     @Test(expected = Defect.class)
-    public void duplicateArgs_inMerge() throws Exception {
+    public void duplicateArgIndexes_inMerge() throws Exception {
         argsWith(arg(0)).mergeIn(argsWith(arg(0)));
     }
 

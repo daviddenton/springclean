@@ -119,7 +119,7 @@
       <file leaf-file-name="ConstructorArgsTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.16393442">
+            <state line="26" column="35" selection-start="940" selection-end="940" vertical-scroll-proportion="0.14754099">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -985,7 +985,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.16393442">
+        <state line="26" column="35" selection-start="940" selection-end="940" vertical-scroll-proportion="0.14754099">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
