@@ -2,10 +2,7 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,7 +108,7 @@
       <file leaf-file-name="ConstructorArgs.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="20" selection-start="877" selection-end="877" vertical-scroll-proportion="0.46448088">
+            <state line="35" column="5" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.6939891">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -988,7 +985,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="20" selection-start="877" selection-end="877" vertical-scroll-proportion="0.46448088">
+        <state line="35" column="5" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.6939891">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

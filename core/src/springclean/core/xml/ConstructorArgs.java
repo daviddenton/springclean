@@ -10,7 +10,7 @@ public class ConstructorArgs {
 
     public ConstructorArgs(List<ConstructorArg> localConstructorArgs) throws IllegalConstructorArgs {
         this.localConstructorArgs = localConstructorArgs;
-        verify(localConstructorArgs);
+        verifyIndexes(localConstructorArgs);
     }
 
     public ConstructorArgs(ConstructorArg... localConstructorArgs) throws IllegalConstructorArgs {
@@ -25,10 +25,6 @@ public class ConstructorArgs {
         return localConstructorArgs;
     }
 
-    private void verify(List<ConstructorArg> constructorArgs) throws IllegalConstructorArgs {
-        verifyIndexes(constructorArgs);
-    }
-
     private void verifyIndexes(List<ConstructorArg> constructorArgs) throws IllegalConstructorArgs {
         int indexedCount = 0;
         for (ConstructorArg constructorArg : constructorArgs) {
@@ -41,6 +37,4 @@ public class ConstructorArgs {
 
     public class IllegalConstructorArgs extends Exception {
     }
-
-    ;
 }
