@@ -34,7 +34,7 @@
         <constructor-arg index="1" ref="overridingPrototypeNoDependencyBean"/>
     </bean>
 
-    <bean id="abstractDestroyableBean" class="springclean.core.generate.data.DestroyableBean"/>
+    <bean id="abstractDestroyableBean" class="springclean.core.generate.data.DestroyableBean" abstract="true"/>
 
     <bean id="destroyableBean" parent="abstractDestroyableBean" destroy-method="destroyMethod"/>
 </beans>

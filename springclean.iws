@@ -2,8 +2,8 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,21 +77,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ApplicationContext.javatest" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.javatest">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="1" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ParentBeanTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ParentBeanTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="4" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationContext.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="108" selection-start="1494" selection-end="1494" vertical-scroll-proportion="0.6869565">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -117,10 +131,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstructorArgsTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ConstructorArgsTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.094017096">
+            <state line="13" column="0" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,15 +175,6 @@
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlConstructionDependency.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="13" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractElementWrapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/AbstractElementWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="21" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -562,17 +567,17 @@
       <recent name="microtypes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConstructorArgsTest">
-    <tempConfiguration default="false" name="ConstructorArgsTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+  <component name="RunManager" selected="JUnit.ParentBeanTest">
+    <tempConfiguration default="false" name="ParentBeanTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <pattern>
-        <option name="PATTERN" value="springclean.core.xml.*" />
+        <option name="PATTERN" value="springclean.core.generate.parentBean.*" />
         <option name="ENABLED" value="true" />
       </pattern>
       <module name="core" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="springclean.core.xml" />
-      <option name="MAIN_CLASS_NAME" value="springclean.core.xml.ConstructorArgsTest" />
+      <option name="PACKAGE_NAME" value="springclean.core.generate.parentBean" />
+      <option name="MAIN_CLASS_NAME" value="springclean.core.generate.parentBean.ParentBeanTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -585,13 +590,7 @@
         <value defaultName="moduleWithDependencies" />
       </option>
       <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="59967" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" value="true" />
@@ -751,7 +750,7 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CustomFactoryBeanTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ConstructorArgsTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParentBeanTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -902,35 +901,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="33" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-9.142858">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="1" selection-start="305" selection-end="1503" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.javatest">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="1" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ParentBeanTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -992,11 +965,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.094017096">
+        <state line="13" column="0" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ParentBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/parentBean/ApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="108" selection-start="1494" selection-end="1494" vertical-scroll-proportion="0.6869565">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
       </provider>
     </entry>
   </component>
