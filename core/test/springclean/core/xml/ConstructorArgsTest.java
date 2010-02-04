@@ -15,10 +15,6 @@ public class ConstructorArgsTest {
 
     ConstructorArg unindexedArg = aConstructorArg().build();
 
-    // situation 1: all dependencies in subclass - can be none in superclass
-    // situation 2: all dependencies in superclass - can be none in subclass
-    // situation 3: overridden indexed dependencies in subclass - indexes must match
-
     @Test(expected = Defect.class)
     public void mergingWithoutClash() throws Exception {
         ConstructorArg arg0 = arg(0);
@@ -40,7 +36,7 @@ public class ConstructorArgsTest {
 
     @Test(expected = Defect.class)
     public void argsNotConsecutiveIndexed_construction() throws Exception {
-        argsWith(arg(0), arg(1));
+        argsWith(arg(0), arg(2));
     }
 
     @Test(expected = Defect.class)
@@ -60,7 +56,7 @@ public class ConstructorArgsTest {
 
     @Test(expected = Defect.class)
     public void argsNotConsecutiveIndexed_inMerge() throws Exception {
-        argsWith(arg(0)).mergeIn(argsWith(arg(1)));
+        argsWith(arg(0)).mergeIn(argsWith(arg(2)));
     }
 
     @Test(expected = Defect.class)
