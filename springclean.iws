@@ -2,7 +2,9 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java" />
     </list>
     <ignored path="springclean.iws" />
@@ -23,7 +25,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" line="143" class="springclean.core.xml.XmlBean" package="springclean.core.xml">
+      <breakpoint url="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java" line="147" class="springclean.core.xml.XmlBean" package="springclean.core.xml">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -98,7 +100,7 @@
       <file leaf-file-name="XmlBean.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="86" selection-start="3836" selection-end="3836" vertical-scroll-proportion="0.0">
+            <state line="93" column="76" selection-start="4032" selection-end="4032" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,21 +108,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstructorArgs.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ConstructorArgs.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+            <state line="27" column="20" selection-start="877" selection-end="877" vertical-scroll-proportion="0.46448088">
               <folding>
-                <marker date="1265321822000" expanded="false" signature="38:161" placeholder="..." />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstructorArgsTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ConstructorArgsTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="0.15384616">
+            <state line="47" column="34" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -562,8 +564,8 @@
       <recent name="microtypes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConstructorArgsTest">
-    <tempConfiguration default="false" name="ConstructorArgsTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+  <component name="RunManager" selected="JUnit.ConstructorArgsTest.noMixingOfIndexedAndNonIndexedArgs_inMerge">
+    <tempConfiguration default="false" name="ConstructorArgsTest.noMixingOfIndexedAndNonIndexedArgs_inMerge" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <pattern>
         <option name="PATTERN" value="springclean.core.xml.*" />
         <option name="ENABLED" value="true" />
@@ -573,8 +575,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="springclean.core.xml" />
       <option name="MAIN_CLASS_NAME" value="springclean.core.xml.ConstructorArgsTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="noMixingOfIndexedAndNonIndexedArgs_inMerge" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -745,7 +747,7 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CustomFactoryBeanTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ConstructorArgsTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ConstructorArgsTest.noMixingOfIndexedAndNonIndexedArgs_inMerge" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -929,15 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="86" selection-start="3836" selection-end="3836" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/AbstractElementWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="21" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
@@ -966,15 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1265321822000" expanded="false" signature="38:161" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/domain/ConstructorArgBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
@@ -984,9 +968,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="76" selection-start="4032" selection-end="4032" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/xml/ConstructorArgsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="0.15384616">
+        <state line="47" column="34" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/ConstructorArgs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="20" selection-start="877" selection-end="877" vertical-scroll-proportion="0.46448088">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

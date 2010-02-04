@@ -87,8 +87,12 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
                 dependencies.add(new XmlConstructorArg(target, applicationContext));
             }
         });
-        ConstructorArgs inheritedConstructorArgs = new ConstructorArgs(hasParent() ? parent().constructorArgs() : Collections.EMPTY_LIST);
-        return new ConstructorArgs(dependencies).mergeIn(inheritedConstructorArgs).constructorArgs();
+        try {
+            ConstructorArgs inheritedConstructorArgs = new ConstructorArgs(hasParent() ? parent().constructorArgs() : Collections.EMPTY_LIST);
+            return new ConstructorArgs(dependencies).mergeIn(inheritedConstructorArgs).constructorArgs();
+        } catch (ConstructorArgs.IllegalConstructorArgs illegalConstructorArgs) {
+            throw new Defect("Illegal constructor arg indexing in " + this);
+        }
     }
 
 
