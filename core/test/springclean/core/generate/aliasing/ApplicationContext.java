@@ -7,11 +7,14 @@ import springclean.core.generate.data.NoDependencyBean;
 public class ApplicationContext {
     public final NoDependencyBean noDependencyBean;
 
+    public final AnonymousBean notSoAnonymous;
+
     public final ConstructorInjectedBean aConstructorInjectedBean;
 
     public ApplicationContext() throws Exception {
         noDependencyBean = new NoDependencyBean();
-        aConstructorInjectedBean = new ConstructorInjectedBean(noDependencyBean, noDependencyBean, new AnonymousBean(), 1);
+        notSoAnonymous = new AnonymousBean();
+        aConstructorInjectedBean = new ConstructorInjectedBean(noDependencyBean, noDependencyBean, notSoAnonymous, 1);
     }
 
 }

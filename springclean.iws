@@ -2,8 +2,9 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.javatest" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.javatest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.xml" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +38,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java" line="66" class="springclean.core.xml.XmlIdentifiedBean" package="springclean.core.xml">
+      <breakpoint url="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java" line="65" class="springclean.core.xml.XmlIdentifiedBean" package="springclean.core.xml">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -94,8 +95,19 @@
       <file leaf-file-name="AliasingTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/AliasingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="1" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+            <state line="4" column="13" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationContext.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="218" selection-end="697" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1265330765000" expanded="true" signature="52:216" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,8 +133,10 @@
       <file leaf-file-name="XmlIdentifiedBean.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="47" selection-start="2142" selection-end="2149" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="61" column="47" selection-start="2108" selection-end="2115" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1265330627000" expanded="false" signature="38:534" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,15 +159,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringId.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/SpringId.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="36" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StringValue.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/microtypes/StringValue.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -163,19 +168,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationContext.javatest" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ApplicationContext.javatest" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.javatest">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="479" selection-end="479" vertical-scroll-proportion="0.45901638">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="11" selection-start="673" selection-end="673" vertical-scroll-proportion="0.4945055">
+            <state line="10" column="26" selection-start="434" selection-end="434" vertical-scroll-proportion="-5.714286">
               <folding />
             </state>
           </provider>
@@ -1004,15 +1009,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="218" selection-end="608" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1265329923000" expanded="true" signature="52:216" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlConstructorArg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
@@ -1055,13 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.javatest">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/microtypes/StringValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
@@ -1083,13 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/AliasingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="0" selection-start="1999" selection-end="1999" vertical-scroll-proportion="0.0">
@@ -1099,8 +1081,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="47" selection-start="2142" selection-end="2149" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="61" column="47" selection-start="2108" selection-end="2115" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1265330627000" expanded="false" signature="38:534" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1111,14 +1095,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/AliasingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="11" selection-start="673" selection-end="673" vertical-scroll-proportion="0.4945055">
+        <state line="10" column="26" selection-start="434" selection-end="434" vertical-scroll-proportion="-5.714286">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="218" selection-end="697" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1265330765000" expanded="true" signature="52:216" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.javatest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="479" selection-end="479" vertical-scroll-proportion="0.45901638">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
