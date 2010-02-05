@@ -1,7 +1,7 @@
 package springclean.core.domain;
 
-import com.sun.xml.internal.ws.util.StringUtils;
 import microtypes.StringValue;
+import org.apache.commons.lang.StringUtils;
 
 public class PropertyName extends StringValue {
     private PropertyName(String value) {
