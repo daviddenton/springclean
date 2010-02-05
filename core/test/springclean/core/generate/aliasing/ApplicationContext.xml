@@ -13,6 +13,5 @@
         <constructor-arg>
             <value>1</value>
         </constructor-arg>
-
     </bean>
 </beans>
