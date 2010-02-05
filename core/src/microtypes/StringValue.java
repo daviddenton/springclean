@@ -1,5 +1,7 @@
 package microtypes;
 
+import org.apache.commons.lang.builder.ToStringBuilder;
+
 public class StringValue {
     public final String value;
 
@@ -26,6 +28,6 @@ public class StringValue {
 
     @Override
     public String toString() {
-        return this.getClass() + "value="+value;
+        return ToStringBuilder.reflectionToString(this);
     }
 }
