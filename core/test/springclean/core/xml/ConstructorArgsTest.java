@@ -15,15 +15,25 @@ public class ConstructorArgsTest {
     ConstructorArg unindexedArg = aConstructorArg().build();
 
     @Test
-    public void mergingWithAllInSub() throws Exception {
+    public void mergingWithAllIndexedInSub() throws Exception {
         ConstructorArg arg0 = arg(0);
         assertThat(argsWith().mergeIn(argsWith(arg0)).constructorArgs(), matchesIndexed(arg0));
     }
 
     @Test
-    public void mergingWithAllInSuper() throws Exception {
+    public void mergingWithAllIndexedInSuper() throws Exception {
         ConstructorArg arg0 = arg(0);
         assertThat(argsWith(arg0).mergeIn(argsWith()).constructorArgs(), matchesIndexed(arg0));
+    }
+
+    @Test
+    public void mergingWithAllNonIndexedInSub() throws Exception {
+        assertThat(argsWith().mergeIn(argsWith(unindexedArg)).constructorArgs(), matchesUnindexed(unindexedArg));
+    }
+
+    @Test
+    public void mergingWithAllNonIndexedInSuper() throws Exception {
+        assertThat(argsWith(unindexedArg).mergeIn(argsWith()).constructorArgs(), matchesUnindexed(unindexedArg));
     }
 
     @Test
@@ -81,6 +91,17 @@ public class ConstructorArgsTest {
                     if (expected[i].index() != actual.get(i).index()) return false;
                 }
                 return true;
+            }
+
+            public void describeTo(Description description) {
+            }
+        };
+    }
+
+    private Matcher<List<ConstructorArg>> matchesUnindexed(final ConstructorArg... expected) {
+        return new TypeSafeMatcher<List<ConstructorArg>>() {
+            public boolean matchesSafely(List<ConstructorArg> actual) {
+                return expected.length == actual.size();
             }
 
             public void describeTo(Description description) {

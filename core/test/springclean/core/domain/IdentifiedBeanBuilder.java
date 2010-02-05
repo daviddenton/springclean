@@ -88,6 +88,10 @@ public class IdentifiedBeanBuilder extends BeanBuilder {
             public SpringId id() {
                 return springId;
             }
+
+            public boolean isKnownAs(SpringId springId) {
+                return id().equals(springId);
+            }
         };
     }
 }

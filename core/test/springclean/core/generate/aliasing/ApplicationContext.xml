@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <bean id="noDependencyBean" name="alias1, ; alias2" class="springclean.core.generate.data.NoDependencyBean"/>
+
+    <bean id="anotherNoDependencyBean" class="springclean.core.generate.data.ConstructorInjectedBean">
+        <constructor-arg ref="alias1"/>
+        <constructor-arg ref="alias2"/>
+        <constructor-arg>
+            <bean class="springclean.core.generate.data.AnonymousBean"/>
+        </constructor-arg>
+        <constructor-arg>
+            <value>1</value>
+        </constructor-arg>
+
+    </bean>
+</beans>

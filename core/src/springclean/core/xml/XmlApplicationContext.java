@@ -51,7 +51,7 @@ public class XmlApplicationContext implements ApplicationContext {
 
     public IdentifiedBean findBean(SpringId springId) {
         for (IdentifiedBean identifiedBean : allAvailableBeans()) {
-            if (identifiedBean.id().equals(springId)) return identifiedBean;
+            if (identifiedBean.isKnownAs(springId)) return identifiedBean;
         }
         throw new XomProcessingException("Can't find bean named " + springId);
     }

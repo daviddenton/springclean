@@ -12,9 +12,9 @@ public class ApplicationContext {
     public ApplicationContext() throws Exception {
         noDependencyBean = new NoDependencyBean();
         aSetterInjectedBean = new SetterInjectedBean() {{
-            setNoDependencyBean(noDependencyBean);
             setAnonymousBean(new AnonymousBean());
             setExpandedValue(1);
+            setNoDependencyBean(noDependencyBean);
         }};
     }
 

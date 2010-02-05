@@ -29,6 +29,11 @@ public class ConstructorArgs {
         entireList.addAll(inheritedArgs);
         verifyIndexedIntegity(entireList);
 
+        return countIndexesIn(entireList) == 0 ? mergedUnindexed(inheritedArgs) : mergedIndexed(inheritedArgs);
+
+    }
+
+    private ConstructorArgs mergedIndexed(List<ConstructorArg> inheritedArgs) throws IllegalConstructorArgs {
         Map<Integer, ConstructorArg> mapped = newHashMap();
         for (ConstructorArg inheritedConstructorArg : inheritedArgs) {
             mapped.put(inheritedConstructorArg.index(), inheritedConstructorArg);
@@ -44,18 +49,27 @@ public class ConstructorArgs {
         return new ConstructorArgs(mergedList);
     }
 
+    private ConstructorArgs mergedUnindexed(List<ConstructorArg> inheritedArgs) throws IllegalConstructorArgs {
+        return new ConstructorArgs(inheritedArgs.isEmpty() ? localConstructorArgs : inheritedArgs);
+    }
+
     public List<ConstructorArg> constructorArgs() {
         return localConstructorArgs;
     }
 
     private void verifyIndexedIntegity(List<ConstructorArg> constructorArgs) throws IllegalConstructorArgs {
+        int indexedCount = countIndexesIn(constructorArgs);
+        if (indexedCount != 0 && indexedCount != constructorArgs.size()) {
+            throw new IllegalConstructorArgs("Inconsistent indexing in constructor args");
+        }
+    }
+
+    private int countIndexesIn(List<ConstructorArg> constructorArgs) {
         int indexedCount = 0;
         for (ConstructorArg constructorArg : constructorArgs) {
             if (constructorArg.isIndexed()) indexedCount++;
         }
-        if (indexedCount != 0 && indexedCount != constructorArgs.size()) {
-            throw new IllegalConstructorArgs("Inconsistent indexing in constructor args");
-        }
+        return indexedCount;
     }
 
     private void verifyIndexContinuity(List<ConstructorArg> constructorArgs) throws IllegalConstructorArgs {
