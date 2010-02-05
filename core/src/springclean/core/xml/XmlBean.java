@@ -103,7 +103,8 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
                 dependencies.add(new XmlProperty(target, applicationContext));
             }
         });
-        return dependencies;
+        InjectedProperties inheritedInjectedProperties = new InjectedProperties(hasParent() ? parent().setterDependencies() : Collections.EMPTY_LIST);
+        return new InjectedProperties(dependencies).mergeIn(inheritedInjectedProperties).properties();
     }
 
     private AClass<ExistingMethod> factoryClass() {

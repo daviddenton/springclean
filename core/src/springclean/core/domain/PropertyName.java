@@ -15,4 +15,8 @@ public class PropertyName extends StringValue {
     public String setterName() {
         return "set" + StringUtils.capitalize(value);
     }
+
+    public int compareTo(PropertyName propertyName) {
+        return value.compareTo(propertyName.value);
+    }
 }
