@@ -26,9 +26,6 @@ p-namespace
            </props>
 
 
-
-abstact and parent beans - somehow lookup and inherit the dependencies from the parent
-
 proxies and pointcuts
 
 <aop:scoped-proxy/>
@@ -54,6 +51,3 @@ idref bean
 lookup-method
 
 replaced-method
-
-scope
-

@@ -12,7 +12,6 @@ import springclean.core.domain.SpringId;
 import springclean.core.exception.Defect;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -58,8 +57,7 @@ public class XmlApplicationContext implements ApplicationContext {
     }
 
     private List<IdentifiedBean> allAvailableBeans() {
-        ArrayList<IdentifiedBean> allBeansInScope = newArrayList();
-        allBeansInScope.addAll(beans());
+        List<IdentifiedBean> allBeansInScope = newArrayList(beans());
         allBeansInScope.addAll(importedBeans());
         return allBeansInScope;
     }
