@@ -8,7 +8,7 @@
 
     <alias name="notSoAnonymous" alias="alias3"/>
 
-    <bean id="anotherNoDependencyBean" class="springclean.core.generate.data.ConstructorInjectedBean">
+    <bean id="aConstructorInjectedBean" class="springclean.core.generate.data.ConstructorInjectedBean">
         <constructor-arg ref="alias1"/>
         <constructor-arg ref="alias2"/>
         <constructor-arg ref="alias3"/>

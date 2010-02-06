@@ -17,7 +17,7 @@ public class XmlConstructionDependency extends AbstractElementWrapper {
         if (hasAttribute("ref")) {
             SpringId id = springId(attributeValue("ref"));
             IdentifiedBean identifiedBean = applicationContext.findBean(id);
-            return identifiedBean.isAbstract() ? identifiedBean : new AnonymousXmlReference(id, applicationContext);
+            return identifiedBean.isAbstract() ? identifiedBean : new AnonymousXmlReference(identifiedBean.id(), applicationContext);
         }
 
         if (hasAttribute("value")) return new XmlPrimitiveValue(attributeValue("value"), applicationContext);

@@ -41,7 +41,9 @@ public class ApplicationContextConstructorBuilder {
                         for (Instance dependency : candidate.dependencies()) {
                             if (externalDependencies.contains(dependency))
                                 constructorParameters.add(dependency);
-                            else if (!processedBeans.contains(dependency)) throw new UnresolvedDependency(dependency);
+                            else if (!processedBeans.contains(dependency)) {
+                                throw new UnresolvedDependency(dependency);
+                            }
                         }
 
                         contextClass.addField(a(publicFinal).generatedField(instance).build());
