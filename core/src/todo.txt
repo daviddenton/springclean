@@ -1,6 +1,6 @@
 SPRINGCLEAN TODO
 
-finish lists, sets and maps
+finish lists, sets and maps and properties
 
 application contexts in the classpath
 
@@ -8,6 +8,13 @@ default-init-method
 
 
 p-namespace
+
+<props>
+        <prop key="administrator">administrator@example.org</prop>
+        <prop key="support">support@example.org</prop>
+        <prop key="development">development@example.org</prop>
+    </props>
+
 
 <property name="properties">
       <value>

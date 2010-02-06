@@ -2,13 +2,15 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.javatest" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.javatest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.java" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlConstructionDependency.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlConstructionDependency.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/ApplicationContextConstructorBuilder.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/ApplicationContextConstructorBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/properties/ApplicationContext.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/properties/ApplicationContext.javatest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/properties/PropertiesTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/todo.txt" afterPath="$PROJECT_DIR$/core/src/todo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.xml" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/properties/ApplicationContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/data/CollectionsBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/test/springclean/core/generate/map" />
     </list>
     <ignored path="springclean.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,15 +110,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ApplicationContextConstructorBuilder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ApplicationContextConstructorBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="76" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AliasingTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/AliasingTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -126,79 +119,93 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.xml">
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="PropertiesTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/properties/PropertiesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="-5.142857">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationContext.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="1" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.16393442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ApplicationContext.javatest" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/ApplicationContext.javatest">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/set/ApplicationContext.javatest">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="3" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/todo.txt">
+      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/set/ApplicationContext.xml">
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.16393442">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InjectedDependency.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/InjectedDependency.java">
+      <file leaf-file-name="ApplicationContext.javatest" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/properties/ApplicationContext.javatest">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="24" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
+            <state line="12" column="1" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlConstructionDependency.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlConstructionDependency.java">
+      <file leaf-file-name="ApplicationContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/properties/ApplicationContext.xml">
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="111" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
+            <state line="8" column="39" selection-start="386" selection-end="386" vertical-scroll-proportion="-4.571429">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollectionsBean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/data/CollectionsBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="36" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1265486244000" expanded="true" signature="48:136" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationContext.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/set/ApplicationContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ApplicationContext.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/ApplicationContext.java">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/properties/ApplicationContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="18" column="1" selection-start="133" selection-end="481" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1265486243000" expanded="false" signature="54:131" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlApplicationContext.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlApplicationContext.java">
+      <file leaf-file-name="SetTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/set/SetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="26" selection-start="2032" selection-end="2032" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="4" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -530,6 +537,108 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="set" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="generate" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="properties" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="generate" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="data" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springclean" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="core" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="generate" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
           <option name="myItemId" value="aliasing" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
@@ -760,11 +869,11 @@
       <recent name="springclean.core.domain.Bean" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="springclean.core.generate.properties" />
       <recent name="springclean.core.generate.aliasing" />
       <recent name="springclean.core.xml" />
       <recent name="springclean.core.generate.simplestCase" />
       <recent name="springclean.core.generate.data" />
-      <recent name="springclean.core.generate.parentBean" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="springclean.core.generate.data" />
@@ -774,15 +883,19 @@
       <recent name="microtypes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.springclean.core.generate in core">
-    <tempConfiguration default="false" name="springclean.core.generate in core" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+  <component name="RunManager" selected="JUnit.PropertiesTest">
+    <tempConfiguration default="false" name="PropertiesTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+      <pattern>
+        <option name="PATTERN" value="springclean.core.generate.properties.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
       <module name="core" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="springclean.core.generate" />
-      <option name="MAIN_CLASS_NAME" />
+      <option name="PACKAGE_NAME" value="springclean.core.generate.properties" />
+      <option name="MAIN_CLASS_NAME" value="springclean.core.generate.properties.PropertiesTest" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -953,7 +1066,7 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.FactoryBeanTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.springclean.core.generate in core" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PropertiesTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1073,71 +1186,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/SpringManagedObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlIdentifiedBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="3768" selection-end="3768" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/IdentifiedBeanConstructionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/StandardBeanConstructionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="46" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/ConstructorArg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="79" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/InjectedDependency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="26" selection-start="2032" selection-end="2032" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/ApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlConstructionDependency.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="111" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
@@ -1148,13 +1196,6 @@
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ApplicationContextConstructorBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="76" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/AliasingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1185,7 +1226,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.16393442">
+        <state line="15" column="12" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/aliasing/AliasingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/set/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/set/ApplicationContext.javatest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/data/CollectionsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="36" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1265486244000" expanded="true" signature="48:136" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/set/SetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/set/ApplicationContext.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/properties/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="1" selection-start="133" selection-end="481" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1265486243000" expanded="false" signature="54:131" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/properties/ApplicationContext.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="39" selection-start="386" selection-end="386" vertical-scroll-proportion="-4.571429">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/properties/ApplicationContext.javatest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/properties/PropertiesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.16393442">
           <folding />
         </state>
       </provider>
