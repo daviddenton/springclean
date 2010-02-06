@@ -8,11 +8,11 @@ import springclean.core.domain.SpringId;
 import springclean.core.generate.ConstructionStrategy;
 import springclean.core.generate.RefConstructionStrategy;
 
-public class SimpleReference implements Reference {
+public class AnonymousXmlReference implements Reference {
     private final SpringId id;
     private final ApplicationContext applicationContext;
 
-    public SimpleReference(SpringId id, ApplicationContext applicationContext) {
+    public AnonymousXmlReference(SpringId id, ApplicationContext applicationContext) {
         this.id = id;
         this.applicationContext = applicationContext;
     }

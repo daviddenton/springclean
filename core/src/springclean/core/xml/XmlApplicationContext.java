@@ -4,11 +4,8 @@ import static com.google.common.collect.Lists.newArrayList;
 import nu.xom.*;
 import org.daisychain.util.Functor;
 import org.daisychain.util.SimpleFunctor;
-import springclean.core.domain.ApplicationContext;
-import springclean.core.domain.ContextName;
+import springclean.core.domain.*;
 import static springclean.core.domain.ContextName.contextName;
-import springclean.core.domain.IdentifiedBean;
-import springclean.core.domain.SpringId;
 import springclean.core.exception.Defect;
 
 import java.io.File;
@@ -38,6 +35,16 @@ public class XmlApplicationContext implements ApplicationContext {
         return identifiedBeans;
     }
 
+    public Collection<Alias> aliases() {
+        final List<Alias> aliases = newArrayList();
+        XomUtils.loop(rootNode().query("alias"), new SimpleFunctor<Element>() {
+            public void execute(Element node) {
+                aliases.add(new XmlAlias(node, XmlApplicationContext.this));
+            }
+        });
+        return aliases;
+    }
+
     public List<IdentifiedBean> importedBeans() {
         final List<IdentifiedBean> importedBeans = newArrayList();
         forAllImports(new SimpleFunctor<ApplicationContext>() {
@@ -52,6 +59,9 @@ public class XmlApplicationContext implements ApplicationContext {
     public IdentifiedBean findBean(SpringId springId) {
         for (IdentifiedBean identifiedBean : allAvailableBeans()) {
             if (identifiedBean.isKnownAs(springId)) return identifiedBean;
+        }
+        for (Alias alias : aliases()) {
+            if (alias.id().equals(springId)) return alias.bean();
         }
         throw new XomProcessingException("Can't find bean named " + springId);
     }

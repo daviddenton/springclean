@@ -113,8 +113,8 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
         throw new XomProcessingException("Can't determine factory class for " + this);
     }
 
-    private SimpleReference factoryBean() {
-        return new SimpleReference(springId(attributeValue("factory-bean")), applicationContext);
+    private AnonymousXmlReference factoryBean() {
+        return new AnonymousXmlReference(springId(attributeValue("factory-bean")), applicationContext);
     }
 
     protected Class<?> beanClass() {

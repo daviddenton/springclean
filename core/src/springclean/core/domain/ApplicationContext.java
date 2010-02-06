@@ -7,6 +7,8 @@ public interface ApplicationContext {
 
     Collection<IdentifiedBean> beans();
 
+    Collection<Alias> aliases();
+
     Collection<IdentifiedBean> importedBeans();
 
     IdentifiedBean findBean(SpringId springId);

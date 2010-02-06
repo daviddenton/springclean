@@ -10,6 +10,7 @@ import java.util.List;
 
 public class ApplicationContextBuilder {
     private ContextName name = contextName(new File("aContextName.xml"));
+    private List<Alias> aliases = newArrayList();
     private List<IdentifiedBean> identifiedBeans = newArrayList();
     private List<IdentifiedBean> importedBeans = newArrayList();
 
@@ -25,8 +26,13 @@ public class ApplicationContextBuilder {
         return this;
     }
 
-    public ApplicationContextBuilder withIdentifiedBean(IdentifiedBean identifiedBean) {
+    public ApplicationContextBuilder withBean(IdentifiedBean identifiedBean) {
         this.identifiedBeans.add(identifiedBean);
+        return this;
+    }
+
+    public ApplicationContextBuilder withAlias(Alias alias) {
+        this.aliases.add(alias);
         return this;
     }
 
@@ -43,6 +49,10 @@ public class ApplicationContextBuilder {
 
             public Collection<IdentifiedBean> beans() {
                 return identifiedBeans;
+            }
+
+            public Collection<Alias> aliases() {
+                return aliases;
             }
 
             public Collection<IdentifiedBean> importedBeans() {
