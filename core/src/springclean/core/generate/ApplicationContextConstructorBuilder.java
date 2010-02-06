@@ -41,7 +41,7 @@ public class ApplicationContextConstructorBuilder {
                         for (Instance dependency : candidate.dependencies()) {
                             if (externalDependencies.contains(dependency))
                                 constructorParameters.add(dependency);
-                            else if (!processedBeans.contains(dependency)) throw new UnresolvedDependency();
+                            else if (!processedBeans.contains(dependency)) throw new UnresolvedDependency(dependency);
                         }
 
                         contextClass.addField(a(publicFinal).generatedField(instance).build());
@@ -55,6 +55,7 @@ public class ApplicationContextConstructorBuilder {
                 }
                 break;
             } catch (UnresolvedDependency e) {
+                System.out.println(e.getMessage());
             }
         }
         return constructor;
@@ -70,6 +71,9 @@ public class ApplicationContextConstructorBuilder {
     }
 
     private class UnresolvedDependency extends Exception {
+        public UnresolvedDependency(Instance instance) {
+            super("can't find " + instance.reference.name);
+        }
     }
 
 }

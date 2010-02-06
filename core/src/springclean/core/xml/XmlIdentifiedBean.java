@@ -67,7 +67,7 @@ public class XmlIdentifiedBean extends XmlBean implements IdentifiedBean {
 
         Set<SpringId> names = newHashSet();
         for (String namePart : attributeValue("name").split("[,; ]")) {
-            names.add(springId(namePart));
+            if (namePart.length() > 0) names.add(springId(namePart));
         }
         return names;
     }
