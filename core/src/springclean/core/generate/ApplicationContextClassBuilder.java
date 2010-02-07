@@ -2,6 +2,7 @@ package springclean.core.generate;
 
 import org.daisychain.source.*;
 import static org.daisychain.source.DaisyChain.a;
+import static org.daisychain.source.ExistingClass.existingClass;
 import static org.daisychain.source.Modifier.Public;
 import springclean.client.Stoppable;
 import springclean.core.domain.ApplicationContext;
@@ -26,7 +27,7 @@ public class ApplicationContextClassBuilder {
             if (!target.isAbstract() && target.hasDestroyMethod()) {
                 final Arguments arguments = new Arguments();
                 method.addStatement(new Instance(target.id().value, target.clazz()).call(target.destroyMethod().name(), arguments.asStatements()));
-                classBuilder.implementing(new ExistingClass(Stoppable.class));
+                classBuilder.implementing(existingClass(Stoppable.class));
                 contextClass = classBuilder.build();
                 contextClass.addMethod(method);
                 break;
@@ -39,7 +40,7 @@ public class ApplicationContextClassBuilder {
     }
 
     private ExistingMethod stopMethod() {
-        return new MethodFinder<ExistingMethod>(new ExistingClass(Stoppable.class)).method("stop", 0);
+        return new MethodFinder<ExistingMethod>(existingClass(Stoppable.class)).method("stop", 0);
     }
 
 }

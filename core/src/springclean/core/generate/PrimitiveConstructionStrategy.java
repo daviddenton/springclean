@@ -3,10 +3,11 @@ package springclean.core.generate;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import static org.apache.commons.lang.builder.ToStringStyle.SHORT_PREFIX_STYLE;
 import org.daisychain.source.AClass;
-import org.daisychain.source.ExistingClass;
+import static org.daisychain.source.ExistingClass.existingClass;
 import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
-import org.daisychain.source.body.SimpleValue;
+import static org.daisychain.source.body.Value.quotedValue;
+import static org.daisychain.source.body.Value.value;
 import org.daisychain.source.util.IndentingStringWriter;
 import springclean.core.exception.Defect;
 
@@ -21,7 +22,7 @@ public class PrimitiveConstructionStrategy implements ConstructionStrategy {
     private final AClass type;
 
     public PrimitiveConstructionStrategy(String content, AClass type) {
-        this.content = (!new ExistingClass(String.class, (List<? extends AClass>) Collections.EMPTY_LIST).equals(type) && "".equals(content)) ? null : content;
+        this.content = (!existingClass(String.class, (List<? extends AClass>) Collections.EMPTY_LIST).equals(type) && "".equals(content)) ? null : content;
         this.type = type;
     }
 
@@ -30,12 +31,12 @@ public class PrimitiveConstructionStrategy implements ConstructionStrategy {
     }
 
     public AssignableStatement asStatement() {
-        if (type.equals(new ExistingClass(String.class, Collections.EMPTY_LIST))) {
-            return new SimpleValue(asStringLiteral(content));
+        if (type.equals(existingClass(String.class, Collections.EMPTY_LIST))) {
+            return quotedValue(asStringLiteral(content));
         } else if (type.isPrimitive()) {
-            return new SimpleValue(content);
+            return value(content);
         } else if (Class.class.getName().equals(type.name())) {
-            return new SimpleValue(content);
+            return value(content);
         } else if (Enum.class.getName().equals(type.name())) {
             return new AssignableStatement() {
                 public Set<AClass> getImports() {
@@ -52,7 +53,7 @@ public class PrimitiveConstructionStrategy implements ConstructionStrategy {
     }
 
     private String asStringLiteral(String stuff) {
-        return "\"" + stuff.replace("\\", "\\\\").replace("\n", "\\n").replace("\t", "\\t").replace("\"", "\\\"") + "\"";
+        return stuff.replace("\\", "\\\\").replace("\n", "\\n").replace("\t", "\\t").replace("\"", "\\\"");
     }
 
     @Override

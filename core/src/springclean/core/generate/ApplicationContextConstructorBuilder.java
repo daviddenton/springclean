@@ -3,6 +3,7 @@ package springclean.core.generate;
 import static com.google.common.collect.Sets.newHashSet;
 import org.daisychain.source.*;
 import static org.daisychain.source.DaisyChain.a;
+import static org.daisychain.source.ExistingClass.existingClass;
 import static org.daisychain.source.Modifier.Public;
 import static org.daisychain.source.Modifier.publicFinal;
 import static org.daisychain.source.Parameter.ParameterModifier.Final;
@@ -27,7 +28,7 @@ public class ApplicationContextConstructorBuilder {
         final Set<Instance> constructorParameters = newHashSet();
         final Set<Instance> externalDependencies = externallyDefinedDependencies(applicationContext);
         final GeneratedConstructor constructor = a(Public).constructor(contextClass).build();
-        constructor.addException(new ExistingClass(Exception.class));
+        constructor.addException(existingClass(Exception.class));
 
         while (true) {
             try {

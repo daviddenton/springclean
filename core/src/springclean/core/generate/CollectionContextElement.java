@@ -3,6 +3,7 @@ package springclean.core.generate;
 import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Sets.newHashSet;
 import org.daisychain.source.*;
+import static org.daisychain.source.ExistingClass.existingClass;
 import static org.daisychain.source.HasImports.ImportExtractor.extractImportsFrom;
 import org.daisychain.source.body.AssignableStatement;
 import org.daisychain.source.util.IndentingStringWriter;
@@ -43,7 +44,7 @@ public class CollectionContextElement implements ConstructionStrategy {
             Method addMethod = new MethodFinder<ExistingMethod>(beanCollection.clazz()).method("add", 1);
 
             for (SpringManagedObject member : beanCollection.members()) {
-                AssignableStatement memberStatement = member.asConstructionStrategy(new ExistingClass(Object.class)).asStatement();
+                AssignableStatement memberStatement = member.asConstructionStrategy(existingClass(Object.class)).asStatement();
                 postConstructionStatements.add(addMethod.call(singletonList(memberStatement)));
             }
         }

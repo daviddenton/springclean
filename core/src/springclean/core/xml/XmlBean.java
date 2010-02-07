@@ -3,6 +3,7 @@ package springclean.core.xml;
 import static com.google.common.collect.Lists.newArrayList;
 import nu.xom.Element;
 import org.daisychain.source.*;
+import static org.daisychain.source.ExistingClass.existingClass;
 import org.daisychain.util.SimpleFunctor;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.FactoryBean;
@@ -47,7 +48,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     public AClass<ExistingMethod> clazz() {
-        return new ExistingClass(beanClass());
+        return existingClass(beanClass());
     }
 
     public boolean hasInitMethod() {

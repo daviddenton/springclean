@@ -1,7 +1,7 @@
 package springclean.core.domain;
 
 import org.daisychain.source.AClass;
-import org.daisychain.source.ExistingClass;
+import static org.daisychain.source.ExistingClass.existingClass;
 import static springclean.core.domain.SpringId.springId;
 import springclean.core.generate.ConstructionStrategy;
 import springclean.core.generate.ConstructionStrategyBuilder;
@@ -9,7 +9,7 @@ import springclean.core.generate.ConstructionStrategyBuilder;
 public class ReferenceBuilder {
     private SpringId springId = springId("springId");
     private ConstructionStrategy constructionStrategy = ConstructionStrategyBuilder.aConstructionStrategy().build();
-    private AClass aClass = new ExistingClass(String.class);
+    private AClass aClass = existingClass(String.class);
 
     private ReferenceBuilder() {
     }

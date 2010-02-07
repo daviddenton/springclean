@@ -4,8 +4,9 @@ import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Sets.newHashSet;
 import nu.xom.Element;
 import org.daisychain.source.*;
+import static org.daisychain.source.ExistingClass.existingClass;
 import org.daisychain.source.body.AssignableStatement;
-import org.daisychain.source.body.SimpleValue;
+import static org.daisychain.source.body.Value.quotedValue;
 import org.daisychain.source.util.IndentingStringWriter;
 import org.daisychain.source.util.ListAppender;
 import static org.daisychain.source.util.ListAppender.generateSource;
@@ -21,7 +22,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class XmlProperties extends AbstractElementWrapper implements SpringManagedObject {
-    private final ExistingClass propertiesClass = new ExistingClass(Properties.class);
+    private final ExistingClass propertiesClass = existingClass(Properties.class);
 
     public XmlProperties(Element propertiesElement, ApplicationContext applicationContext) {
         super(propertiesElement, applicationContext);
@@ -62,8 +63,8 @@ public class XmlProperties extends AbstractElementWrapper implements SpringManag
             public void execute(final Element target) {
                 propertyPutStatements.add(putMethod.call(
                         new ArrayList<AssignableStatement>() {{
-                            add(new SimpleValue(target.getAttributeValue("key")));
-                            add(new SimpleValue(target.getValue()));
+                            add(quotedValue(target.getAttributeValue("key")));
+                            add(quotedValue(target.getValue()));
                         }}));
             }
         });
