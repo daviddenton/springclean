@@ -26,32 +26,39 @@ public class CollectionContextElement implements ConstructionStrategy {
     }
 
     public Set<Instance> dependencies() {
+        // this will not work!!!
         return newHashSet();
     }
 
     public AssignableStatement asStatement() {
-        Method addMethod = new MethodFinder<ExistingMethod>(beanCollection.clazz()).method("add", 1);
-        final List<AssignableStatement> postConstructionStatements = newArrayList();
+        return new CollectionConstruction(beanCollection);
+    }
 
-        for (SpringManagedObject member : beanCollection.members()) {
-            AssignableStatement memberStatement = member.asConstructionStrategy(new ExistingClass(Object.class)).asStatement();
-            postConstructionStatements.add(addMethod.call(singletonList(memberStatement)));
+    private static class CollectionConstruction implements AssignableStatement {
+        private final BeanCollection beanCollection;
+        private final List<AssignableStatement> postConstructionStatements = newArrayList();
+
+        public CollectionConstruction(BeanCollection beanCollection) {
+            this.beanCollection = beanCollection;
+            Method addMethod = new MethodFinder<ExistingMethod>(beanCollection.clazz()).method("add", 1);
+
+            for (SpringManagedObject member : beanCollection.members()) {
+                AssignableStatement memberStatement = member.asConstructionStrategy(new ExistingClass(Object.class)).asStatement();
+                postConstructionStatements.add(addMethod.call(singletonList(memberStatement)));
+            }
         }
 
-        return new AssignableStatement() {
-            public Set<AClass> getImports() {
-                return extractImportsFrom(singletonList(beanCollection.clazz()), postConstructionStatements);
-            }
+        public Set<AClass> getImports() {
+            return extractImportsFrom(singletonList(beanCollection.clazz()), postConstructionStatements);
+        }
 
-            public void appendSource(IndentingStringWriter writer) throws IOException {
-                beanCollection.clazz().instantiate(EMPTY_LIST).appendSource(writer);
-                loop(postConstructionStatements)
-                        .withPrefix(new InitializerBlockStart())
-                        .andForEach(generateSource()).seperatedBy(";\n")
-                        .withSuffix(new InitializerBlockEnd())
-                        .to(writer);
-            }
-        };
-
+        public void appendSource(IndentingStringWriter writer) throws IOException {
+            beanCollection.clazz().instantiate(EMPTY_LIST).appendSource(writer);
+            loop(postConstructionStatements)
+                    .withPrefix(new InitializerBlockStart())
+                    .andForEach(generateSource()).seperatedBy(";\n")
+                    .withSuffix(new InitializerBlockEnd())
+                    .to(writer);
+        }
     }
 }

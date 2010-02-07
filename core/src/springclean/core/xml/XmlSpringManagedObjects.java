@@ -10,6 +10,10 @@ public enum XmlSpringManagedObjects {
         SpringManagedObject value(Element element, ApplicationContext applicationContext) {
             return new XmlBeanList(element, applicationContext);
         }},
+    PROPS() {
+        SpringManagedObject value(Element element, ApplicationContext applicationContext) {
+            return new XmlProperties(element, applicationContext);
+        }},
     SET() {
         SpringManagedObject value(Element element, ApplicationContext applicationContext) {
             return new XmlBeanSet(element, applicationContext);

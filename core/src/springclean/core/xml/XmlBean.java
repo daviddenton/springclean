@@ -7,7 +7,10 @@ import org.daisychain.util.SimpleFunctor;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
-import springclean.core.domain.*;
+import springclean.core.domain.ApplicationContext;
+import springclean.core.domain.Bean;
+import springclean.core.domain.ConstructorArg;
+import springclean.core.domain.Property;
 import static springclean.core.domain.SpringId.springId;
 import springclean.core.exception.Defect;
 import springclean.core.generate.*;
@@ -26,7 +29,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
 
     protected XmlIdentifiedBean parent() {
         if (!hasParent()) throw new Defect("No parent for " + this);
-        return (XmlIdentifiedBean) applicationContext.findBean(SpringId.springId(attributeValue("parent")));
+        return (XmlIdentifiedBean) applicationContext.findBean(springId(attributeValue("parent")));
     }
 
     protected boolean hasAttribute(String name) {
