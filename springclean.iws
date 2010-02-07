@@ -2,7 +2,7 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlProperties.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlProperties.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XomUtils.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XomUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -174,19 +174,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlProperties.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="XmlProperties.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="33" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.26233765">
-              <folding />
+            <state line="62" column="10" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XomUtils.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="XomUtils.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XomUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="39" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+            <state line="30" column="43" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.5922078">
               <folding />
             </state>
           </provider>
@@ -1521,16 +1523,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XomUtils.java">
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="39" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="62" column="10" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlProperties.java">
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XomUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="33" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.26233765">
+        <state line="30" column="43" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.5922078">
           <folding />
         </state>
       </provider>

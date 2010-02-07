@@ -1,11 +1,16 @@
 package springclean.core.xml;
 
+import com.google.common.base.Function;
+import com.google.common.collect.Lists;
+import static com.google.common.collect.Lists.newArrayList;
 import nu.xom.*;
 import org.daisychain.util.Functor;
+import org.daisychain.util.SimpleFunctor;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
+import java.util.List;
 
 public class XomUtils {
 
@@ -13,6 +18,11 @@ public class XomUtils {
         for (int i = 0; i < nodes.size(); i++) {
             functor.execute((T) nodes.get(i));
         }
+    }
+
+
+    public static <E extends Throwable> List<E> transform(Nodes nodes, Function<Node, E> function) throws E {
+        return Lists.transform(collect(nodes), function);
     }
 
     public static <E extends Throwable> void children(Element element, Functor<Node, E> functor) throws E {
@@ -25,6 +35,30 @@ public class XomUtils {
         for (int i = 0; i < elements.size(); i++) {
             closure.execute(elements.get(i));
         }
+    }
+
+    public static <E extends Throwable> List<E> transform(Elements elements, Function<Element, E> function) throws E {
+        return Lists.transform(collect(elements), function);
+    }
+
+    private static List<Element> collect(Elements elements) {
+        final List<Element> elementList = newArrayList();
+        loop(elements, new SimpleFunctor<Element>() {
+            public void execute(Element element) {
+                elementList.add(element);
+            }
+        });
+        return elementList;
+    }
+
+    private static List<Element> collect(Nodes nodes) {
+        final List<Element> nodeList = newArrayList();
+        loop(nodes, new SimpleFunctor<Element>() {
+            public void execute(Element element) {
+                nodeList.add(element);
+            }
+        });
+        return nodeList;
     }
 
     public static <E extends Throwable> void attributes(Element element, Functor<Attribute, E> closure) throws E {
