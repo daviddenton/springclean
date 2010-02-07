@@ -56,7 +56,7 @@ public class XmlProperties extends AbstractElementWrapper implements SpringManag
     }
 
     private List<XmlPropertyEntry> members() {
-        return XomUtils.transform(element.getChildElements("props"), new Function<Element, XmlPropertyEntry>() {
+        return XomUtils.transform(element.getChildElements("prop"), new Function<Element, XmlPropertyEntry>() {
             public XmlPropertyEntry apply(Element element) {
                 return new XmlPropertyEntry(element, applicationContext);
             }

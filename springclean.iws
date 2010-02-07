@@ -2,7 +2,6 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XomUtils.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XomUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlProperties.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlProperties.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
     </list>
@@ -115,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractFeatureTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AbstractFeatureTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/AbstractFeatureTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+            <state line="27" column="0" selection-start="977" selection-end="977" vertical-scroll-proportion="0.5922078">
               <folding />
             </state>
           </provider>
@@ -164,10 +163,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlProperties.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="XmlProperties.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="42" selection-start="2618" selection-end="2618" vertical-scroll-proportion="0.07532468">
+            <state line="58" column="64" selection-start="2488" selection-end="2488" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1204,15 +1203,19 @@
       <recent name="microtypes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in core">
-    <tempConfiguration default="false" name="All in core" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+  <component name="RunManager" selected="JUnit.PropertiesTest">
+    <tempConfiguration default="false" name="PropertiesTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+      <pattern>
+        <option name="PATTERN" value="springclean.core.generate.properties.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
       <module name="core" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
+      <option name="PACKAGE_NAME" value="springclean.core.generate.properties" />
+      <option name="MAIN_CLASS_NAME" value="springclean.core.generate.properties.PropertiesTest" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1383,7 +1386,7 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.FactoryBeanTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.All in core" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PropertiesTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1566,13 +1569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/AbstractFeatureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/PrimitiveConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.0">
@@ -1630,10 +1626,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="42" selection-start="2618" selection-end="2618" vertical-scroll-proportion="0.07532468">
+        <state line="58" column="64" selection-start="2488" selection-end="2488" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/AbstractFeatureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="977" selection-end="977" vertical-scroll-proportion="0.5922078">
+          <folding />
         </state>
       </provider>
     </entry>
