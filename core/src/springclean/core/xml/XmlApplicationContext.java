@@ -1,5 +1,6 @@
 package springclean.core.xml;
 
+import com.google.common.base.Function;
 import static com.google.common.collect.Lists.newArrayList;
 import nu.xom.*;
 import org.daisychain.util.Functor;
@@ -7,6 +8,7 @@ import org.daisychain.util.SimpleFunctor;
 import springclean.core.domain.*;
 import static springclean.core.domain.ContextName.contextName;
 import springclean.core.exception.Defect;
+import static springclean.core.xml.XomUtils.transform;
 
 import java.io.File;
 import java.util.Collection;
@@ -26,23 +28,19 @@ public class XmlApplicationContext implements ApplicationContext {
     }
 
     public Collection<IdentifiedBean> beans() {
-        final List<IdentifiedBean> identifiedBeans = newArrayList();
-        XomUtils.loop(rootNode().query("bean"), new SimpleFunctor<Element>() {
-            public void execute(Element node) {
-                identifiedBeans.add(new XmlIdentifiedBean(node, XmlApplicationContext.this));
+        return transform(rootNode().query("bean"), new Function<Element, IdentifiedBean>() {
+            public IdentifiedBean apply(Element element) {
+                return new XmlIdentifiedBean(element, XmlApplicationContext.this);
             }
         });
-        return identifiedBeans;
     }
 
     public Collection<Alias> aliases() {
-        final List<Alias> aliases = newArrayList();
-        XomUtils.loop(rootNode().query("alias"), new SimpleFunctor<Element>() {
-            public void execute(Element node) {
-                aliases.add(new XmlAlias(node, XmlApplicationContext.this));
+        return transform(rootNode().query("alias"), new Function<Element, Alias>() {
+            public Alias apply(Element element) {
+                return new XmlAlias(element, XmlApplicationContext.this);
             }
         });
-        return aliases;
     }
 
     public List<IdentifiedBean> importedBeans() {

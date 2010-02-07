@@ -21,7 +21,7 @@ public class XomUtils {
     }
 
 
-    public static <E> List<E> transform(Nodes nodes, Function<Node, E> function) {
+    public static <E> List<E> transform(Nodes nodes, Function<Element, E> function) {
         return Lists.transform(collect(nodes), function);
     }
 
