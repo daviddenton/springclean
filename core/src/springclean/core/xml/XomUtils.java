@@ -21,7 +21,7 @@ public class XomUtils {
     }
 
 
-    public static <E extends Throwable> List<E> transform(Nodes nodes, Function<Node, E> function) throws E {
+    public static <E> List<E> transform(Nodes nodes, Function<Node, E> function) {
         return Lists.transform(collect(nodes), function);
     }
 
@@ -37,7 +37,7 @@ public class XomUtils {
         }
     }
 
-    public static <E extends Throwable> List<E> transform(Elements elements, Function<Element, E> function) throws E {
+    public static <E> List<E> transform(Elements elements, Function<Element, E> function) {
         return Lists.transform(collect(elements), function);
     }
 

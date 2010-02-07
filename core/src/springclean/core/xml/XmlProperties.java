@@ -1,7 +1,6 @@
 package springclean.core.xml;
 
 import com.google.common.base.Function;
-import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Lists.transform;
 import static com.google.common.collect.Sets.newHashSet;
 import nu.xom.Element;
@@ -12,13 +11,11 @@ import static org.daisychain.source.body.Value.quotedValue;
 import org.daisychain.source.util.IndentingStringWriter;
 import org.daisychain.source.util.ListAppender;
 import static org.daisychain.source.util.ListAppender.generateSource;
-import org.daisychain.util.SimpleFunctor;
 import springclean.core.domain.ApplicationContext;
 import springclean.core.domain.SpringManagedObject;
 import springclean.core.generate.ConstructionStrategy;
 import springclean.core.generate.InitializerBlockEnd;
 import springclean.core.generate.InitializerBlockStart;
-import static springclean.core.xml.XomUtils.loop;
 
 import java.io.IOException;
 import java.util.*;
@@ -59,13 +56,11 @@ public class XmlProperties extends AbstractElementWrapper implements SpringManag
     }
 
     private List<XmlPropertyEntry> members() {
-        final List<XmlPropertyEntry> members = newArrayList();
-        loop(element.getChildElements("prop"), new SimpleFunctor<Element>() {
-            public void execute(final Element target) {
-                members.add(new XmlPropertyEntry(target, applicationContext));
+        return XomUtils.transform(element.getChildElements("props"), new Function<Element, XmlPropertyEntry>() {
+            public XmlPropertyEntry apply(Element element) {
+                return new XmlPropertyEntry(element, applicationContext);
             }
         });
-        return members;
     }
 
     private List<AssignableStatement> memberStatements() {
