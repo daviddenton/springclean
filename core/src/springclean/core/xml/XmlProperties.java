@@ -1,6 +1,8 @@
 package springclean.core.xml;
 
+import com.google.common.base.Function;
 import static com.google.common.collect.Lists.newArrayList;
+import static com.google.common.collect.Lists.transform;
 import static com.google.common.collect.Sets.newHashSet;
 import nu.xom.Element;
 import org.daisychain.source.*;
@@ -41,7 +43,7 @@ public class XmlProperties extends AbstractElementWrapper implements SpringManag
 
                     public void appendSource(IndentingStringWriter writer) throws IOException {
                         propertiesClass.instantiate(Collections.EMPTY_LIST).appendSource(writer);
-                        ListAppender.loop(members())
+                        ListAppender.loop(memberStatements())
                                 .withPrefix(new InitializerBlockStart())
                                 .andForEach(generateSource()).seperatedBy(";\n")
                                 .withSuffix(new InitializerBlockEnd())
@@ -56,18 +58,40 @@ public class XmlProperties extends AbstractElementWrapper implements SpringManag
         };
     }
 
-    private List<AssignableStatement> members() {
-        final Method putMethod = new MethodFinder<ExistingMethod>(propertiesClass).method("put", 2);
-        final List<AssignableStatement> propertyPutStatements = newArrayList();
+    private List<XmlPropertyEntry> members() {
+        final List<XmlPropertyEntry> members = newArrayList();
         loop(element.getChildElements("prop"), new SimpleFunctor<Element>() {
             public void execute(final Element target) {
-                propertyPutStatements.add(putMethod.call(
-                        new ArrayList<AssignableStatement>() {{
-                            add(quotedValue(target.getAttributeValue("key")));
-                            add(quotedValue(target.getValue()));
-                        }}));
+                members.add(new XmlPropertyEntry(target, applicationContext));
             }
         });
-        return propertyPutStatements;
+        return members;
+    }
+
+    private List<AssignableStatement> memberStatements() {
+        final Method putMethod = new MethodFinder<ExistingMethod>(propertiesClass).method("put", 2);
+        return transform(members(), new Function<XmlPropertyEntry, AssignableStatement>() {
+            public AssignableStatement apply(final XmlPropertyEntry entry) {
+                return putMethod.call(
+                        new ArrayList<AssignableStatement>() {{
+                            add(quotedValue(entry.key()));
+                            add(quotedValue(entry.value()));
+                        }});
+            }
+        });
+    }
+
+    private static class XmlPropertyEntry extends AbstractElementWrapper {
+        protected XmlPropertyEntry(Element beanNode, ApplicationContext applicationContext) {
+            super(beanNode, applicationContext);
+        }
+
+        public String key() {
+            return attributeValue("key");
+        }
+
+        public String value() {
+            return element.getValue();
+        }
     }
 }
