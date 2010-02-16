@@ -10,14 +10,13 @@ import org.daisychain.source.util.IndentingStringWriter;
 import static org.daisychain.source.util.ListAppender.generateSource;
 import static org.daisychain.source.util.ListAppender.loop;
 import springclean.core.domain.BeanMap;
-import springclean.core.domain.SpringManagedObject;
+import springclean.core.domain.BeanMapEntry;
 
 import java.io.IOException;
 import static java.util.Collections.EMPTY_LIST;
 import static java.util.Collections.singletonList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 
@@ -43,10 +42,9 @@ public class MapContextElement implements ConstructionStrategy {
 
         public MapConstruction(BeanMap beanMap) {
             Method addMethod = new MethodFinder<ExistingMethod>(MAP_CLASS).method("put", 2);
-
-            for (Map.Entry<SpringManagedObject, SpringManagedObject> entry : beanMap.entries()) {
-                AssignableStatement keyStatement = entry.getKey().asConstructionStrategy(existingClass(Object.class)).asStatement();
-                AssignableStatement valueStatement = entry.getValue().asConstructionStrategy(existingClass(Object.class)).asStatement();
+            for (BeanMapEntry entry : beanMap.entries()) {
+                AssignableStatement keyStatement = entry.key().asConstructionStrategy(existingClass(Object.class)).asStatement();
+                AssignableStatement valueStatement = entry.value().asConstructionStrategy(existingClass(Object.class)).asStatement();
                 postConstructionStatements.add(addMethod.call(newArrayList(keyStatement, valueStatement)));
             }
         }
