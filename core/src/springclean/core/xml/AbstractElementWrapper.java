@@ -1,6 +1,7 @@
 package springclean.core.xml;
 
 import nu.xom.Element;
+import nu.xom.Elements;
 import springclean.core.domain.ApplicationContext;
 
 class AbstractElementWrapper {
@@ -10,6 +11,18 @@ class AbstractElementWrapper {
     protected AbstractElementWrapper(Element beanNode, ApplicationContext applicationContext) {
         this.element = beanNode;
         this.applicationContext = applicationContext;
+    }
+
+    protected boolean hasChild(String name) {
+        return element.getChildElements(name).size() > 0;
+    }
+
+    protected Element firstChild(String name) {
+        return element.getChildElements(name).get(0);
+    }
+
+    protected Elements children(String name) {
+        return element.getChildElements(name);
     }
 
     protected boolean hasAttribute(String name) {

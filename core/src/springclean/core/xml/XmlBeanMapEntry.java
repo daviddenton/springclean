@@ -8,8 +8,11 @@ import static org.daisychain.source.ExistingClass.existingClass;
 import org.daisychain.source.body.AssignableStatement;
 import springclean.core.domain.ApplicationContext;
 import springclean.core.domain.BeanMapEntry;
+import static springclean.core.domain.SpringId.springId;
 import springclean.core.domain.SpringManagedObject;
+import springclean.core.exception.Defect;
 import springclean.core.generate.ConstructionStrategy;
+import static springclean.core.xml.XmlSpringManagedObjects.springManagedObjectFor;
 
 import java.util.HashMap;
 import java.util.Set;
@@ -22,11 +25,20 @@ public class XmlBeanMapEntry extends AbstractElementWrapper implements BeanMapEn
     }
 
     public SpringManagedObject key() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        if (hasAttribute("key")) return new XmlPrimitiveValue(attributeValue("key"), applicationContext);
+        if (hasAttribute("key-ref"))
+            return new InlineXmlReference(springId(attributeValue("key-ref")), applicationContext);
+        if (hasChild("key"))
+            return springManagedObjectFor(firstChild("key").getChildElements().get(0), applicationContext);
+        throw new Defect("Can't work out key bean " + this);
     }
 
     public SpringManagedObject value() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        if (hasAttribute("value")) return new XmlPrimitiveValue(attributeValue("value"), applicationContext);
+        if (hasAttribute("value-ref"))
+            return new InlineXmlReference(springId(attributeValue("value-ref")), applicationContext);
+        if (hasChild("key")) return springManagedObjectFor(element.getChildElements().get(1), applicationContext);
+        return springManagedObjectFor(element.getChildElements().get(0), applicationContext);
     }
 
     public ConstructionStrategy asConstructionStrategy(AClass aClass) {

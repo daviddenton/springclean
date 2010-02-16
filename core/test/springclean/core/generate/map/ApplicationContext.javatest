@@ -1,15 +1,17 @@
 public class ApplicationContext {
     public final NoDependencyBean aNoDependencyBean;
 
-    public final SetterInjectedBean setterInjectedBean;
+    public final CollectionsBean collectionsBean;
 
     public ApplicationContext() throws Exception {
         aNoDependencyBean = new NoDependencyBean();
-        setterInjectedBean = new SetterInjectedBean() {{
-            setAList(new ArrayList() {{
-                add(new NoDependencyBean());
-                add(aNoDependencyBean);
-                add("aString");
+        collectionsBean = new CollectionsBean() {{
+            setMap(new HashMap() {{
+                put("inlineValue", "anInlineValue");
+                put(aNoDependencyBean, aNoDependencyBean);
+                put(aNoDependencyBean, new NoDependencyBean());
+                put(new NoDependencyBean(), aNoDependencyBean);
+                put("expandedValue", "expandedValue");
             }});
         }};
     }

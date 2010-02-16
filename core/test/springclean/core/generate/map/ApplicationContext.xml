@@ -19,6 +19,7 @@
                     <ref bean="aNoDependencyBean"/>
                 </entry>
                 <entry key="expandedValue">
+
                     <value>expandedValue</value>
                 </entry>
             </map>
