@@ -18,6 +18,10 @@ public enum XmlSpringManagedObjects {
         SpringManagedObject value(Element element, ApplicationContext applicationContext) {
             return new XmlBeanSet(element, applicationContext);
         }},
+    MAP() {
+        SpringManagedObject value(Element element, ApplicationContext applicationContext) {
+            return new XmlBeanMap(element, applicationContext);
+        }},
     REF() {
         SpringManagedObject value(Element element, ApplicationContext applicationContext) {
             return new XmlReference(element, applicationContext);
