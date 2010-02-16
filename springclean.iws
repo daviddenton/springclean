@@ -2,12 +2,8 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMapEntry.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/MapContextElement.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/MapContextElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/domain/BeanMap.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/domain/BeanMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMap.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/springclean/core/domain/BeanMapEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMapEntry.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMapEntry.java" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="springclean.iws" />
@@ -110,7 +106,7 @@
       <file leaf-file-name="XmlBeanMap.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="33" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
+            <state line="33" column="13" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,7 +117,18 @@
       <file leaf-file-name="XmlBeanMapEntry.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMapEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="308" selection-end="308" vertical-scroll-proportion="0.12403101">
+            <state line="26" column="0" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.4516129">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConstructionStrategy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructionStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="17" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -151,9 +158,9 @@
       <file leaf-file-name="BeanMap.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="21" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+            <state line="4" column="21" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1266361959000" expanded="true" signature="41:56" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -162,7 +169,16 @@
       <file leaf-file-name="BeanMapEntry.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanMapEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="32" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+            <state line="3" column="30" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringManagedObject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/SpringManagedObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="17" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -171,28 +187,10 @@
       <file leaf-file-name="MapContextElement.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/MapContextElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
+            <state line="25" column="0" selection-start="961" selection-end="1042" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractXmlBeanCollection.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/AbstractXmlBeanCollection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="974" selection-end="1247" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BeanCollection.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanCollection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="43" selection-start="128" selection-end="141" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1184,22 +1182,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/data/CollectionsBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="151" selection-end="166" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/map/ApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/springclean/core/generate/map/MapTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
@@ -1266,25 +1248,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanMapEntry.java">
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="32" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+        <state line="4" column="21" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1266361959000" expanded="true" signature="41:56" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/SpringManagedObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanMap.java">
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/ConstructionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="8" column="17" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="33" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
+        <state line="33" column="13" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1293,17 +1282,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/MapContextElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
+        <state line="25" column="0" selection-start="961" selection-end="1042" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanMapEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="30" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMapEntry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="308" selection-end="308" vertical-scroll-proportion="0.12403101">
-          <folding />
+        <state line="26" column="0" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.4516129">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
