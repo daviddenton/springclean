@@ -4,7 +4,7 @@
 <beans>
     <bean id="aNoDependencyBean" class="springclean.core.generate.data.NoDependencyBean"/>
 
-    <bean id="aSetterInjectedBean" class="springclean.core.generate.data.SetterInjectedBean">
+    <bean id="setterInjectedBean" class="springclean.core.generate.data.SetterInjectedBean">
         <property name="aList">
             <list>
                 <bean class="springclean.core.generate.data.NoDependencyBean"/>
