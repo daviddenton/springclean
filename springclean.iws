@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springclean.iws" afterPath="$PROJECT_DIR$/springclean.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMapEntry.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMapEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/springclean/core/generate/MapContextElement.java" afterPath="$PROJECT_DIR$/core/src/springclean/core/generate/MapContextElement.java" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="springclean.iws" />
@@ -117,7 +117,7 @@
       <file leaf-file-name="XmlBeanMapEntry.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMapEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.4516129">
+            <state line="47" column="0" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.8054054">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,10 +158,8 @@
       <file leaf-file-name="BeanMap.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="21" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1266361959000" expanded="true" signature="41:56" placeholder="..." />
-              </folding>
+            <state line="5" column="23" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,7 +185,7 @@
       <file leaf-file-name="MapContextElement.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/MapContextElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="961" selection-end="1042" vertical-scroll-proportion="0.0">
+            <state line="52" column="25" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1115,16 +1113,16 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" />
       <window_info id="TODO" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="2" side_tool="false" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20822838" sideWeight="0.6625954" order="0" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32671756" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20822838" sideWeight="0.65954196" order="0" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671756" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274559" sideWeight="0.65954196" order="7" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274559" sideWeight="0.6625954" order="7" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24853064" sideWeight="0.65954196" order="1" side_tool="false" />
       <window_info id="Changes" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977098" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
@@ -1248,15 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1266361959000" expanded="true" signature="41:56" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/SpringManagedObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="17" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
@@ -1271,6 +1260,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanMapEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="30" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="13" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
@@ -1280,25 +1276,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/generate/MapContextElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="961" selection-end="1042" vertical-scroll-proportion="0.0">
+        <state line="52" column="25" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/springclean/core/domain/BeanMapEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/springclean/core/xml/XmlBeanMapEntry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.4516129">
+        <state line="47" column="0" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.8054054">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

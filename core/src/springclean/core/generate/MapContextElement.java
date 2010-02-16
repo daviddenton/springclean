@@ -2,9 +2,11 @@ package springclean.core.generate;
 
 import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Sets.newHashSet;
-import org.daisychain.source.*;
+import org.daisychain.source.AClass;
+import org.daisychain.source.ExistingClass;
 import static org.daisychain.source.ExistingClass.existingClass;
 import static org.daisychain.source.HasImports.ImportExtractor.extractImportsFrom;
+import org.daisychain.source.Instance;
 import org.daisychain.source.body.AssignableStatement;
 import org.daisychain.source.util.IndentingStringWriter;
 import static org.daisychain.source.util.ListAppender.generateSource;
@@ -29,7 +31,7 @@ public class MapContextElement implements ConstructionStrategy {
     }
 
     public Set<Instance> dependencies() {
-        // this will not work!!!
+        // will not work
         return newHashSet();
     }
 
@@ -41,11 +43,8 @@ public class MapContextElement implements ConstructionStrategy {
         private final List<AssignableStatement> postConstructionStatements = newArrayList();
 
         public MapConstruction(BeanMap beanMap) {
-            Method addMethod = new MethodFinder<ExistingMethod>(MAP_CLASS).method("put", 2);
             for (BeanMapEntry entry : beanMap.entries()) {
-                AssignableStatement keyStatement = entry.key().asConstructionStrategy(existingClass(Object.class)).asStatement();
-                AssignableStatement valueStatement = entry.value().asConstructionStrategy(existingClass(Object.class)).asStatement();
-                postConstructionStatements.add(addMethod.call(newArrayList(keyStatement, valueStatement)));
+                postConstructionStatements.add(entry.asConstructionStrategy(existingClass(Object.class)).asStatement());
             }
         }
 
