@@ -5,6 +5,7 @@ import springclean.core.domain.ApplicationContext;
 import springclean.core.domain.Value;
 import springclean.core.generate.ConstructionStrategy;
 import springclean.core.generate.PrimitiveConstructionStrategy;
+import springclean.core.generate.PropertyPlaceholderConstructionStrategy;
 
 public class XmlPrimitiveValue implements Value {
 
@@ -17,8 +18,8 @@ public class XmlPrimitiveValue implements Value {
     }
 
     public ConstructionStrategy asConstructionStrategy(AClass aClass) {
-        return new PrimitiveConstructionStrategy(rawValue, aClass);
+        return rawValue.matches(PropertyPlaceholderConstructionStrategy.PROPERTY_PLACEHOLDER_REGEX) ?
+                new PropertyPlaceholderConstructionStrategy(rawValue) :
+                new PrimitiveConstructionStrategy(rawValue, aClass);
     }
-
-
 }

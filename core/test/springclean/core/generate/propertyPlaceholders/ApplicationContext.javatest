@@ -1,5 +1,4 @@
 public class ApplicationContext {
-
     public final PropertyBean propertyBean;
 
     public ApplicationContext(final Properties properties) throws Exception {

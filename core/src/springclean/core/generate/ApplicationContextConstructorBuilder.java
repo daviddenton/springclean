@@ -66,6 +66,7 @@ public class ApplicationContextConstructorBuilder {
 
     private Set<Instance> externallyDefinedDependencies(ApplicationContext applicationContext) {
         final Set<Instance> dependencies = newHashSet();
+        dependencies.addAll(GlobalSpringBeans.globalBeans());
         for (IdentifiedBean target : applicationContext.importedBeans()) {
             dependencies.add(new Instance(target.id().value, target.clazz()));
 
