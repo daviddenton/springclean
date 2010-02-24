@@ -20,7 +20,7 @@ public class XmlConstructionDependency extends AbstractElementWrapper {
             return identifiedBean.isAbstract() ? identifiedBean : new InlineXmlReference(identifiedBean.id(), applicationContext);
         }
 
-        if (hasAttribute("value")) return new XmlPrimitiveValue(attributeValue("value"), applicationContext);
+        if (hasAttribute("value")) return new XmlPrimitiveValue(attributeValue("value"));
 
         return springManagedObjectFor(element.getChildElements().get(0), applicationContext);
     }

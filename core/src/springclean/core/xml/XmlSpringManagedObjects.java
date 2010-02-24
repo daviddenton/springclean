@@ -32,7 +32,7 @@ public enum XmlSpringManagedObjects {
         }},
     VALUE() {
         SpringManagedObject value(Element element, ApplicationContext applicationContext) {
-            return new XmlPrimitiveValue(element.getValue(), applicationContext);
+            return new XmlPrimitiveValue(element.getValue());
         }},
     NULL() {
         SpringManagedObject value(Element element, ApplicationContext applicationContext) {

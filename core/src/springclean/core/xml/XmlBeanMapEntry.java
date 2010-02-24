@@ -25,7 +25,7 @@ public class XmlBeanMapEntry extends AbstractElementWrapper implements BeanMapEn
     }
 
     public SpringManagedObject key() {
-        if (hasAttribute("key")) return new XmlPrimitiveValue(attributeValue("key"), applicationContext);
+        if (hasAttribute("key")) return new XmlPrimitiveValue(attributeValue("key"));
         if (hasAttribute("key-ref"))
             return new InlineXmlReference(springId(attributeValue("key-ref")), applicationContext);
         if (hasChild("key"))
@@ -34,7 +34,7 @@ public class XmlBeanMapEntry extends AbstractElementWrapper implements BeanMapEn
     }
 
     public SpringManagedObject value() {
-        if (hasAttribute("value")) return new XmlPrimitiveValue(attributeValue("value"), applicationContext);
+        if (hasAttribute("value")) return new XmlPrimitiveValue(attributeValue("value"));
         if (hasAttribute("value-ref"))
             return new InlineXmlReference(springId(attributeValue("value-ref")), applicationContext);
         if (hasChild("key")) return springManagedObjectFor(element.getChildElements().get(1), applicationContext);

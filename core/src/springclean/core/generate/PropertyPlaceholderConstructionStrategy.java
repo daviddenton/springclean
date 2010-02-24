@@ -13,8 +13,7 @@ import java.util.regex.Pattern;
 
 
 public class PropertyPlaceholderConstructionStrategy implements ConstructionStrategy {
-
-    public static final String PROPERTY_PLACEHOLDER_REGEX = "\\$\\{(.*)\\}";
+    public static final Pattern PROPERTY_PLACEHOLDER_PATTERN = Pattern.compile("\\$\\{(.*)\\}");
 
     private final String propertyName;
 
@@ -31,8 +30,7 @@ public class PropertyPlaceholderConstructionStrategy implements ConstructionStra
     }
 
     private List<AssignableStatement> propertyName() {
-        final Pattern pattern = Pattern.compile(PROPERTY_PLACEHOLDER_REGEX);
-        final Matcher matcher = pattern.matcher(propertyName);
+        final Matcher matcher = PROPERTY_PLACEHOLDER_PATTERN.matcher(propertyName);
         matcher.matches();
         return singletonList((AssignableStatement) quotedValue(matcher.group(1)));
     }
