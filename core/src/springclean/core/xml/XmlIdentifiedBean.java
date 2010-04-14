@@ -25,7 +25,7 @@ public class XmlIdentifiedBean extends XmlBean implements IdentifiedBean {
         } else if (hasAttribute("name")) {
             return springId(element.getAttributeValue("name"));
         } else if (hasAttribute("class")) {
-            return springId(StringUtils.uncapitalize(beanClass().getSimpleName()));
+            return springId(StringUtils.uncapitalize(declaredJavaClass().getSimpleName()));
         }
         throw new XomProcessingException("can't work out id for bean " + element.toXML());
     }

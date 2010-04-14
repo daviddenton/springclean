@@ -26,7 +26,7 @@ public class ConstructorInvocation implements AssignableStatement {
     }
 
     public void appendSource(IndentingStringWriter writer) throws IOException {
-        bean.clazz().instantiate(constructorStatements).appendSource(writer);
+        bean.declaredBeanClass().instantiate(constructorStatements).appendSource(writer);
     }
 
 }

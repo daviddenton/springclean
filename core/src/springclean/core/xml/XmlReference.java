@@ -48,6 +48,6 @@ public class XmlReference extends AbstractElementWrapper implements Reference {
     }
 
     public AClass<ExistingMethod> clazz() {
-        return applicationContext.findBean(id()).clazz();
+        return applicationContext.findBean(id()).declaredBeanClass();
     }
 }

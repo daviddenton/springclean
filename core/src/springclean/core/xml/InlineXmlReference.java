@@ -26,6 +26,6 @@ public class InlineXmlReference implements Reference {
     }
 
     public AClass<ExistingMethod> clazz() {
-        return applicationContext.findBean(id).clazz();
+        return applicationContext.findBean(id).declaredBeanClass();
     }
 }

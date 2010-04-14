@@ -21,4 +21,5 @@ public class AStringFactoryBean implements FactoryBean {
     public boolean isSingleton() {
         return true;
     }
+
 }

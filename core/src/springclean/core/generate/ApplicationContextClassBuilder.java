@@ -26,7 +26,7 @@ public class ApplicationContextClassBuilder {
         for (IdentifiedBean target : applicationContext.beans()) {
             if (!target.isAbstract() && target.hasDestroyMethod()) {
                 final Arguments arguments = new Arguments();
-                method.addStatement(new Instance(target.id().value, target.clazz()).call(target.destroyMethod().name(), arguments.asStatements()));
+                method.addStatement(new Instance(target.id().value, target.declaredBeanClass()).call(target.destroyMethod().name(), arguments.asStatements()));
                 classBuilder.implementing(existingClass(Stoppable.class));
                 contextClass = classBuilder.build();
                 contextClass.addMethod(method);

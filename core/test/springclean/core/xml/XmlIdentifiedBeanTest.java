@@ -26,7 +26,7 @@ public class XmlIdentifiedBeanTest extends AbstractSpringCleanTestCase {
 
     @Test
     public void clazz() {
-        assertThat(xmlIdentifiedBeanFrom("XmlIdentifiedBeanTest_id.xml").clazz().name(), equalTo(String.class.getName()));
+        assertThat(xmlIdentifiedBeanFrom("XmlIdentifiedBeanTest_id.xml").declaredBeanClass().name(), equalTo(String.class.getName()));
     }
 
     private XmlIdentifiedBean xmlIdentifiedBeanFrom(String xmlFileName) {

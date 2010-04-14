@@ -16,7 +16,7 @@ public class XmlAlias extends AbstractElementWrapper implements Alias {
     }
 
     public AClass<ExistingMethod> clazz() {
-        return bean().clazz();
+        return bean().declaredBeanClass();
     }
 
     public SpringId id() {

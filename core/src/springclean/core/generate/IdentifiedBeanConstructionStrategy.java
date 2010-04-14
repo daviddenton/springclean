@@ -12,7 +12,7 @@ public class IdentifiedBeanConstructionStrategy implements ConstructionStrategy 
 
     public IdentifiedBeanConstructionStrategy(IdentifiedBean bean, ConstructionStrategy innerConstructionStrategy) {
         this.innerConstructionStrategy = innerConstructionStrategy;
-        instance = new Instance(bean.id().value, bean.clazz());
+        instance = new Instance(bean.id().value, bean.declaredBeanClass());
     }
 
     public AssignableStatement asStatement() {

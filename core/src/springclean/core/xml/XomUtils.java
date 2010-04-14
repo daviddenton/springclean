@@ -6,9 +6,12 @@ import static com.google.common.collect.Lists.newArrayList;
 import nu.xom.*;
 import org.daisychain.util.Functor;
 import org.daisychain.util.SimpleFunctor;
+import org.xml.sax.XMLReader;
+import springclean.core.exception.Defect;
+import springclean.core.xml.dtd.InternalSpringDtdEntityResolver;
 
+import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
-import java.io.IOException;
 import java.net.URI;
 import java.util.List;
 
@@ -72,12 +75,14 @@ public class XomUtils {
     }
 
     public static Document parse(File xmlFile) {
+        SAXParserFactory factory = SAXParserFactory.newInstance();
+        factory.setNamespaceAware(true);
         try {
-            return new Builder(false).build(xmlFile);
-        } catch (ParsingException e) {
-            throw new XomProcessingException("Parsing " + xmlFile.getAbsolutePath(), e);
-        } catch (IOException e) {
-            throw new XomProcessingException("Accessing " + xmlFile.getAbsolutePath(), e);
+            final XMLReader reader = factory.newSAXParser().getXMLReader();
+            reader.setEntityResolver(new InternalSpringDtdEntityResolver());
+            return new Builder(reader, false).build(xmlFile);
+        } catch (Exception e) {
+            throw new Defect("Problem reading XML", e);
         }
     }
 

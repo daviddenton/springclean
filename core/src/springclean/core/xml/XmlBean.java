@@ -5,6 +5,7 @@ import nu.xom.Element;
 import org.daisychain.source.*;
 import static org.daisychain.source.ExistingClass.existingClass;
 import org.daisychain.util.SimpleFunctor;
+import org.objenesis.ObjenesisStd;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
@@ -47,16 +48,29 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
         return super.hasAttribute("parent");
     }
 
-    public AClass<ExistingMethod> clazz() {
-        return existingClass(beanClass());
+    public AClass<ExistingMethod> declaredBeanClass() {
+        return existingClass(declaredJavaClass());
+    }
+
+    public AClass<ExistingMethod> constructedBeanClass() {
+        return declaredBeanClass().implementsInterface(FactoryBean.class) ? factoryBeanClass() : declaredBeanClass();
+    }
+
+    private ExistingClass factoryBeanClass() {
+        try {
+            FactoryBean factoryBean = (FactoryBean) new ObjenesisStd().getInstantiatorOf(declaredJavaClass()).newInstance();
+            return existingClass(factoryBean.getObjectType());
+        } catch (Exception e) {
+            return existingClass(declaredJavaClass());
+        }
     }
 
     public boolean hasInitMethod() {
-        return hasAttribute("init-method") || clazz().implementsInterface(InitializingBean.class);
+        return hasAttribute("init-method") || declaredBeanClass().implementsInterface(InitializingBean.class);
     }
 
     public boolean hasDestroyMethod() {
-        boolean localResult = hasAttribute("destroy-method") || clazz().implementsInterface(DisposableBean.class);
+        boolean localResult = hasAttribute("destroy-method") || declaredBeanClass().implementsInterface(DisposableBean.class);
         return localResult || (hasParent() && parent().hasDestroyMethod());
     }
 
@@ -66,9 +80,10 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     public Method initMethod() {
-        MethodFinder<ExistingMethod> methodFinder = new MethodFinder<ExistingMethod>(clazz());
+        MethodFinder<ExistingMethod> methodFinder = new MethodFinder<ExistingMethod>(declaredBeanClass());
         if (hasAttribute("init-method")) return methodFinder.method(attributeValue("init-method"), 0);
-        if (clazz().implementsInterface(InitializingBean.class)) return methodFinder.method("afterPropertiesSet", 0);
+        if (declaredBeanClass().implementsInterface(InitializingBean.class))
+            return methodFinder.method("afterPropertiesSet", 0);
         if (hasParent()) return parent().initMethod();
         throw new Defect("No init method defined on " + this);
     }
@@ -76,7 +91,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     public Method destroyMethod() {
         if (!hasDestroyMethod()) throw new Defect("No destroy method on " + this);
         String methodName = hasAttribute("destroy-method") ? attributeValue("destroy-method") : "destroy";
-        return new MethodFinder<ExistingMethod>(clazz()).method(methodName, 0);
+        return new MethodFinder<ExistingMethod>(declaredBeanClass()).method(methodName, 0);
     }
 
     public Method factoryMethod() {
@@ -112,7 +127,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     private AClass<ExistingMethod> factoryClass() {
-        if (hasAttribute("class")) return clazz();
+        if (hasAttribute("class")) return declaredBeanClass();
         if (hasFactoryBean()) return factoryBean().clazz();
         throw new XomProcessingException("Can't determine factory class for " + this);
     }
@@ -121,7 +136,8 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
         return new InlineXmlReference(springId(attributeValue("factory-bean")), applicationContext);
     }
 
-    protected Class<?> beanClass() {
+
+    protected Class<?> declaredJavaClass() {
 
         String className;
         if (hasAttribute("class")) {
@@ -140,12 +156,11 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     private boolean hasFactoryBean() {
-        boolean localResult = hasAttribute("factory-bean");
-        return localResult || (hasParent() && parent().hasFactoryMethod());
+        return hasAttribute("factory-bean") || (hasParent() && parent().hasFactoryMethod());
     }
 
     public Constructor constructor() {
-        for (Constructor constructionMethod : clazz().constructors()) {
+        for (Constructor constructionMethod : declaredBeanClass().constructors()) {
             if (constructionMethod.parameters().size() == constructorArgs().size()) {
                 return constructionMethod;
             }
@@ -154,7 +169,7 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
     }
 
     public Method setter(Property property) {
-        for (Method method : clazz().methods()) {
+        for (Method method : declaredBeanClass().methods()) {
             if (property.name().setterName().equals(method.name())) return method;
         }
         throw new Defect("Not sure which setter method to use for " + property.name());
@@ -172,9 +187,9 @@ public class XmlBean extends AbstractElementWrapper implements Bean {
         if (hasFactoryBean() && hasFactoryMethod())
             return new CustomFactoryBeanConstructionStrategy(factoryBean(), this);
         if (hasFactoryMethod()) return new StaticFactoryMethodBeanConstructionStrategy(this);
-        if (clazz().implementsInterface(FactoryBean.class))
-            return new SpringFactoryBeanConstructionStrategy(clazz(), new StandardBeanConstructionStrategy(this));
-        if (clazz().implementsInterface(InitializingBean.class)) new StandardBeanConstructionStrategy(this);
+        if (declaredBeanClass().implementsInterface(FactoryBean.class))
+            return new SpringFactoryBeanConstructionStrategy(constructedBeanClass(), new StandardBeanConstructionStrategy(this));
+        if (declaredBeanClass().implementsInterface(InitializingBean.class)) new StandardBeanConstructionStrategy(this);
         return new StandardBeanConstructionStrategy(this);
     }
 

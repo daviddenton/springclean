@@ -33,10 +33,10 @@ public class ApplicationContextConstructorBuilder {
         while (true) {
             try {
                 for (IdentifiedBean target : applicationContext.beans()) {
-                    Instance instance = new Instance(target.id().value, target.clazz());
+                    Instance instance = new Instance(target.id().value, target.constructedBeanClass());
                     if (target.isAbstract()) processedBeans.add(instance);
 
-                    ConstructionStrategy candidate = target.asConstructionStrategy(target.clazz());
+                    ConstructionStrategy candidate = target.asConstructionStrategy(target.declaredBeanClass());
                     if (!processedBeans.contains(instance)) {
 
                         for (Instance dependency : candidate.dependencies()) {
@@ -68,7 +68,7 @@ public class ApplicationContextConstructorBuilder {
         final Set<Instance> dependencies = newHashSet();
         dependencies.addAll(GlobalSpringBeans.globalBeans());
         for (IdentifiedBean target : applicationContext.importedBeans()) {
-            dependencies.add(new Instance(target.id().value, target.clazz()));
+            dependencies.add(new Instance(target.id().value, target.declaredBeanClass()));
 
         }
         return dependencies;

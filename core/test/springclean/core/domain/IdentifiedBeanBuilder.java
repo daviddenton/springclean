@@ -2,6 +2,7 @@ package springclean.core.domain;
 
 import static com.google.common.collect.Lists.newArrayList;
 import org.daisychain.source.AClass;
+import org.daisychain.source.ExistingMethod;
 import org.daisychain.source.Method;
 import static springclean.core.domain.SpringId.springId;
 import springclean.core.exception.Defect;
@@ -27,7 +28,11 @@ public class IdentifiedBeanBuilder extends BeanBuilder {
     public IdentifiedBean build() {
         return new IdentifiedBean() {
 
-            public AClass clazz() {
+            public AClass<ExistingMethod> declaredBeanClass() {
+                return aClass;
+            }
+
+            public AClass<ExistingMethod> constructedBeanClass() {
                 return aClass;
             }
 

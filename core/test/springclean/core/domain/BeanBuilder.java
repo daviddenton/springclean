@@ -81,7 +81,11 @@ public class BeanBuilder {
 
     public Bean build() {
         return new Bean() {
-            public AClass clazz() {
+            public AClass<ExistingMethod> declaredBeanClass() {
+                return aClass;
+            }
+
+            public AClass<ExistingMethod> constructedBeanClass() {
                 return aClass;
             }
 

@@ -26,9 +26,9 @@ public class StaticFactoryMethodInvocation implements AssignableStatement {
     }
 
     public void appendSource(IndentingStringWriter writer) throws IOException {
-        bean.clazz().call(bean.factoryMethod().name(), argumentStatements).appendSource(writer);
+        bean.declaredBeanClass().call(bean.factoryMethod().name(), argumentStatements).appendSource(writer);
         if (bean.hasInitMethod()) {
-            new Instance("bean", bean.clazz()).call(bean.initMethod().name()).appendSource(writer);
+            new Instance("bean", bean.declaredBeanClass()).call(bean.initMethod().name()).appendSource(writer);
         }
     }
 }

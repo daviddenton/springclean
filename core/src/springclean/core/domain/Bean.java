@@ -7,7 +7,9 @@ import org.daisychain.source.Method;
 import java.util.List;
 
 public interface Bean extends SpringManagedObject {
-    AClass<ExistingMethod> clazz();
+    AClass<ExistingMethod> declaredBeanClass();
+
+    AClass<ExistingMethod> constructedBeanClass();
 
     List<Property> setterDependencies();
 
