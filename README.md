@@ -60,7 +60,7 @@ Note that the process is not perfect. After conversion, some work will be requir
 
 - lazy initialisation
 
-###How to currently run SpringClean? over your Application Context files
+###How to currently run SpringClean over your Application Context files
 At the moment, the SpringClean? main-able entrypoint class is not enabled - due to a combination of laziness and the API not being ready yet.
 
 However, you can still run the cleaning process over your Spring XML to check out what you would get so far. The best way to do this is to integrate the SpringClean? libraries and dependencies (from the ZIP file of source tree) into your project and to then write a TestCase? that does the following:
