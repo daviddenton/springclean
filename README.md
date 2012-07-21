@@ -4,71 +4,72 @@ Effectively inlines the XML into Java whilst retaining the use of the various Sp
 
 Note that the process is not perfect. After conversion, some work will be required to make a runnable application. Any issues are noted next to the features below.
 
-Supported Features
+###Supported Features
 
-Constructor Injection
+- Constructor Injection
 
-Setter Injection
+- Setter Injection
 
-abstract/parent beans
+- Abstract/parent beans
 
-Initialising Bean
+- Initialising Bean
 
-Factory Bean Issue: Currently cannot determine the type of the class created by the factory (due to this only being available at Spring runtime) and hence uses the class type of the Factory. Fix: Simply change the bean type (and cast on getObject()).
+- Factory Bean Issue: Currently cannot determine the type of the class created by the factory (due to this only being available at Spring runtime) and hence uses the class type of the Factory. Fix: Simply change the bean type (and cast on getObject()).
 
-Init Method
+- Init Method
 
-Static Factory Method
+- Static Factory Method
 
-Destroy Method Issue: Code for automatically calling destroy methods is only generated for identified beans. Destroy methods for prototype-scoped and anonymous beans not are not called. Fix: Extract bean to a field and manually call destroy method inside generated stop() method
+- Destroy Method Issue: Code for automatically calling destroy methods is only generated for identified beans. Destroy methods for prototype-scoped and anonymous beans not are not called. Fix: Extract bean to a field and manually call destroy method inside generated stop() method
 
-DisposableBean?
+- DisposableBean?
 
-Prototype and Singleton Scopes
+- Prototype and Singleton Scopes
 
-Collections (lists, sets, maps, properties) Issue: Ues ungenerified collections, which will result in IDE warnings. Fix: Add generification parameters.
+- Collections (lists, sets, maps, properties) Issue: Ues ungenerified collections, which will result in IDE warnings. Fix: Add generification parameters.
 
-Aliases and bean names
+- Aliases and bean names
 
-Values Issue: Cannot always detect what type of object is required, especially when inside a collection. If in doubt, uses a String. Fix: Convert String values back into primitives as required
+- Values Issue: Cannot always detect what type of object is required, especially when inside a collection. If in doubt, uses a String. Fix: Convert String values back into primitives as required
 
-Currently Unsupported
+###Currently Unsupported
 
-depends-on
+- depends-on
 
-multiple application contexts and classpath searching
+- multiple application contexts and classpath searching
 
-system properties and property config loaders ($XXX)
+- system properties and property config loaders ($XXX)
 
-proxies and pointcuts
+- proxies and pointcuts
 
-p: namespace
+- p: namespace
 
-idref bean
+- idref bean
 
-lookup-method
+- lookup-method
 
-replaced-method
+- replaced-method
 
-default-init-method
+- default-init-method
 
-collection merging
+- collection merging
 
-annotation based beans
+- annotation based beans
 
-FieldRetrievingFactoryBean?
+- FieldRetrievingFactoryBean?
 
-lazy initialisation
+- lazy initialisation
 
-
-
-How to currently run SpringClean? over your Application Context files
+###How to currently run SpringClean? over your Application Context files
 At the moment, the SpringClean? main-able entrypoint class is not enabled - due to a combination of laziness and the API not being ready yet.
 
 However, you can still run the cleaning process over your Spring XML to check out what you would get so far. The best way to do this is to integrate the SpringClean? libraries and dependencies (from the ZIP file of source tree) into your project and to then write a TestCase? that does the following:
 
+```java
         ApplicationContext applicationContext = new XmlApplicationContext("mycrazyapplicationcontext.xml");
         System.out.println(new ApplicationContextClassBuilder(applicationContext.build());
+```
+
 This will give you a pretty well formatted Java source file for that particular context file. It will cope with imported contexts, which will render external beans as injected dependencies through the constructor.
 
 Lather, rinse and repeat for your other context files and you should have a pretty good start on removing the XML.
