@@ -27,6 +27,7 @@ public class ResourceLoader {
 
     public File tempFile(String name) {
         try {
+            new File("build").mkdirs(); // TODO: quick hack to make tests work.
             File tmpFile = new File("build", name);
             tmpFile.createNewFile();
             IOUtils.copy(this.loader.getClass().getResourceAsStream(name), new FileOutputStream(tmpFile));
