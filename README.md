@@ -6,6 +6,8 @@ Note that the process is not perfect. After conversion, some work will be requir
 
 ###Supported Features
 
+- Imported sub-Application Contexts
+
 - Constructor Injection
 
 - Setter Injection
@@ -35,8 +37,6 @@ Note that the process is not perfect. After conversion, some work will be requir
 ###Currently Unsupported
 
 - depends-on
-
-- multiple application contexts and classpath searching
 
 - system properties and property config loaders ($XXX)
 
