@@ -1,22 +1,26 @@
 package springclean.core.generate;
 
-import static com.google.common.collect.Lists.newArrayList;
-import static com.google.common.collect.Sets.newHashSet;
-import org.daisychain.source.*;
-import static org.daisychain.source.ExistingClass.existingClass;
-import static org.daisychain.source.HasImports.ImportExtractor.extractImportsFrom;
+import org.daisychain.source.AClass;
+import org.daisychain.source.Instance;
+import org.daisychain.source.Method;
+import org.daisychain.source.MethodFinder;
 import org.daisychain.source.body.AssignableStatement;
 import org.daisychain.source.util.IndentingStringWriter;
-import static org.daisychain.source.util.ListAppender.generateSource;
-import static org.daisychain.source.util.ListAppender.loop;
 import springclean.core.domain.BeanCollection;
 import springclean.core.domain.SpringManagedObject;
 
 import java.io.IOException;
-import static java.util.Collections.EMPTY_LIST;
-import static java.util.Collections.singletonList;
 import java.util.List;
 import java.util.Set;
+
+import static com.google.common.collect.Lists.newArrayList;
+import static com.google.common.collect.Sets.newHashSet;
+import static java.util.Collections.EMPTY_LIST;
+import static java.util.Collections.singletonList;
+import static org.daisychain.source.ExistingClass.existingClass;
+import static org.daisychain.source.HasImports.ImportExtractor.extractImportsFrom;
+import static org.daisychain.source.util.ListAppender.generateSource;
+import static org.daisychain.source.util.ListAppender.loop;
 
 
 public class CollectionContextElement implements ConstructionStrategy {
@@ -41,7 +45,7 @@ public class CollectionContextElement implements ConstructionStrategy {
 
         public CollectionConstruction(BeanCollection beanCollection) {
             this.beanCollection = beanCollection;
-            Method addMethod = new MethodFinder<ExistingMethod>(beanCollection.clazz()).method("add", 1);
+            Method addMethod = new MethodFinder<>(beanCollection.clazz()).method("add", 1);
 
             for (SpringManagedObject member : beanCollection.members()) {
                 AssignableStatement memberStatement = member.asConstructionStrategy(existingClass(Object.class)).asStatement();

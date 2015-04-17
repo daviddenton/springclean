@@ -44,7 +44,7 @@ public enum XmlSpringManagedObjects {
 
     public static SpringManagedObject springManagedObjectFor(Element child, ApplicationContext applicationContext) {
         try {
-            return XmlSpringManagedObjects.valueOf(child.getLocalName().toUpperCase()).value(child, applicationContext);
+            return valueOf(child.getLocalName().toUpperCase()).value(child, applicationContext);
         } catch (IllegalArgumentException e) {
             throw new Defect("Don't know what to do with " + child.toXML());
         }

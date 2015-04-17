@@ -1,16 +1,11 @@
 package springclean.core.xml;
 
 import com.google.common.base.Function;
-import static com.google.common.collect.Lists.transform;
-import static com.google.common.collect.Sets.newHashSet;
 import nu.xom.Element;
 import org.daisychain.source.*;
-import static org.daisychain.source.ExistingClass.existingClass;
 import org.daisychain.source.body.AssignableStatement;
-import static org.daisychain.source.body.Value.quotedValue;
 import org.daisychain.source.util.IndentingStringWriter;
 import org.daisychain.source.util.ListAppender;
-import static org.daisychain.source.util.ListAppender.generateSource;
 import springclean.core.domain.ApplicationContext;
 import springclean.core.domain.SpringManagedObject;
 import springclean.core.generate.ConstructionStrategy;
@@ -19,6 +14,13 @@ import springclean.core.generate.InitializerBlockStart;
 
 import java.io.IOException;
 import java.util.*;
+
+import static com.google.common.collect.Lists.transform;
+import static com.google.common.collect.Sets.newHashSet;
+import static java.util.Collections.EMPTY_LIST;
+import static org.daisychain.source.ExistingClass.existingClass;
+import static org.daisychain.source.body.Value.quotedValue;
+import static org.daisychain.source.util.ListAppender.generateSource;
 
 public class XmlProperties extends AbstractElementWrapper implements SpringManagedObject {
     private final ExistingClass propertiesClass = existingClass(Properties.class);
@@ -39,7 +41,7 @@ public class XmlProperties extends AbstractElementWrapper implements SpringManag
                     }
 
                     public void appendSource(IndentingStringWriter writer) throws IOException {
-                        propertiesClass.instantiate(Collections.EMPTY_LIST).appendSource(writer);
+                        propertiesClass.instantiate(EMPTY_LIST).appendSource(writer);
                         ListAppender.loop(memberStatements())
                                 .withPrefix(new InitializerBlockStart())
                                 .andForEach(generateSource()).seperatedBy(";\n")
@@ -64,7 +66,7 @@ public class XmlProperties extends AbstractElementWrapper implements SpringManag
     }
 
     private List<AssignableStatement> memberStatements() {
-        final Method putMethod = new MethodFinder<ExistingMethod>(propertiesClass).method("put", 2);
+        final Method putMethod = new MethodFinder<>(propertiesClass).method("put", 2);
         return transform(members(), new Function<XmlPropertyEntry, AssignableStatement>() {
             public AssignableStatement apply(final XmlPropertyEntry entry) {
                 return putMethod.call(

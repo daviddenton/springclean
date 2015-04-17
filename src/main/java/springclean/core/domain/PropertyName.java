@@ -1,7 +1,8 @@
 package springclean.core.domain;
 
 import microtypes.StringValue;
-import org.apache.commons.lang.StringUtils;
+
+import static org.apache.commons.lang.StringUtils.capitalize;
 
 public class PropertyName extends StringValue {
     private PropertyName(String value) {
@@ -13,7 +14,7 @@ public class PropertyName extends StringValue {
     }
 
     public String setterName() {
-        return "set" + StringUtils.capitalize(value);
+        return "set" + capitalize(value);
     }
 
     public int compareTo(PropertyName propertyName) {

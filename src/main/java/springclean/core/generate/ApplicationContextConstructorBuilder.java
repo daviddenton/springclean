@@ -1,16 +1,17 @@
 package springclean.core.generate;
 
-import static com.google.common.collect.Sets.newHashSet;
 import org.daisychain.source.*;
+import springclean.core.domain.ApplicationContext;
+import springclean.core.domain.IdentifiedBean;
+
+import java.util.Set;
+
+import static com.google.common.collect.Sets.newHashSet;
 import static org.daisychain.source.DaisyChain.a;
 import static org.daisychain.source.ExistingClass.existingClass;
 import static org.daisychain.source.Modifier.Public;
 import static org.daisychain.source.Modifier.publicFinal;
 import static org.daisychain.source.Parameter.ParameterModifier.Final;
-import springclean.core.domain.ApplicationContext;
-import springclean.core.domain.IdentifiedBean;
-
-import java.util.Set;
 
 public class ApplicationContextConstructorBuilder {
     private final ApplicationContext applicationContext;
@@ -40,9 +41,9 @@ public class ApplicationContextConstructorBuilder {
                     if (!processedBeans.contains(instance)) {
 
                         for (Instance dependency : candidate.dependencies()) {
-                            if (externalDependencies.contains(dependency))
+                            if (externalDependencies.contains(dependency)) {
                                 constructorParameters.add(dependency);
-                            else if (!processedBeans.contains(dependency)) {
+                            } else if (!processedBeans.contains(dependency)) {
                                 throw new UnresolvedDependency(dependency);
                             }
                         }

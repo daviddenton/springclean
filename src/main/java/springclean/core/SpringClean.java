@@ -1,6 +1,12 @@
 package springclean.core;
 
+import org.daisychain.source.util.IndentingStringWriter;
+import springclean.core.domain.ApplicationContext;
+import springclean.core.generate.ApplicationContextClassBuilder;
+import springclean.core.xml.XmlApplicationContext;
+
 import java.io.File;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -54,14 +60,14 @@ public class SpringClean {
 
 
     private static void clean(File springFile, String packageName, File outputDir) throws Exception {
-//        final ApplicationContextFile contextFile = new ApplicationContextFile(springFile);
-//        File outputFile = new File(outputDir, contextFile.name());
-//
-//        IndentingStringWriter writer = new IndentingStringWriter(new FileWriter(outputFile));
-//        try {
-//            contextFile.appendSource(writer);
-//        } finally {
-//            writer.close();
-//        }
+        ApplicationContext applicationContext = new XmlApplicationContext(springFile);
+        File outputFile = new File(outputDir, applicationContext.name() + ".java");
+
+        IndentingStringWriter writer = new IndentingStringWriter(new FileWriter(outputFile));
+        try {
+            new ApplicationContextClassBuilder(applicationContext).build().appendSource(writer);
+        } finally {
+            writer.close();
+        }
     }
 }

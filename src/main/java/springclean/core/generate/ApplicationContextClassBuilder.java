@@ -41,7 +41,7 @@ public class ApplicationContextClassBuilder {
     }
 
     private ExistingMethod stopMethod() {
-        return new MethodFinder<ExistingMethod>(existingClass(Stoppable.class)).method("stop", 0);
+        return new MethodFinder<>(existingClass(Stoppable.class)).method("stop", 0);
     }
 
 }
