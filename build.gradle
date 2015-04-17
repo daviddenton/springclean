@@ -11,7 +11,7 @@ apply plugin: 'java'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven-publish'
 
-version = '0.0.1'
+version = '0.1.0'
 group = 'io.github.daviddenton'
 
 dependencies {
@@ -57,7 +57,7 @@ bintray {
     pkg {
         repo = 'maven'
         name = 'springclean'
-        desc = 'Java source code generation'
+        desc = 'Now is the Spring of our discontent. Made glorious Summer.'
         websiteUrl = 'https://github.com/daviddenton/springclean'
         issueTrackerUrl = 'https://github.com/daviddenton/springclean/issues'
         vcsUrl = 'https://github.com/daviddenton/springclean.git'
