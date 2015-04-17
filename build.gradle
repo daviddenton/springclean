@@ -62,7 +62,7 @@ bintray {
         issueTrackerUrl = 'https://github.com/daviddenton/springclean/issues'
         vcsUrl = 'https://github.com/daviddenton/springclean.git'
         licenses = ['Apache-2.0']
-        labels = ['gear', 'gore', 'gorilla']
+        labels = []
         publicDownloadNumbers = true
         version {
             name = project.version
