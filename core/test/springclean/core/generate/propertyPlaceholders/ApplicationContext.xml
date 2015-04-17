@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
-
-<beans>
-    <bean id="propertyBean" class="springclean.core.generate.data.PropertyBean">
-        <constructor-arg index="0" value="${constructorStringProperty}"/>
-        <property name="setterStringProperty" value="${setterStringProperty}"/>
-    </bean>
-</beans>

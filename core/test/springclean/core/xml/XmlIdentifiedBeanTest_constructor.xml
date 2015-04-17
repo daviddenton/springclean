@@ -1,3 +1,0 @@
-<bean id="id" class="java.lang.String">
-    <constructor-arg/>
-</bean>

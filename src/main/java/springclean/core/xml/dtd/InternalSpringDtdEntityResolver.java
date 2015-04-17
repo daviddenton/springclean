@@ -11,6 +11,7 @@ import java.net.URL;
 public class InternalSpringDtdEntityResolver implements EntityResolver {
     public InputSource resolveEntity(String publicId, String systemId) throws SAXException, IOException {
         String fileName = new File(new URL(systemId).getFile()).getName();
+        System.out.println(fileName);
         return new InputSource(this.getClass().getResourceAsStream(fileName));
     }
 }
