@@ -1,0 +1,15 @@
+public class ApplicationContext {
+    public final NoDependencyBean noDependencyBean;
+
+    public final SetterInjectedBean aSetterInjectedBean;
+
+    public ApplicationContext() throws Exception {
+        noDependencyBean = new NoDependencyBean();
+        aSetterInjectedBean = new SetterInjectedBean() {{
+            setAnonymousBean(new AnonymousBean());
+            setExpandedValue(1);
+            setNoDependencyBean(noDependencyBean);
+        }};
+    }
+
+}

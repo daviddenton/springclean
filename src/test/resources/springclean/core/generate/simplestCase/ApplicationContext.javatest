@@ -1,0 +1,8 @@
+public class ApplicationContext {
+    public final NoDependencyBean noDependencyBean;
+
+    public ApplicationContext() throws Exception {
+        noDependencyBean = new NoDependencyBean();
+    }
+
+}

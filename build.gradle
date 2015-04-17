@@ -1,0 +1,75 @@
+plugins {
+    id "com.jfrog.bintray" version "1.1"
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+apply plugin: 'java'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven-publish'
+
+version = '0.0.1'
+group = 'io.github.daviddenton'
+
+dependencies {
+    compile 'xom:xom:1.2.5'
+    compile 'org.objenesis:objenesis:2.1'
+    compile 'com.google.guava:guava:18.0'
+    compile 'commons-io:commons-io:2.4'
+    compile 'commons-lang:commons-lang:2.6'
+    compile 'org.springframework:spring-beans:2.5'
+    compile 'io.github.daviddenton:daisychain:1.0.2'
+    testCompile 'org.hamcrest:hamcrest-all:1.3'
+    testCompile 'junit:junit:4.12'
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+
+            artifact sourcesJar
+            artifact javadocJar
+        }
+    }
+}
+
+bintray {
+    user = 'daviddenton'
+    key = project.bintrayKey
+
+    publications = ['mavenJava']
+    dryRun = false
+    publish = true
+    pkg {
+        repo = 'maven'
+        name = 'springclean'
+        desc = 'Java source code generation'
+        websiteUrl = 'https://github.com/daviddenton/springclean'
+        issueTrackerUrl = 'https://github.com/daviddenton/springclean/issues'
+        vcsUrl = 'https://github.com/daviddenton/springclean.git'
+        licenses = ['Apache-2.0']
+        labels = ['gear', 'gore', 'gorilla']
+        publicDownloadNumbers = true
+        version {
+            name = project.version
+//            mavenCentralSync {
+//                user = 'daviddenton'
+//                password = project.sonatypePassword
+//            }
+        }
+    }
+}

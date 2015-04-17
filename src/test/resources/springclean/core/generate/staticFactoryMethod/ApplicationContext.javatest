@@ -1,0 +1,11 @@
+public class ApplicationContext {
+    public final NoDependencyBean noDependencyBean;
+
+    public final StaticFactoryMethodBean aStaticFactoryMethodBean;
+
+    public ApplicationContext() throws Exception {
+        noDependencyBean = new NoDependencyBean();
+        aStaticFactoryMethodBean = StaticFactoryMethodBean.staticFactoryMethod(noDependencyBean);
+    }
+
+}

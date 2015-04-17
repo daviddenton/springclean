@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <bean id="aNoDependencyBean" class="springclean.core.generate.data.NoDependencyBean"/>
+
+    <bean id="collectionsBean" class="springclean.core.generate.data.CollectionsBean">
+        <property name="map">
+            <map>
+                <entry key="inlineValue" value="anInlineValue"/>
+                <entry key-ref="aNoDependencyBean" value-ref="aNoDependencyBean"/>
+                <entry key-ref="aNoDependencyBean">
+                    <bean class="springclean.core.generate.data.NoDependencyBean"/>
+                </entry>
+                <entry>
+                    <key>
+                        <bean class="springclean.core.generate.data.NoDependencyBean"/>
+                    </key>
+                    <ref bean="aNoDependencyBean"/>
+                </entry>
+                <entry key="expandedValue">
+
+                    <value>expandedValue</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+</beans>
